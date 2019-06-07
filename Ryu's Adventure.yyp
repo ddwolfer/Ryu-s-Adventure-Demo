@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "2524ac8b-1161-4fa6-bfca-9f36502706b5",
+            "Value": {
+                "id": "9300a41b-21a7-402a-93a2-6b59ce111e45",
+                "resourcePath": "objects\\oDialogueTrigger\\oDialogueTrigger.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "27bcc5ac-12b5-44b0-9599-b3f9cc9a9c13",
             "Value": {
                 "id": "aaad8650-f2ef-4335-8ef3-cbb0646e8de5",
@@ -955,6 +963,14 @@
             "Value": {
                 "id": "5d675e8f-04ee-4291-8a61-12909a950249",
                 "resourcePath": "sprites\\sprite69\\sprite69.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6d6bb757-20be-4db2-8f45-0f9166ed9c5c",
+            "Value": {
+                "id": "0341a3a4-1110-466e-9746-b340b3c84eab",
+                "resourcePath": "sprites\\sprite89\\sprite89.yy",
                 "resourceType": "GMSprite"
             }
         },
