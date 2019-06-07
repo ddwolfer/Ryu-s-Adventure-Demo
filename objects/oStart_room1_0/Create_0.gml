@@ -5,7 +5,7 @@ freeze = false
 debug = false
 
 create_textevent(
-	"Just a test for start room",
+	["Just a test for start room"],
 	-1,
 	[1, 4],
 	2,
