@@ -5,9 +5,9 @@ freeze = false
 debug = false
 
 create_textevent(
-	["Just a test for start room Just a test for start roomJust aust a test for start room"],
+	"Just a test for start room Just a test for start roomJust aust a test for start room",
 	-1,
-	[ 1, 1],
+	[1, 1],
 	2,
 	-1,
 	-1,
@@ -17,4 +17,4 @@ create_textevent(
 	-1,
 );
 
-show_debug_overlay(true);
+//show_debug_overlay(true);

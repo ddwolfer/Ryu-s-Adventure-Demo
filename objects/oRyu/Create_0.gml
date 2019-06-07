@@ -43,3 +43,15 @@ deathSound = false;
 //light glow
 //instance_create_layer(x, y, "Lighting", oRyuLight);
 
+//--------Dialogue Stuff
+reset_dialogue_defaults();
+myPortrait			= -1;
+myVoice				= -1;
+myFont				= font_add("EquipmentPro.ttf", 20, false, false, 32, 128);;
+myName				= "Ryu";
+
+myPortraitTalk		= -1;
+myPortraitTalk_x	= 26;
+myPortraitTalk_y	= 44;
+myPortraitIdle		= -1;
+

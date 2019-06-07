@@ -3,7 +3,7 @@
 if(instance_number(obj_textevent)>1 or instance_number(obj_textbox)>1){ instance_destroy(); exit; }
 
 //-----------Customise (FOR USER)
-interact_key		= ord("E");
+interact_key		= ord("X");
 up_key				= vk_up;		//for dialogue choices
 down_key			= vk_down;		//for dialogue choices
 
@@ -23,7 +23,7 @@ select_snd_effect	= -1;
 default_col			= c_black;
 choice_col			= c_yellow;
 select_col			= c_orange;
-name_col			= c_orange;
+name_col			= c_black;
 
 name_font			= font_add("EquipmentPro.ttf", 20, false, false, 32, 128);
 
