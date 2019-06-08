@@ -12,7 +12,7 @@
         "b2be1bbb-1d4c-4624-9d68-691130fcb47a"
     ],
     "filterType": "GMScript",
-    "folderName": "dialogueScripts",
+    "folderName": "DialogueScripts",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

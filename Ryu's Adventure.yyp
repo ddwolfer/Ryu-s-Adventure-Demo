@@ -1575,6 +1575,14 @@
             }
         },
         {
+            "Key": "aa4b612a-9cad-43e1-9112-e3f050f3516a",
+            "Value": {
+                "id": "c3dce398-b2e7-4227-bf3b-44e46c486846",
+                "resourcePath": "scripts\\scrChangeMusicVolume\\scrChangeMusicVolume.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "aa9bf488-005d-493c-aa97-2eb3f1d7859e",
             "Value": {
                 "id": "da73aa7d-23e9-4ed4-aeb4-148135d8053e",
@@ -2055,6 +2063,14 @@
             }
         },
         {
+            "Key": "dd6871f8-389a-4744-8d80-fd5ccd5c8292",
+            "Value": {
+                "id": "868c4d78-39f5-40a7-b627-ed040838e6e6",
+                "resourcePath": "views\\dd6871f8-389a-4744-8d80-fd5ccd5c8292.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "dfb5e188-361d-465e-a743-cc8a60ea18f3",
             "Value": {
                 "id": "51f9c9f1-f37f-4c3b-b135-382ef18174f0",
@@ -2076,6 +2092,14 @@
                 "id": "d493c243-e471-4dd6-9379-c1796f48fa48",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e4e633ec-d373-4323-ad61-a56fcf975014",
+            "Value": {
+                "id": "530277dd-b924-4d35-83cd-489d4fd8e02b",
+                "resourcePath": "scripts\\scrChangeSoundVolume\\scrChangeSoundVolume.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2286,27 +2310,29 @@
         "2337f110-ef13-4fd0-939b-9e895f7507e7",
         "1f66fe38-e4b8-406f-ae74-7c6d8b6502c7",
         "b2be1bbb-1d4c-4624-9d68-691130fcb47a",
-        "464fc10d-92ec-4fe8-8388-485945b4f9f7",
-        "cef02c62-bca9-4a61-be41-f1e7b6604777",
-        "2f4e7017-5a23-4f49-bb2d-ee10ca7ff358",
         "7659fb3f-f3af-411e-a28d-3dc1b6c6d43f",
         "cc015c4e-1d85-47ed-b418-363dc742d939",
         "39342d78-d973-4823-9f97-21717e1abdcf",
         "6548d3c1-7927-45a0-b3bc-68075227c243",
         "3ddb45c5-ddb6-49c5-a9b5-7aa2216cadb4",
         "89e93c56-1db0-4c70-96f4-88e9c847dc73",
-        "8c66a1fa-2c93-4e73-bba5-cfcbd6c58f3f",
-        "0ff05751-86ca-4aa7-a22f-965d3c5e13ea",
-        "7b2f7ad6-6f08-473f-933c-408601fa8887",
-        "6bdaba52-e7d0-4ae1-8f45-a6409a63d009",
-        "7e56f55d-a90d-4898-9d61-0a87ba0efb5a",
-        "86e51286-0de6-44b3-9956-894b597d56d2",
         "b01f9cd3-2c48-4dcf-82bd-c6765b7d3f6c",
         "44eb6981-1e02-43f5-8187-1b6c933a6fd0",
         "b26c551b-2b7d-4c27-b058-fadcfdb6fdc8",
         "f1c02d5a-ae0f-44c4-a470-31115db55668",
         "3a0161ff-35ef-4455-b09f-c2fbe75d34f1",
-        "5ab13248-695c-4fa8-a47b-38578a9e904d"
+        "5ab13248-695c-4fa8-a47b-38578a9e904d",
+        "e4e633ec-d373-4323-ad61-a56fcf975014",
+        "aa4b612a-9cad-43e1-9112-e3f050f3516a",
+        "464fc10d-92ec-4fe8-8388-485945b4f9f7",
+        "cef02c62-bca9-4a61-be41-f1e7b6604777",
+        "2f4e7017-5a23-4f49-bb2d-ee10ca7ff358",
+        "8c66a1fa-2c93-4e73-bba5-cfcbd6c58f3f",
+        "0ff05751-86ca-4aa7-a22f-965d3c5e13ea",
+        "7b2f7ad6-6f08-473f-933c-408601fa8887",
+        "6bdaba52-e7d0-4ae1-8f45-a6409a63d009",
+        "7e56f55d-a90d-4898-9d61-0a87ba0efb5a",
+        "86e51286-0de6-44b3-9956-894b597d56d2"
     ],
     "tutorial": ""
 }

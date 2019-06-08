@@ -15,6 +15,16 @@
                     "groupName": "soundEffect",
                     "targets": 461609314234257646
                 }
+            },
+            {
+                "Key": 2,
+                "Value": {
+                    "id": "5c0c299e-403d-4b11-a5af-dd568980670d",
+                    "modelName": "GMAudioGroup",
+                    "mvc": "1.0",
+                    "groupName": "music",
+                    "targets": 461609314234257646
+                }
             }
         ],
         "Checksum": "濑Ⱥ朦씁ᬄ縈",

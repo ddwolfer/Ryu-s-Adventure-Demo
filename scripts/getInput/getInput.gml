@@ -34,4 +34,6 @@
 	select = keyboard_check_pressed(vk_escape);
 	upMenu = keyboard_check_pressed(vk_up); 
 	downMenu = keyboard_check_pressed(vk_down);
+	leftMenu = keyboard_check_pressed(vk_left);
+	rightMenu = keyboard_check_pressed(vk_right);
 //}
