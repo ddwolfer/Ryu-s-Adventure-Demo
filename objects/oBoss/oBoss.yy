@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oBoss",
     "eventList": [
-        
+        {
+            "id": "129eb5e4-6d63-4e44-8914-457c630e2992",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "8693e2ce-7d20-44a6-8acc-46ef35e8a628"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

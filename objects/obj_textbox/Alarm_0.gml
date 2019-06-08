@@ -37,7 +37,12 @@ if(type[page] == 0){
 	
 	//Get variables ready
 	var by = 0, ty = 0, cc = 1, breakpoint = 0;
-	var next_space = 0, char, txtwidth = boxWidth-(2*x_buffer), char_max = txtwidth div charSize;
+	if(charSize == 0){
+		var next_space = 0, char, txtwidth = boxWidth-(2*x_buffer), char_max = txtwidth div 1;
+	}else{
+		var next_space = 0, char, txtwidth = boxWidth-(2*x_buffer), char_max = txtwidth div charSize;
+	}
+	
 
 	//Reset the text effects and breakpoints arrays
 	text_effects = -1;
