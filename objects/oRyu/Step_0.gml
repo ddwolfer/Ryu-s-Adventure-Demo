@@ -114,18 +114,19 @@ if(control){
 		state = death;
 		audio_play_sound(sdDeath, 3, false);
 		control = false;
-		damage = true;
+		damaged = true;
 	}
 	
-	//out of camera
-	var CameraX = camera_get_view_x(view_camera[0]);
-	var maxCameraX = CameraX + camera_get_view_width(view_camera[0]);
-	if(x > maxCameraX || x < CameraX){
-		alarm[11] = 20; //set a timer for the death animation to finish
-		oRyu.state = death;
-		control = false;
+	//out of camera in auto scroll levels
+	if(instance_exists(oAutoRightCamera)){
+		var CameraX = camera_get_view_x(view_camera[0]);
+		var maxCameraX = CameraX + camera_get_view_width(view_camera[0]);
+		if(x > maxCameraX || x < CameraX){
+			alarm[11] = 20; //set a timer for the death animation to finish
+			state = death;
+			control = false;
+		}
 	}
-	
 	
 	//coyote time
 	if(jumpBufferTimer > 0){
@@ -180,5 +181,5 @@ if(warp != noone){
 
 
 
-//show_debug_message(gamepad_get_description(4));
+//show_debug_message(state);
 

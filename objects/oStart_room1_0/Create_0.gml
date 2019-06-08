@@ -5,7 +5,7 @@
 create_textevent(
     ["Just a test for start room"],
     -1,
-    [ [1, 4]],
+    [[1, 4]],
     -1,
     -1,
     -1,

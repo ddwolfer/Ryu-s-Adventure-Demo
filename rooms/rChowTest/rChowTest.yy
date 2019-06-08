@@ -1,6 +1,6 @@
 
 {
-    "name": "rTest",
+    "name": "rChowTest",
     "id": "93d177ba-df02-4209-805b-8d6b02f9ba55",
     "creationCodeFile": "",
     "inheritCode": false,
