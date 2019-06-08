@@ -119,7 +119,7 @@ else {
 						if(l == "a" or l == "e" or l == "i" or l == "o" or l == "u"){ 
 							portrait_talk_c = open_mouth_frame; 
 							if (charCount > audio_c) { 
-								audio_play_sound(voice[page], 1, false); 
+								//audio_play_sound(voice[page], 1, false); 
 								audio_c = charCount + audio_increment; 
 							} 
 						}
@@ -134,7 +134,7 @@ else {
 					}
 				} 
 				#endregion
-				else if (charCount >= audio_c) { audio_play_sound(voice[page], 1, false); audio_c = charCount + audio_increment; }
+				else if (charCount >= audio_c) { /*audio_play_sound(voice[page], 1, false);*/ audio_c = charCount + audio_increment; }
 		}
 		#endregion
 		
@@ -185,7 +185,9 @@ else {
 		
 		switch(effect){
 			case 0:	//normal
+				draw_set_halign(fa_center);
 				draw_text_color(xx + (cx*charSize), yy+(cy*stringHeight), letter, col, col, col, col, 1);
+				draw_set_halign(fa_left);
 				break;
 			
 			case 1:	//shakey

@@ -17,8 +17,8 @@ name_box			= spr_namebox;
 finished_effect		= spr_dialoguefinished;
 emote_sprite		= spr_emotes;
 
-choice_snd_effect	= -1;
-select_snd_effect	= -1;
+choice_snd_effect	= sdMenu;
+select_snd_effect	= sdMenuComfirm;
 
 default_col			= c_black;
 choice_col			= c_yellow;

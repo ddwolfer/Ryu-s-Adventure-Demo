@@ -23,6 +23,10 @@ switch (state) {
 		yscale = 1;
 		sprite_index = sRyuDeath;
 		image_speed = 0.8; 
+		if(animationEnd()){
+			oRyuController.deathCount++;
+			instance_destroy();
+		}
 	break;
 }
 
@@ -31,6 +35,7 @@ if (lastSprite != sprite_index) {
    image_index = 0;
    lastSprite = sprite_index;
 }
+
 // Draw player
 if (onGround) draw_sprite_ext(sprite_index, image_index, x, y + (16 - 16 * yscale) * 0.25, facing * xscale, yscale, 0, c_white, image_alpha);    
 else draw_sprite_ext(sprite_index, image_index, x, y, facing * xscale, yscale, 0, c_white, image_alpha);
