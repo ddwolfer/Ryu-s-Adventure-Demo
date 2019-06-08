@@ -25,7 +25,7 @@ choice_col			= c_yellow;
 select_col			= c_orange;
 name_col			= c_black;
 
-name_font			= font_add("EquipmentPro.ttf", 20, false, false, 32, 128);
+name_font			= font_add("Chinese.ttf", 15, false, false, 0, 65535);
 
 priority_snd_effect = 5;
 open_mouth_frame	= 1;	//You only need to change this if you are using animated sprites
