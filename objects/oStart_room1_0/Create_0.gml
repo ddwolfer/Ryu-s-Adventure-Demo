@@ -3,7 +3,7 @@
 
 
 create_textevent(
-    ["Just a test for start room"],
+    ["Welcome to Ryu's adventure"],
     -1,
     [[1, 4]],
     -1,

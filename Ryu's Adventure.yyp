@@ -338,7 +338,7 @@
             "Key": "2524ac8b-1161-4fa6-bfca-9f36502706b5",
             "Value": {
                 "id": "9300a41b-21a7-402a-93a2-6b59ce111e45",
-                "resourcePath": "objects\\oDialogueTrigger\\oDialogueTrigger.yy",
+                "resourcePath": "objects\\oDialogueTrigger_Minornos\\oDialogueTrigger_Minornos.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1167,6 +1167,14 @@
             }
         },
         {
+            "Key": "799d8081-435a-4028-8737-5bec17139db7",
+            "Value": {
+                "id": "81bf7d1f-e5c6-43e7-a13a-6e59257b981a",
+                "resourcePath": "datafiles_yy\\microsoftCN.ttc.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "79e1b912-28e5-444e-a49d-2e7b32456709",
             "Value": {
                 "id": "54f0636c-2aaa-4b05-a0c7-4cfc0bf102a5",
@@ -1543,6 +1551,14 @@
             }
         },
         {
+            "Key": "a71136a6-5a54-4317-9acc-7a7cd6cf194e",
+            "Value": {
+                "id": "a3eaabcb-84d0-44e5-b3b2-ee8971ef31a0",
+                "resourcePath": "objects\\oDialogueTrigger_CheckPoint\\oDialogueTrigger_CheckPoint.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a7b09381-3bec-476c-8118-a3b020615164",
             "Value": {
                 "id": "ff62a3e7-4616-4657-a85a-8083f057331c",
@@ -1556,14 +1572,6 @@
                 "id": "482d76e6-a30d-408e-80f3-2c805c8edd10",
                 "resourcePath": "objects\\oWarp\\oWarp.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "aa4b3317-8a0a-44c7-92a1-c188a96df22c",
-            "Value": {
-                "id": "d5c092a9-78c6-4f4d-9b09-307b4679e224",
-                "resourcePath": "rooms\\r1_2_2\\r1_2_2.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -1708,6 +1716,30 @@
                 "id": "87ae03ff-d73b-4780-8629-0ade2ee11358",
                 "resourcePath": "sprites\\sEParticle\\sEParticle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b5a08d5c-fc6a-49a9-8923-35d4323d68f0",
+            "Value": {
+                "id": "571108be-ace8-4b79-82fe-7c5ca15cc45f",
+                "resourcePath": "rooms\\rChineseTest\\rChineseTest.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "b6a3f60a-1c2a-4f1b-a527-166e0f117daa",
+            "Value": {
+                "id": "0e3891ec-b995-4562-8902-b2d2203202d7",
+                "resourcePath": "datafiles_yy\\Chinese.ttf.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "b7203197-7ee5-4fb0-802c-256fd51de674",
+            "Value": {
+                "id": "fef5d88a-5180-4ca6-9e34-c91f40ae216a",
+                "resourcePath": "objects\\oChineseStart\\oChineseStart.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1956,6 +1988,14 @@
                 "id": "653eafde-e78c-4f76-ac73-35bd1e78dad8",
                 "resourcePath": "objects\\oRedDino\\oRedDino.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d5ec7c84-2474-4024-a238-398ae01d0fb7",
+            "Value": {
+                "id": "f47b867f-696e-4215-b6cc-4654670b58df",
+                "resourcePath": "fonts\\font_wolf_test\\font_wolf_test.yy",
+                "resourceType": "GMFont"
             }
         },
         {
