@@ -24,7 +24,7 @@ if(place_meeting(x, y, oRyu)){
 	
 }
 
-if( !instance_exists(obj_textbox) ){
+if( !instance_exists(obj_textbox)){
 	oRyu.control = true;
 }
 
