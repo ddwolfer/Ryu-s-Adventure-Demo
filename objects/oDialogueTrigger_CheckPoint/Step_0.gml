@@ -2,8 +2,6 @@
 // You can write your code in this editor
 
 
-
-
 if(place_meeting(x, y, oRyu)){
 	if(activeTimes > dialogueActiveCount){
 		create_textevent(
@@ -20,11 +18,12 @@ if(place_meeting(x, y, oRyu)){
 		);
 		oRyu.control = false;
 		dialogueActiveCount++;
+		activedialouge = 1;
 	}
-	
 }
 
-if( !instance_exists(obj_textbox) ){
+if( !instance_exists(obj_textbox) && activedialouge == 1){
 	oRyu.control = true;
+	activedialouge = 0
 }
 

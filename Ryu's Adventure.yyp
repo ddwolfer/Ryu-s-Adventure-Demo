@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "03ed720f-70a9-4c7f-b20a-474ce1157041",
+            "Value": {
+                "id": "f3375523-e2bb-4fe3-81f2-0dde19c3b4d1",
+                "resourcePath": "objects\\oSoundController\\oSoundController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0730d431-c700-4fa9-8444-ba1d51a7266b",
             "Value": {
                 "id": "5ccbe83e-d3ca-497a-9974-1de2903702f8",
@@ -591,6 +599,14 @@
             }
         },
         {
+            "Key": "3ec4fed9-de6f-4105-b45e-107d3ad235d1",
+            "Value": {
+                "id": "929628de-40d6-427e-bf04-4754598330d9",
+                "resourcePath": "scripts\\scrPlayMusic\\scrPlayMusic.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "40e9cd06-f890-459a-8da0-fd54ae66d28e",
             "Value": {
                 "id": "87fc7e27-0399-4d9d-b913-362a6eb6c2ec",
@@ -1028,6 +1044,14 @@
                 "id": "999cdc79-a542-4643-b401-3d9004b8f0e8",
                 "resourcePath": "views\\6b45913c-ce3d-496f-aa89-d9d2c151a424.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6ba9d914-891f-4189-8ccf-466690c38c87",
+            "Value": {
+                "id": "48a26a04-25b9-49af-be43-69a75e0e6c7d",
+                "resourcePath": "scripts\\scrControlSound\\scrControlSound.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2324,6 +2348,8 @@
         "5ab13248-695c-4fa8-a47b-38578a9e904d",
         "e4e633ec-d373-4323-ad61-a56fcf975014",
         "aa4b612a-9cad-43e1-9112-e3f050f3516a",
+        "3ec4fed9-de6f-4105-b45e-107d3ad235d1",
+        "6ba9d914-891f-4189-8ccf-466690c38c87",
         "464fc10d-92ec-4fe8-8388-485945b4f9f7",
         "cef02c62-bca9-4a61-be41-f1e7b6604777",
         "2f4e7017-5a23-4f49-bb2d-ee10ca7ff358",

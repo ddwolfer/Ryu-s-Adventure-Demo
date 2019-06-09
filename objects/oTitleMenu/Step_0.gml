@@ -85,7 +85,7 @@ switch(screen){
 		}
 		
 		switch(cursor_options){
-			case 1:
+			case 1: //Language
 				if(leftMenu){
 					audio_play_sound(sdMenu, 2, false);
 					cursor_Language -=1
@@ -96,18 +96,22 @@ switch(screen){
 					if(cursor_Language > Language_Count) cursor_options = 0;
 				}
 			break;
-			case 2:
+			case 2: //SFX
 				if(leftMenu){
-					
+					audio_play_sound(sdMenu, 2, false);
+					scrChangeSoundVolume(-0.1);
 				}else if (rightMenu){
-
+					audio_play_sound(sdMenu, 2, false);
+					scrChangeSoundVolume(0.1);
 				}
 			break;
-			case 3:
+			case 3: //Music
 				if(leftMenu){
-					
+					audio_play_sound(sdMenu, 2, false);
+					scrChangeMusicVolume(-0.1);
 				}else if (rightMenu){
-
+					audio_play_sound(sdMenu, 2, false);
+					scrChangeMusicVolume(0.1);
 				}
 			break;
 		}
