@@ -43,6 +43,9 @@ deathSound = false;
 //light glow
 //instance_create_layer(x, y, "Lighting", oRyuLight);
 
+//Boomerang
+canThrow = true;
+
 //--------Dialogue Stuff
 reset_dialogue_defaults();
 myPortrait			= -1;

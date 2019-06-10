@@ -10,7 +10,7 @@
         "a71136a6-5a54-4317-9acc-7a7cd6cf194e"
     ],
     "filterType": "GMObject",
-    "folderName": "oDialogueSystem",
+    "folderName": "DialogueSystem",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

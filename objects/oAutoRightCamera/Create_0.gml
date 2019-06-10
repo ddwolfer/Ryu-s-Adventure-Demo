@@ -1,5 +1,4 @@
 /// @description create camera
-// You can write your code in this editor
 
 startPosition_X = 0;
 startRoom = 0;
