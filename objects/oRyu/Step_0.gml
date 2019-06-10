@@ -168,12 +168,22 @@ if(control){
 		if(!instance_exists(oTeleport)){
 			instance_create_layer(x, y, "MainEntities", oTeleport);
 		}
+		if(instance_exists(oTeleport)){
+			var RyutempX = x;
+			x = oTeleport.x;
+			if(place_meeting(oTeleport.x+12,oTeleport.y,oParentSolid)){			//fix foot stuck in wall bug
+				y = oTeleport.y-12;
+			}else if(place_meeting(oTeleport.x-12,oTeleport.y,oParentSolid)){	//fix head stuck in wall bug
+				y = oTeleport.y+12;
+			}else{																//normal teleport
+				y = oTeleport.y;
+			}
+			if(abs(oTeleport.x - RyutempX) > 1){								//fix can't shoot bug
+				instance_destroy(oTeleport);
+			}
+		}
 	}
 	
-	if(instance_exists(oTeleport) && action){
-			x = oTeleport.x;
-			y = oTeleport.y;
-	}
 }//end of control
 
 //warp transitions

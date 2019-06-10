@@ -1,7 +1,7 @@
 /// @description 
 
 x += mySpeed * dir;
-image_angle -= 2;
+image_angle -= boomerangRotateSpeed;
 
 if(place_meeting(x, y, oParentSolid)){
 	instance_destroy()
