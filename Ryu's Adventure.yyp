@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "03ed720f-70a9-4c7f-b20a-474ce1157041",
+            "Value": {
+                "id": "f3375523-e2bb-4fe3-81f2-0dde19c3b4d1",
+                "resourcePath": "objects\\oSoundController\\oSoundController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0730d431-c700-4fa9-8444-ba1d51a7266b",
             "Value": {
                 "id": "5ccbe83e-d3ca-497a-9974-1de2903702f8",
@@ -503,6 +511,14 @@
             }
         },
         {
+            "Key": "3601f14e-c133-4a7d-9267-d53d3fe515fb",
+            "Value": {
+                "id": "f50e5724-16e9-41aa-b060-b00561a7e64a",
+                "resourcePath": "views\\3601f14e-c133-4a7d-9267-d53d3fe515fb.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "3631adf1-524c-49c4-ac4d-b0ab5af0b97f",
             "Value": {
                 "id": "e8ace3e9-fba2-44e3-8f11-01d5371b5c80",
@@ -611,6 +627,14 @@
             "Value": {
                 "id": "bd31087f-c6af-4fce-a945-a680a2ad6d8e",
                 "resourcePath": "scripts\\__init_global\\__init_global.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3ec4fed9-de6f-4105-b45e-107d3ad235d1",
+            "Value": {
+                "id": "929628de-40d6-427e-bf04-4754598330d9",
+                "resourcePath": "scripts\\scrPlayMusic\\scrPlayMusic.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1071,6 +1095,14 @@
             }
         },
         {
+            "Key": "6ba9d914-891f-4189-8ccf-466690c38c87",
+            "Value": {
+                "id": "48a26a04-25b9-49af-be43-69a75e0e6c7d",
+                "resourcePath": "scripts\\scrControlSound\\scrControlSound.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6bdaba52-e7d0-4ae1-8f45-a6409a63d009",
             "Value": {
                 "id": "93c3c99d-2cd8-4135-89de-ff3b030801c8",
@@ -1196,6 +1228,14 @@
                 "id": "988c8b1e-d98d-4de8-9824-6f7a0a71f5f0",
                 "resourcePath": "sprites\\sFallingPlatform2\\sFallingPlatform2.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "78276faf-6022-47cc-9205-8889b2e254f9",
+            "Value": {
+                "id": "84f82950-0b64-4a74-baa2-57ad1c011153",
+                "resourcePath": "objects\\oRoomMenuControl\\oRoomMenuControl.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2381,6 +2421,8 @@
         "5ab13248-695c-4fa8-a47b-38578a9e904d",
         "e4e633ec-d373-4323-ad61-a56fcf975014",
         "aa4b612a-9cad-43e1-9112-e3f050f3516a",
+        "3ec4fed9-de6f-4105-b45e-107d3ad235d1",
+        "6ba9d914-891f-4189-8ccf-466690c38c87",
         "464fc10d-92ec-4fe8-8388-485945b4f9f7",
         "cef02c62-bca9-4a61-be41-f1e7b6604777",
         "2f4e7017-5a23-4f49-bb2d-ee10ca7ff358",

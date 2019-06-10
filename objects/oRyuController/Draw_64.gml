@@ -1,5 +1,7 @@
 var text1 = "X" + string(deathCount);
 var text2 = "X" + string(cheeseCount);
+f = font_add("EquipmentPro.ttf", 20, false, false, 32, 128);
+draw_set_font(f)
 draw_set_halign(fa_left);
 
 if(room != rCredit){
