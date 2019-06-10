@@ -8,7 +8,7 @@
         "235e0f01-8792-4177-be8a-58a28bcf0139"
     ],
     "filterType": "GMObject",
-    "folderName": "oCamera",
+    "folderName": "Camera",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

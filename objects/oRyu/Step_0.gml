@@ -162,6 +162,18 @@ if(control){
 		state = death;
 		control = false;
 	}*/
+	
+	//Boomerang
+	if(action){
+		if(!instance_exists(oTeleport)){
+			instance_create_layer(x, y, "MainEntities", oTeleport);
+		}
+	}
+	
+	if(instance_exists(oTeleport) && action){
+			x = oTeleport.x;
+			y = oTeleport.y;
+	}
 }//end of control
 
 //warp transitions
