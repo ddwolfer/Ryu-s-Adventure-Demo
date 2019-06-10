@@ -30,8 +30,10 @@
 	jump = keyboard_check_pressed(ord("Z")); 
 	jumpRelease = keyboard_check_released(ord("Z"));
 	jumpHold = keyboard_check(ord("Z"));
-	start = keyboard_check_pressed(vk_enter);
+	start = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space);
 	select = keyboard_check_pressed(vk_escape);
 	upMenu = keyboard_check_pressed(vk_up); 
 	downMenu = keyboard_check_pressed(vk_down);
+	leftMenu = keyboard_check_pressed(vk_left);
+	rightMenu = keyboard_check_pressed(vk_right);
 //}
