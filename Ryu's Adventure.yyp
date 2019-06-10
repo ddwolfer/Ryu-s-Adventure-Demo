@@ -1527,14 +1527,6 @@
             }
         },
         {
-            "Key": "93d177ba-df02-4209-805b-8d6b02f9ba55",
-            "Value": {
-                "id": "36489e06-aab6-4542-8b30-68cb385eee73",
-                "resourcePath": "rooms\\rChowTest\\rChowTest.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "968af6d9-33ea-4301-b369-3f0cf1846ab7",
             "Value": {
                 "id": "f1413559-23c8-4098-97a0-e805a8b81df0",
