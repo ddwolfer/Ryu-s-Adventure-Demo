@@ -495,6 +495,14 @@
             }
         },
         {
+            "Key": "3601f14e-c133-4a7d-9267-d53d3fe515fb",
+            "Value": {
+                "id": "f50e5724-16e9-41aa-b060-b00561a7e64a",
+                "resourcePath": "views\\3601f14e-c133-4a7d-9267-d53d3fe515fb.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "3631adf1-524c-49c4-ac4d-b0ab5af0b97f",
             "Value": {
                 "id": "e8ace3e9-fba2-44e3-8f11-01d5371b5c80",
@@ -1180,6 +1188,14 @@
                 "id": "988c8b1e-d98d-4de8-9824-6f7a0a71f5f0",
                 "resourcePath": "sprites\\sFallingPlatform2\\sFallingPlatform2.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "78276faf-6022-47cc-9205-8889b2e254f9",
+            "Value": {
+                "id": "84f82950-0b64-4a74-baa2-57ad1c011153",
+                "resourcePath": "objects\\oRoomMenuControl\\oRoomMenuControl.yy",
+                "resourceType": "GMObject"
             }
         },
         {
