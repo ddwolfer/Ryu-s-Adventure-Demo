@@ -4,5 +4,11 @@ if(!instance_exists(oRyu)){
 		oSwitchBlockB.state = -1;
 		oSwitchBlockR.state = 1;
 	}
-	instance_create_layer(spawnX, spawnY, "MainEntities", oRyu);
+	if(SartWithContinue == true){
+		instance_create_layer(ContinueX, ContinueY, "MainEntities", oRyu);
+		SartWithContinue = false;
+	}else{
+		instance_create_layer(spawnX, spawnY, "MainEntities", oRyu);
+	}
+	
 }

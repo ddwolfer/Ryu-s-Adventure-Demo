@@ -14,6 +14,11 @@ timerSecond = 0;
 timerMinute = 0;
 //alarm[10] = 1;
 
+globalvar SartWithContinue,ContinueX,ContinueY,RoomContinue;
+SartWithContinue = false;
+ContinueX = 0 ;
+ContinueY = 0 ;
+RoomContinue = 0;
 gpConnected = false;
 
 f = font_add("EquipmentPro.ttf", 20, false, false, 32, 128);

@@ -39,6 +39,7 @@ Language_Count = array_length_1d(Language_option);
 cursor = 3;
 cursor_options = 3;
 cursor_Language = 0;
+
 //variable for controll view
 enum menu_screen { //which page now
 	main = 0,
@@ -46,6 +47,5 @@ enum menu_screen { //which page now
 	height = 2,
 }
 screen = menu_screen.main
-
 
 

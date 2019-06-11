@@ -15,9 +15,10 @@ fontSize = font_get_size(levelMenuFont);
 optionsCommited = -1;
 
 //option txx
-options[4] = "Music : ";
-options[3] = "SFX : ";
-options[2] = "Language : ";
+options[5] = "Music : ";
+options[4] = "SFX : ";
+options[3] = "Language : ";
+options[2] = "SAVE THE GAME"
 options[1] = "BACK TO MENU";
 options[0] = "RESUME";
 //Language options
@@ -27,5 +28,5 @@ Language_option[0] = "English";
 //variable for step 
 optionsCount = array_length_1d(options);
 Language_Count = array_length_1d(Language_option);
-cursor_options = 4;
+cursor_options = 5;
 cursor_Language = 0;
