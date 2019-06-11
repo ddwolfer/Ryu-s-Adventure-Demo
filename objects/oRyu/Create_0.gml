@@ -36,6 +36,7 @@ jumpBufferTimer = 0;
 coyoteJump = false;
 damaged = false;
 hasCheese = false;
+canDJump = true;
 
 lastSprite = sprite_index;// make sure animation starts from frame 0
 

@@ -14,7 +14,9 @@
         "9b6521ff-5bfa-4972-bc2f-d12c2bd962e1",
         "59b9e21e-6468-4075-ba99-a8b59e409328",
         "00649a8f-10c2-44d1-94c4-53c21fef6a1b",
-        "18f58810-9a97-4ec8-94b0-daa20158487d"
+        "18f58810-9a97-4ec8-94b0-daa20158487d",
+        "1f7fd095-8c5d-413f-8df9-1d653731e50e",
+        "ef50f300-7b29-41b3-81bf-7ff2778439a9"
     ],
     "filterType": "GMSprite",
     "folderName": "Ryu",
