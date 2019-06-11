@@ -1,7 +1,7 @@
-//if(!instance_exists(oRyuController)) exit;
+if(!instance_exists(oRyuController)) exit;
 
 if(instance_exists(oRyu)){
-	var target_x = oRyu.x;
+	var target_x = oRyu.x; 
 	var target_y = oRyu.y;
 
 

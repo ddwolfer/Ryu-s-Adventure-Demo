@@ -95,7 +95,7 @@ if(control){
 	
 	if(!onGround) {
 		state = jump;
-		if(jump && canDJump){
+		if(jump && canDJump && oRyuController.abilityDJump){    //can double jump after collect scroll
 			 yVelo = -jumpHeight * (2 / 3);
 			 canDJump = false;
 			 instance_create(x , y + 12, oJumpEffect);
@@ -173,7 +173,7 @@ if(control){
 	}*/
 	
 	//Boomerang
-	if(action){
+	if(action && oRyuController.abilityTP){  //Can teleport after coolect the scroll
 		if(!instance_exists(oTeleport)){
 			instance_create_layer(x, y, "MainEntities", oTeleport);
 		}
@@ -190,6 +190,8 @@ if(control){
 			}
 			if(abs(oTeleport.x - RyutempX) > 1){								//fix can't shoot bug
 				instance_destroy(oTeleport);
+				instance_create(x, y, oTeleportEffect);
+				audio_play_sound(sdTeleport, 2, false);
 			}
 		}
 	}
