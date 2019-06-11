@@ -8,6 +8,7 @@ if(onGround){
 	tempAccel = groundAccel;
 	tempFric = groundFric;
 	ledgeJumpTimer = ledgeJumpTime; //coyote time 
+	canDJump = true;
 } else{
 	tempAccel = airAccel;
 	tempFric = airFric;
@@ -92,7 +93,15 @@ if(control){
 	        yVelo *= 0.25;
 	}
 	
-	if(!onGround) state = jump;
+	if(!onGround) {
+		state = jump;
+		if(jump && canDJump){
+			 yVelo = -jumpHeight * (2 / 3);
+			 canDJump = false;
+			 instance_create(x , y + 12, oJumpEffect);
+			 audio_play_sound(sdJump, 2, false);
+		}
+	}
 
 	//Particles
 	else if (random(100) > 85 && abs(xVelo) > 0.5 && !onMovingPlatform) instance_create(x, y + 8, oParticle);
@@ -171,6 +180,7 @@ if(control){
 		if(instance_exists(oTeleport)){
 			var RyutempX = x;
 			x = oTeleport.x;
+
 			if(place_meeting(oTeleport.x+12,oTeleport.y,oParentSolid)){			//fix foot stuck in wall bug
 				y = oTeleport.y-12;
 			}else if(place_meeting(oTeleport.x-12,oTeleport.y,oParentSolid)){	//fix head stuck in wall bug

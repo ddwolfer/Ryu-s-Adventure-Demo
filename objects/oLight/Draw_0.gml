@@ -5,3 +5,9 @@ draw_set_alpha(0.3);
 draw_rectangle(0, 0, width, height, false);
 surface_reset_target();
 draw_set_alpha(1); //set back to 1
+
+if(!surface_exists(light)){
+	light = surface_create(width, height);
+	surface_set_target(light);
+	surface_reset_target();
+}

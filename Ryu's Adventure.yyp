@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "1f7fd095-8c5d-413f-8df9-1d653731e50e",
+            "Value": {
+                "id": "1700eceb-38fc-4da2-945a-21c6769699ca",
+                "resourcePath": "sprites\\sAppearEffect\\sAppearEffect.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "20f55d53-9074-4bd7-95c1-8e75d617740c",
             "Value": {
                 "id": "67631efe-da13-4ef0-ad6c-1a9168cb4d06",
@@ -436,6 +444,14 @@
                 "id": "9ce9da61-0ca6-461a-abc2-176a901f1d25",
                 "resourcePath": "rooms\\r1_4_\\r1_4_.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "2e2cacf2-22a4-432f-be21-ed0e65c5b340",
+            "Value": {
+                "id": "c9dae782-b9ce-4563-b1a4-a104bb74b1c2",
+                "resourcePath": "objects\\oTeleportEffect\\oTeleportEffect.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1423,6 +1439,14 @@
             }
         },
         {
+            "Key": "88bbef54-8c4f-4281-bae2-3966aefa7ed7",
+            "Value": {
+                "id": "267667de-d76b-46f9-88ac-6ac0604b14d2",
+                "resourcePath": "views\\88bbef54-8c4f-4281-bae2-3966aefa7ed7.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "88dbcc8a-32f1-4fe5-bcf4-dafe1069a6c0",
             "Value": {
                 "id": "165e35a2-e797-4e3b-b5cf-8d1cc9fcb45d",
@@ -1524,14 +1548,6 @@
                 "id": "5333c965-59e1-4725-9b79-bf6574e200be",
                 "resourcePath": "views\\9346b776-4671-42a6-bebf-edffb1350582.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "93d177ba-df02-4209-805b-8d6b02f9ba55",
-            "Value": {
-                "id": "36489e06-aab6-4542-8b30-68cb385eee73",
-                "resourcePath": "rooms\\rChowTest\\rChowTest.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -2175,6 +2191,14 @@
             }
         },
         {
+            "Key": "e2f90e20-cc42-4281-be3e-12c3adddcbce",
+            "Value": {
+                "id": "1baa81b1-8613-4593-808d-394f28d0c282",
+                "resourcePath": "objects\\oJumpEffect\\oJumpEffect.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
             "Value": {
                 "id": "d493c243-e471-4dd6-9379-c1796f48fa48",
@@ -2251,6 +2275,14 @@
             "Value": {
                 "id": "d73be4c6-f29c-4c40-b4fa-bc430a929e22",
                 "resourcePath": "sprites\\sWarp\\sWarp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ef50f300-7b29-41b3-81bf-7ff2778439a9",
+            "Value": {
+                "id": "1b854574-df58-40b7-bad6-26ae99a8e2c6",
+                "resourcePath": "sprites\\sJumpEffect\\sJumpEffect.yy",
                 "resourceType": "GMSprite"
             }
         },
