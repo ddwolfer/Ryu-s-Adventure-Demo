@@ -46,8 +46,6 @@ deathSound = false;
 //light glow
 //instance_create_layer(x, y, "Lighting", oRyuLight);
 
-//Boomerang
-canThrow = true;
 
 //--------Dialogue Stuff
 reset_dialogue_defaults();
@@ -60,4 +58,6 @@ myPortraitTalk		= -1;
 myPortraitTalk_x	= 26;
 myPortraitTalk_y	= 44;
 myPortraitIdle		= -1;
+
+
 

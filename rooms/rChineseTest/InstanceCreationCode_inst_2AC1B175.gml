@@ -1,1 +1,0 @@
-targetRoom = r1_1;
