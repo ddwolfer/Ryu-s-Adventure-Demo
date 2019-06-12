@@ -15,6 +15,7 @@ idle = 10;
 run = 11;
 jump = 12;
 death = 13;
+climb = 14;
 
 state = idle;
 facing = -image_xscale;
@@ -38,7 +39,8 @@ damaged = false;
 hasCheese = false;
 teleportImage = false;
 canDJump = true;
-
+stopGravity = false;
+holdClimb = false;
 
 lastSprite = sprite_index;// make sure animation starts from frame 0
 

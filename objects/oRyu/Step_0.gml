@@ -17,18 +17,18 @@ if(onGround){
 
 if(control){
 	//Handle gravity
-	if(!onGround){
+	if(!onGround && state!=climb && stopGravity==false ){
 		yVelo = approach(yVelo, yVeloMax, gravityNormal);
 	}
 
 	if(!onMovingPlatform){
-		if(left){
+		if(left && state!=climb){
 			facing = 1;
 			state = run;
 			//Apply acceleration left
 			if(xVelo > 0) xVelo = approach(xVelo, 0, tempFric);
 			xVelo = approach(xVelo, -xVeloMax, tempAccel);
-		}else if(right){
+		}else if(right && state!=climb){
 			facing = -1;
 			state = run;
 			//Apply acceleration right
@@ -49,13 +49,13 @@ if(control){
 			}
 			state = idle;
 		}
-		else if(left){
+		else if(left && state!=climb){
 			facing = 1;
 			state = run;
 			//Apply acceleration left
 			if(xVelo > 0) xVelo = approach(xVelo, 0, tempFric);
 			xVelo = approach(xVelo, -xVeloMax, tempAccel);
-		}else if(right){
+		}else if(right && state!=climb){
 			facing = -1;
 			state = run;
 			//Apply acceleration right
@@ -70,10 +70,52 @@ if(control){
 		xVelo = approach(xVelo, 0, tempFric);
 		state = idle;
 	}*/
-
-	//Jump
+	
+	#region //climb Ladder
+	if(jump && holdClimb==true){
+		holdClimb = false;
+	}
+	if(climb){
+		if(left || right){
+			state = idle;
+		}
+	}
+	if(!place_meeting(x,y,oLadder)){ //stop state climb
+		holdClimb = false;
+	}
+	if(place_meeting(x,y,oLadder)){ 
+		if(place_meeting(x,y+1,oParentSolid)){//when Ryu on the ground, stop hold climb
+			holdClimb = false;
+		}
+		if(holdClimb == true){ //if you still on the ladder, hold the state
+			state = climb;
+		}
+		var tempLadder = instance_place(x,y,oLadder); //Let RyuX can in the center of ladder
+		if(up){
+			state = climb;
+			holdClimb = true;
+			x = tempLadder.x+8;
+			if(!instance_place(x,y-12,oLadder)){ //if Ryu's head over the ladder, let Ryu stand on ladder
+				y -= 12;
+			}else{
+				y -= 0.8;
+			}
+		}
+		else if (down && !place_meeting(x,y+1,oParentSolid)){ //can't down when you on the ground
+			state = climb;
+			holdClimb = true;
+			x = tempLadder.x+8;
+			y += 0.8;
+		}
+	}else if (down && place_meeting(x,y+13,oLadder)){ //if have ladder under the floor
+		state = climb;
+		y = y+12;
+	}
+	#endregion
+	
+	#region//Jump
 	if(jump){
-		if(onGround || ledgeJumpTimer > 0){
+		if(onGround || ledgeJumpTimer > 0 ){
 			/*if (down) {    /////////fall through platform
 	            if (place_meeting(x, y + 1, oParentJumpThru))
 	                ++y;
@@ -88,12 +130,12 @@ if(control){
 		}
 		jumpBufferTimer = jumpBufferTime;
 		
-	}else if (jumpRelease) { 
+	}else if (jumpRelease && state!=climb) { 
 	    if (yVelo < 0)
 	        yVelo *= 0.25;
 	}
 	
-	if(!onGround) {
+	if(!onGround && state!=climb ) {
 		state = jump;
 		if(jump && canDJump && oRyuController.abilityDJump){    //can double jump after collect scroll
 			 yVelo = -jumpHeight * (2 / 3);
@@ -102,22 +144,24 @@ if(control){
 			 audio_play_sound(sdJump, 2, false);
 		}
 	}
-
+	#endregion
 	//Particles
 	else if (random(100) > 85 && abs(xVelo) > 0.5 && !onMovingPlatform) instance_create(x, y + 8, oParticle);
 
 
-	//squash and stretch
+	#region //squash and stretch
 	xscale = approach(xscale, 1, 0.05);
 	yscale = approach(yscale, 1, 0.05);
-
-	//open locker
+	#endregion
+	
+	#region //open locker
 	if(action && (oRyuController.keyCount > 0) && (place_meeting(x + blockSize, y, oLocker) || place_meeting(x - blockSize, y, oLocker))){
 		instance_destroy(oLocker);
 		oRyuController.keyCount--;
 	}
-
-	//touch spikes
+	#endregion
+	
+	#region //touch spikes
 	if(place_meeting(x, y, oParentHazards) && (!damaged)){
 		alarm[11] = 20; //set a timer for the death animation to finish
 		state = death;
@@ -125,8 +169,9 @@ if(control){
 		control = false;
 		damaged = true;
 	}
+	#endregion
 	
-	//out of camera in auto scroll levels
+	#region //out of camera in auto scroll levels
 	if(instance_exists(oAutoRightCamera)){
 		var CameraX = camera_get_view_x(view_camera[0]);
 		var maxCameraX = CameraX + camera_get_view_width(view_camera[0]);
@@ -136,8 +181,9 @@ if(control){
 			control = false;
 		}
 	}
+	#endregion
 	
-	//coyote time
+	#region //coyote time
 	if(jumpBufferTimer > 0){
 		coyoteJump = true
 	}else{
@@ -154,25 +200,10 @@ if(control){
 			jumpBufferTimer = 0
 		}
 		jumpBufferTimer--;
-	}//end of coyote jump
+	}
+	#endregion
 	
-	//enemies
-	/*if(place_meeting(x, y + 6, oParentEnemies) && yVelo > 0){   //under my feet and velo should be positive
-		//var enemy = instance_place(x, y + 6, oParentEnemies);
-		//instance_destroy(enemy);
-		if(jumpHold || jump || jumpRelease){  //to jump high when stomp on enemy
-			yVelo = -jumpHeight
-		}else{
-			yVelo = -jumpHeight / 2;
-		}
-	}else if(place_meeting(x, y , oParentEnemies) && yVelo <= 0){
-		alarm[11] = 20; //set a timer for the death animation to finish
-		audio_play_sound(sdDeath, 3, false);
-		state = death;
-		control = false;
-	}*/
-	
-	//Boomerang
+	#region //Boomerang
 	if(action && oRyuController.abilityTP){  //Can teleport after coolect the scroll
 		if(!instance_exists(oTeleport)){
 			instance_create_layer(x, y-1, "MainEntities", oTeleport);
@@ -196,6 +227,24 @@ if(control){
 			}
 		}
 	}
+	#endregion
+	
+	#region //enemies
+	/*if(place_meeting(x, y + 6, oParentEnemies) && yVelo > 0){   //under my feet and velo should be positive
+		//var enemy = instance_place(x, y + 6, oParentEnemies);
+		//instance_destroy(enemy);
+		if(jumpHold || jump || jumpRelease){  //to jump high when stomp on enemy
+			yVelo = -jumpHeight
+		}else{
+			yVelo = -jumpHeight / 2;
+		}
+	}else if(place_meeting(x, y , oParentEnemies) && yVelo <= 0){
+		alarm[11] = 20; //set a timer for the death animation to finish
+		audio_play_sound(sdDeath, 3, false);
+		state = death;
+		control = false;
+	}*/
+	#endregion
 	
 }//end of control
 
@@ -213,7 +262,5 @@ if(warp != noone){
 		}
 	}
 }
-
-
 
 //show_debug_message(state);
