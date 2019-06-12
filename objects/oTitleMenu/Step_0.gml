@@ -26,15 +26,41 @@ switch(screen){
 			switch(menuCommited){
 				case 3:  //Start
 					with(oGame){
+						SartWithContinue = false;
 						targetRoom = r1_0;
 						doTransition = true;
 					}
 				break;
-	
+				
 				case 2: //Continue
 					with(oGame){
-						targetRoom = r1_0;
+						if(file_exists("savedfile.sav")){
+							show_debug_message("Yes you got it");
+							var wrapper = LoadJSONFromFile("savedfile.sav");
+							var list = wrapper[? "ROOT"];
+							
+							for(var i = 0; i < ds_list_size(list); i++){
+								var map = list[| i];
+								var obj = map[? "obj"];
+								with(instance_create_layer(0, 0, layer , asset_get_index(obj))){
+									oRyuController.deathCount = map[? "deathCount"];
+									ContinueX = map[? "oRyuX"];
+									ContinueY = map[? "oRyuY"];
+									RoomContinue = map[? "room"];
+									show_debug_message(string(RoomContinue)+string(layer_get_name(layer))+"x :"+string(ContinueX) + "and Y : "+string(ContinueY));
+								}
+							}
+							ds_map_destroy(wrapper);
+							//show_debug_message(" Did I Loaded?" + "+" +string(roomContinue));
+						}else{
+							show_debug_message("NOOOOOOOOOOOOOOOOOOOOOOO");
+						}
+						
+						targetRoom = int64(RoomContinue);
 						doTransition = true;
+						SartWithContinue = true;
+						
+						
 					}
 				break;
 	

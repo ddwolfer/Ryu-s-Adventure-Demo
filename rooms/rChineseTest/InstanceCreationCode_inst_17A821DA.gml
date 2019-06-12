@@ -1,2 +1,0 @@
-spriteGP = sXboxDpadLR;
-spriteKB = sKBLR;

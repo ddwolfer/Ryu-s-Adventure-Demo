@@ -1871,14 +1871,6 @@
             }
         },
         {
-            "Key": "b5a08d5c-fc6a-49a9-8923-35d4323d68f0",
-            "Value": {
-                "id": "571108be-ace8-4b79-82fe-7c5ca15cc45f",
-                "resourcePath": "rooms\\rChineseTest\\rChineseTest.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "b6a3f60a-1c2a-4f1b-a527-166e0f117daa",
             "Value": {
                 "id": "0e3891ec-b995-4562-8902-b2d2203202d7",
