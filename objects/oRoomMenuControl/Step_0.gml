@@ -43,23 +43,27 @@ if(drawGrayBackround == true){
 					RoomContinue = room;
 					//create root list
 					var rootList = ds_list_create();
-
-					//for every instance, create a map
+					
+					#region //save system & character info
+					var map = ds_map_create();
+					ds_list_add(rootList, map);
+					ds_list_mark_as_map(rootList, ds_list_size(rootList) - 1);
+					
+					ds_map_add(map,"obj",object_get_name(oGame));
+					ds_map_add(map,"deathCount", oRyuController.deathCount);
+					ds_map_add(map,"room", room);
+					ds_map_add(map,"oRyuX",oRyu.x);
+					ds_map_add(map,"oRyuY",oRyu.y);
+					ds_map_add(map,"oRyuAbilityTP",oRyuController.abilityTP);
+					
+					#endregion
+					
+					#region //save other obj info here
 					with(oParentSaveMe){
-						var map = ds_map_create();
-						ds_list_add(rootList, map);
-						ds_list_mark_as_map(rootList, ds_list_size(rootList) - 1);
-		
-						var obj = object_get_name(object_index);
-						ds_map_add(map,"obj", obj);
-						ds_map_add(map,"deathCount", oRyuController.deathCount);
-						ds_map_add(map,"room", room);
-						ds_map_add(map,"oRyuX",oRyu.x);
-						ds_map_add(map,"oRyuY",oRyu.y);
-						show_debug_message(string( room_get_name(room) ));
-						show_debug_message("x :"+string(oRyu.x) + "and Y : "+string(oRyu.y));
+						
 					}
-
+					#endregion
+					
 					//wrap the root list up in a map
 					var wrapper = ds_map_create();
 					ds_map_add_list(wrapper, "ROOT", rootList);
@@ -67,10 +71,15 @@ if(drawGrayBackround == true){
 					//save all of this to a string
 					var str = json_encode(wrapper);
 					SaveStringToFile("savedfile.sav", str);
+					
 
 					//Nuke the data
 					ds_map_destroy(wrapper);
-
+					
+					//save message
+					show_debug_message(string( room_get_name(room) ));
+					show_debug_message("x :"+string(oRyu.x) + "and Y : "+string(oRyu.y));
+					show_debug_message(str);
 					show_debug_message("Saved");
 				#endregion
 			break;
