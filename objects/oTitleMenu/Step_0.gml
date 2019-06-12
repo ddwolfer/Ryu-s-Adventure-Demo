@@ -39,19 +39,30 @@ switch(screen){
 							var wrapper = LoadJSONFromFile("savedfile.sav");
 							var list = wrapper[? "ROOT"];
 							
-							for(var i = 0; i < ds_list_size(list); i++){
+							#region //Load system & character info
+							var map = list[| 0];
+							var obj = map[? "obj"];
+							with(instance_create_layer(0, 0, layer , asset_get_index(obj))){
+								oRyuController.deathCount = map[? "deathCount"];
+								oRyuController.abilityTP = map[? "oRyuAbilityTP"];
+								ContinueX = map[? "oRyuX"];
+								ContinueY = map[? "oRyuY"];
+								RoomContinue = map[? "room"];
+								show_debug_message(string(RoomContinue)+string(layer_get_name(layer))+"x :"+string(ContinueX) + "and Y : "+string(ContinueY));
+							}
+							#endregion
+							
+							#region //Load other info
+							for(var i = 1; i < ds_list_size(list); i++){
 								var map = list[| i];
 								var obj = map[? "obj"];
 								with(instance_create_layer(0, 0, layer , asset_get_index(obj))){
-									oRyuController.deathCount = map[? "deathCount"];
-									ContinueX = map[? "oRyuX"];
-									ContinueY = map[? "oRyuY"];
-									RoomContinue = map[? "room"];
-									show_debug_message(string(RoomContinue)+string(layer_get_name(layer))+"x :"+string(ContinueX) + "and Y : "+string(ContinueY));
+									
 								}
 							}
+							#endregion
+							
 							ds_map_destroy(wrapper);
-							//show_debug_message(" Did I Loaded?" + "+" +string(roomContinue));
 						}else{
 							show_debug_message("NOOOOOOOOOOOOOOOOOOOOOOO");
 						}
@@ -59,8 +70,6 @@ switch(screen){
 						targetRoom = int64(RoomContinue);
 						doTransition = true;
 						SartWithContinue = true;
-						
-						
 					}
 				break;
 	

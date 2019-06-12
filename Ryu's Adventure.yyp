@@ -1447,6 +1447,14 @@
             }
         },
         {
+            "Key": "856e847b-24e8-4e61-b89e-96410159fc26",
+            "Value": {
+                "id": "537078a5-cc37-4d9b-9dfd-fececb9c67d3",
+                "resourcePath": "sprites\\sRyuClimb\\sRyuClimb.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "860627f8-49f6-4380-a81d-e96519ebf629",
             "Value": {
                 "id": "f9672f19-cb21-48ed-be1d-7e02b66e893b",
@@ -1628,6 +1636,14 @@
                 "id": "71ae0ab3-ccdb-4b5a-af74-4ca5892a43ca",
                 "resourcePath": "views\\9bd1a7cd-cd3c-4a84-9be2-94449f7e1d71.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9cd9010a-2db9-4b48-adf5-3a1dbe71e78d",
+            "Value": {
+                "id": "727ae6b5-97a4-46d5-8d53-a9acc40297e0",
+                "resourcePath": "objects\\oLadder\\oLadder.yy",
+                "resourceType": "GMObject"
             }
         },
         {
