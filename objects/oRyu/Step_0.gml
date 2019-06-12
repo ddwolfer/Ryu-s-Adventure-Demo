@@ -173,47 +173,47 @@ if(control){
 	}*/
 	
 	//Boomerang
-	if(action && oRyuController.abilityTP){  //Can teleport after coolect the scroll
-		if(!instance_exists(oTeleport)){
-			instance_create_layer(x, y, "MainEntities", oTeleport);
-		}
-		if(instance_exists(oTeleport)){
-			var RyutempX = x;
-			x = oTeleport.x;
+    if(action && oRyuController.abilityTP){  //Can teleport after coolect the scroll
+        if(!instance_exists(oTeleport)){
+            instance_create_layer(x, y-1, "MainEntities", oTeleport);
+        }
+        if(instance_exists(oTeleport)){
+            var RyutempX = x;
+            if(abs(oTeleport.x - RyutempX) > 1){                                //fix can't shoot bug
+                x = oTeleport.x;
 
-			if(place_meeting(oTeleport.x+12,oTeleport.y,oParentSolid)){			//fix foot stuck in wall bug
-				y = oTeleport.y-12;
-			}else if(place_meeting(oTeleport.x-12,oTeleport.y,oParentSolid)){	//fix head stuck in wall bug
-				y = oTeleport.y+12;
-			}else{																//normal teleport
-				y = oTeleport.y;
-			}
-			if(abs(oTeleport.x - RyutempX) > 1){								//fix can't shoot bug
-				instance_destroy(oTeleport);
-				instance_create(x, y, oTeleportEffect);
-				audio_play_sound(sdTeleport, 2, false);
-			}
-		}
-	}
-	
+                if(place_meeting(oTeleport.x,oTeleport.y+1,oParentSolid)){            //fix foot stuck in wall bug
+                    y = oTeleport.y-12;
+                }else if(place_meeting(oTeleport.x,oTeleport.y-1,oParentSolid)){    //fix head stuck in wall bug
+                    y = oTeleport.y+12;
+                }else{                                                                //normal teleport
+                    y = oTeleport.y;
+                }
+
+                instance_destroy(oTeleport);
+                instance_create(x, y, oTeleportEffect);
+                audio_play_sound(sdTeleport, 2, false);
+            }
+        }
+    }
+
 }//end of control
 
 //warp transitions
 var warp = instance_place(x, y, oWarp);
 if(warp != noone){
-	with(oGame){
-		targetRoom = warp.targetRoom;
-		if(oRyu.up){
-			doTransition = true;
-			if(oRyu.hasCheese) {
-				oRyuController.cheeseCount++;
-				oRyu.hasCheese = false;
-			}
-		}
-	}
+    with(oGame){
+        targetRoom = warp.targetRoom;
+        if(oRyu.up){
+            doTransition = true;
+            if(oRyu.hasCheese) {
+                oRyuController.cheeseCount++;
+                oRyu.hasCheese = false;
+            }
+        }
+    }
 }
 
 
 
 //show_debug_message(state);
-

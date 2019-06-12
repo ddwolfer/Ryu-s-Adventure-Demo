@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "00229e14-3749-491c-8360-2f88316c4a71",
+            "Value": {
+                "id": "907c85af-7f85-42d9-b112-4faa6819a51a",
+                "resourcePath": "views\\00229e14-3749-491c-8360-2f88316c4a71.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "00649a8f-10c2-44d1-94c4-53c21fef6a1b",
             "Value": {
                 "id": "52fcf745-1a06-4534-b0d8-201896c59c8a",
@@ -1498,7 +1506,7 @@
             "Key": "890788be-21cb-4eb8-a124-fc726aabb8a1",
             "Value": {
                 "id": "3dcc7776-a8f5-401c-92f9-2c1c2907ba08",
-                "resourcePath": "rooms\\r2_5\\r2_5.yy",
+                "resourcePath": "rooms\\r2_5_\\r2_5_.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -1727,11 +1735,27 @@
             }
         },
         {
+            "Key": "aa7e439c-c8c9-4184-b184-812e203d96bb",
+            "Value": {
+                "id": "53c34c15-d17b-4874-9ab4-0c63e0a48d6b",
+                "resourcePath": "rooms\\r3_3\\r3_3.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "aa9bf488-005d-493c-aa97-2eb3f1d7859e",
             "Value": {
                 "id": "da73aa7d-23e9-4ed4-aeb4-148135d8053e",
                 "resourcePath": "objects\\oParentGem\\oParentGem.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "aa9da1ad-23f0-438e-8704-23163599b441",
+            "Value": {
+                "id": "cc0becec-9389-4e12-bfad-5cc41a599612",
+                "resourcePath": "rooms\\r3_1\\r3_1.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -2340,6 +2364,14 @@
                 "id": "952e9b15-d9b4-442d-b6f5-6daffb8fc9b7",
                 "resourcePath": "objects\\oTeleport\\oTeleport.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "eeb023ef-dc3c-4e04-a74b-638692ee9ce6",
+            "Value": {
+                "id": "489ed26d-aa88-45e5-a4b5-4767f2d86f07",
+                "resourcePath": "rooms\\r3_4\\r3_4.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
