@@ -1,19 +1,16 @@
 // Draw sprite depending on player state
 switch (state) {
     case idle: 
-		stopGravity = false;
         image_speed = 0.3;
 		sprite_index = sRyuIdle;
     break;
         
     case run: 
-		stopGravity = false;
         image_speed = 0.8; 
         sprite_index = sRyuRun;
     break;
         
     case jump:
-		stopGravity = false;
         if (yVelo <= 0) {
                 sprite_index = sRyuJump;  
         } else {
@@ -22,8 +19,13 @@ switch (state) {
     break;
 	
 	case climb:
-		stopGravity = true;
-		image_speed = 0.35;
+		yVelo = 0 ;
+		xVelo = 0 ;
+		if(up || down){
+			image_speed = 0.35;
+		}else{
+			image_speed = 0;
+		}
 		sprite_index = sRyuClimb;
 	break;
 	

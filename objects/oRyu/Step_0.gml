@@ -17,7 +17,7 @@ if(onGround){
 
 if(control){
 	//Handle gravity
-	if(!onGround && state!=climb && stopGravity==false ){
+	if(!onGround && state!=climb ){
 		yVelo = approach(yVelo, yVeloMax, gravityNormal);
 	}
 
@@ -75,7 +75,7 @@ if(control){
 	if(jump && holdClimb==true){
 		holdClimb = false;
 	}
-	if(climb){
+	if(state == climb){
 		if(left || right){
 			state = idle;
 		}
@@ -90,7 +90,7 @@ if(control){
 		if(holdClimb == true){ //if you still on the ladder, hold the state
 			state = climb;
 		}
-		var tempLadder = instance_place(x,y,oLadder); //Let RyuX can in the center of ladder
+		var tempLadder = instance_place(x,y,oLadder); //Let RyuX in the center of ladder
 		if(up){
 			state = climb;
 			holdClimb = true;

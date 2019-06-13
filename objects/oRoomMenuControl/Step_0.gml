@@ -50,11 +50,14 @@ if(drawGrayBackround == true){
 					ds_list_mark_as_map(rootList, ds_list_size(rootList) - 1);
 					
 					ds_map_add(map,"obj",object_get_name(oGame));
-					ds_map_add(map,"deathCount", oRyuController.deathCount);
 					ds_map_add(map,"room", room);
 					ds_map_add(map,"oRyuX",oRyu.x);
 					ds_map_add(map,"oRyuY",oRyu.y);
+					ds_map_add(map,"deathCount", oRyuController.deathCount);
 					ds_map_add(map,"oRyuAbilityTP",oRyuController.abilityTP);
+					ds_map_add(map,"oRyuAbilityDJump",oRyuController.abilityDJump);
+					ds_map_add(map,"SFXVol",round(scrControlSound(SOUND_VOLUME, 0, 1, 0, 10)));
+					ds_map_add(map,"MusicVol",round(scrControlSound(MUSIC_VOLUME, 0, 1, 0, 10)) );
 					
 					#endregion
 					
