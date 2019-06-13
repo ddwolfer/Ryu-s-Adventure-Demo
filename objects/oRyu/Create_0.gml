@@ -13,7 +13,7 @@ gravityNormal = 0.35;
 //states
 idle = 10;
 run = 11;
-jump = 12;
+jumpS = 12;
 death = 13;
 climb = 14;
 

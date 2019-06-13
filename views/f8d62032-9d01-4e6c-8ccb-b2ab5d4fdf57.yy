@@ -11,7 +11,8 @@
         "ae88ac43-8639-47f0-bcfe-90f35a3215cb",
         "7a341815-ce0b-422d-bc58-72ba47e3b294",
         "aced8704-0f3d-40ea-a5e5-deb285ff738d",
-        "b0c9d556-1dbb-4909-8f07-5712d6063bd9"
+        "b0c9d556-1dbb-4909-8f07-5712d6063bd9",
+        "9cd9010a-2db9-4b48-adf5-3a1dbe71e78d"
     ],
     "filterType": "GMObject",
     "folderName": "Normal blocks",

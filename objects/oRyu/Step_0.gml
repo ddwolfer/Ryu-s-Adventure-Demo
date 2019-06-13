@@ -9,6 +9,7 @@ if(onGround){
 	tempFric = groundFric;
 	ledgeJumpTimer = ledgeJumpTime; //coyote time 
 	canDJump = true;
+	holdClimb = false;     ///climbing
 } else{
 	tempAccel = airAccel;
 	tempFric = airFric;
@@ -17,18 +18,18 @@ if(onGround){
 
 if(control){
 	//Handle gravity
-	if(!onGround && state!=climb && stopGravity==false ){
+	if(!onGround && state!=climb  ){
 		yVelo = approach(yVelo, yVeloMax, gravityNormal);
 	}
 
 	if(!onMovingPlatform){
-		if(left && state!=climb){
+		if(left ){
 			facing = 1;
 			state = run;
 			//Apply acceleration left
 			if(xVelo > 0) xVelo = approach(xVelo, 0, tempFric);
 			xVelo = approach(xVelo, -xVeloMax, tempAccel);
-		}else if(right && state!=climb){
+		}else if(right ){
 			facing = -1;
 			state = run;
 			//Apply acceleration right
@@ -49,13 +50,13 @@ if(control){
 			}
 			state = idle;
 		}
-		else if(left && state!=climb){
+		else if(left){
 			facing = 1;
 			state = run;
 			//Apply acceleration left
 			if(xVelo > 0) xVelo = approach(xVelo, 0, tempFric);
 			xVelo = approach(xVelo, -xVeloMax, tempAccel);
-		}else if(right && state!=climb){
+		}else if(right){
 			facing = -1;
 			state = run;
 			//Apply acceleration right
@@ -64,52 +65,44 @@ if(control){
 		 }
 		 yVelo = tempPlatform.SpeedY * tempPlatform.DirY; //handle Y speed of the moving platform
 	}
-
-	/*//Friction
-	if(!right && !left){
-		xVelo = approach(xVelo, 0, tempFric);
-		state = idle;
-	}*/
 	
 	#region //climb Ladder
-	if(jump && holdClimb==true){
-		holdClimb = false;
-	}
-	if(climb){
-		if(left || right){
-			state = idle;
-		}
-	}
-	if(!place_meeting(x,y,oLadder)){ //stop state climb
-		holdClimb = false;
+	if(state == climb){
+		if(right) facing = -1;   //for teleport
+		else if(left) facing = 1;
 	}
 	if(place_meeting(x,y,oLadder)){ 
-		if(place_meeting(x,y+1,oParentSolid)){//when Ryu on the ground, stop hold climb
+		if(jump && (left || right)){
+			state = jumpS;
+			holdClimb = false;
+			yVelo = -jumpHeight * 0.75;
+		}
+		if(place_meeting(x,y+1,oParentSolid)){  //when Ryu on the ground, stop hold climb
 			holdClimb = false;
 		}
-		if(holdClimb == true){ //if you still on the ladder, hold the state
+		if(holdClimb){ //if you still on the ladder, hold the state
 			state = climb;
+			var tempLadder = instance_place(x,y,oLadder); //Lock RyuX to the center of ladder
+			x = tempLadder.x;
+			image_speed = 0;
 		}
-		var tempLadder = instance_place(x,y,oLadder); //Let RyuX can in the center of ladder
+		//var tempLadder = instance_place(x,y,oLadder); //Lock RyuX to the center of ladder
 		if(up){
 			state = climb;
 			holdClimb = true;
-			x = tempLadder.x+8;
-			if(!instance_place(x,y-12,oLadder)){ //if Ryu's head over the ladder, let Ryu stand on ladder
-				y -= 12;
-			}else{
-				y -= 0.8;
-			}
+		    y -= 0.8;
+			image_speed = 0.35;
 		}
 		else if (down && !place_meeting(x,y+1,oParentSolid)){ //can't down when you on the ground
 			state = climb;
 			holdClimb = true;
-			x = tempLadder.x+8;
 			y += 0.8;
+			image_speed = 0.35;
 		}
-	}else if (down && place_meeting(x,y+13,oLadder)){ //if have ladder under the floor
+	}else if (down && place_meeting(x,y+8,oLadder)){ //if have ladder under the JumpTru
 		state = climb;
 		y = y+12;
+		image_speed = 0.35;
 	}
 	#endregion
 	
@@ -136,18 +129,16 @@ if(control){
 	}
 	
 	if(!onGround && state!=climb ) {
-		state = jump;
+		state = jumpS;
 		if(jump && canDJump && oRyuController.abilityDJump){    //can double jump after collect scroll
 			 yVelo = -jumpHeight * (2 / 3);
 			 canDJump = false;
 			 instance_create(x , y + 12, oJumpEffect);
 			 audio_play_sound(sdJump, 2, false);
 		}
-	}
+	}//Particles
+else if (random(100) > 85 && abs(xVelo) > 0.5 && !onMovingPlatform) instance_create(x, y + 8, oParticle);
 	#endregion
-	//Particles
-	else if (random(100) > 85 && abs(xVelo) > 0.5 && !onMovingPlatform) instance_create(x, y + 8, oParticle);
-
 
 	#region //squash and stretch
 	xscale = approach(xscale, 1, 0.05);
@@ -224,6 +215,7 @@ if(control){
 				instance_destroy(oTeleport);
 				instance_create(x, y, oTeleportEffect);
 				audio_play_sound(sdTeleport, 2, false);
+				//holdClimb = false; ///climbing
 			}
 		}
 	}
@@ -245,6 +237,8 @@ if(control){
 		control = false;
 	}*/
 	#endregion
+
+
 	
 }//end of control
 
@@ -263,4 +257,4 @@ if(warp != noone){
 	}
 }
 
-//show_debug_message(state);
+show_debug_message(state);
