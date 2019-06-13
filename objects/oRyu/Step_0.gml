@@ -70,21 +70,23 @@ if(control){
 	if(state == climb){
 		if(right) facing = -1;   //for teleport
 		else if(left) facing = 1;
+		
 	}
 	if(place_meeting(x,y,oLadder)){ 
-		if(jump && (left || right)){
-			state = jumpS;
-			holdClimb = false;
-			yVelo = -jumpHeight * 0.75;
-		}
 		if(place_meeting(x,y+1,oParentSolid)){  //when Ryu on the ground, stop hold climb
 			holdClimb = false;
 		}
 		if(holdClimb){ //if you still on the ladder, hold the state
 			state = climb;
+			canDJump = true;           //can double jump after leave ladder
 			var tempLadder = instance_place(x,y,oLadder); //Lock RyuX to the center of ladder
 			x = tempLadder.x;
 			image_speed = 0;
+			if(jump && (left || right) ){
+				state = jumpS;
+				holdClimb = false;
+				yVelo = -jumpHeight * 0.75;
+			}
 		}
 		//var tempLadder = instance_place(x,y,oLadder); //Lock RyuX to the center of ladder
 		if(up){
@@ -108,7 +110,7 @@ if(control){
 	
 	#region//Jump
 	if(jump){
-		if(onGround || ledgeJumpTimer > 0 ){
+		if(onGround || ledgeJumpTimer > 0){
 			/*if (down) {    /////////fall through platform
 	            if (place_meeting(x, y + 1, oParentJumpThru))
 	                ++y;
@@ -128,9 +130,9 @@ if(control){
 	        yVelo *= 0.25;
 	}
 	
-	if(!onGround && state!=climb ) {
+	if(!onGround && state!=climb) {
 		state = jumpS;
-		if(jump && canDJump && oRyuController.abilityDJump){    //can double jump after collect scroll
+		if(jump && canDJump && oRyuController.abilityDJump && !place_meeting(x,y,oLadder)){    //can double jump after collect scroll
 			 yVelo = -jumpHeight * (2 / 3);
 			 canDJump = false;
 			 instance_create(x , y + 12, oJumpEffect);
