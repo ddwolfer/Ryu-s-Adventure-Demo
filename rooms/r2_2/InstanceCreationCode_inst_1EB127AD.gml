@@ -1,1 +1,1 @@
-targetRoom = r1_5;
+targetRoom = r2_3;

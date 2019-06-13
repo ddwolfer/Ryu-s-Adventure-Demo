@@ -36,27 +36,38 @@ switch(screen){
 					with(oGame){
 						if(file_exists("savedfile.sav")){
 							show_debug_message("Yes you got it");
+							show_debug_message("what layer:"+string(layer) );
 							var wrapper = LoadJSONFromFile("savedfile.sav");
 							var list = wrapper[? "ROOT"];
 							
 							#region //Load system & character info
 							var map = list[| 0];
 							var obj = map[? "obj"];
-							with(instance_create_layer(0, 0, layer , asset_get_index(obj))){
-								oRyuController.deathCount = map[? "deathCount"];
-								oRyuController.abilityTP = map[? "oRyuAbilityTP"];
-								ContinueX = map[? "oRyuX"];
-								ContinueY = map[? "oRyuY"];
-								RoomContinue = map[? "room"];
-								show_debug_message(string(RoomContinue)+string(layer_get_name(layer))+"x :"+string(ContinueX) + "and Y : "+string(ContinueY));
+							/*if we don't have this object(oRyuController),then create one
+							because the first time open game, r_Title room doesn't create oRyuController
+							but if you play in other room and back to menu, the system create that in other room
+							need this "if" to stop create oRyuController more than two times*/ 
+							if( layer != -1 ){
+								instance_create_layer(0, 0, layer , asset_get_index(obj));
 							}
+							show_debug_message("what layer:"+string(layer) );
+							oRyuController.deathCount = map[? "deathCount"];
+							oRyuController.abilityTP = map[? "oRyuAbilityTP"];
+							oRyuController.abilityDJump = map[? "oRyuAbilityDJump"];
+							ContinueX = map[? "oRyuX"];
+							ContinueY = map[? "oRyuY"];
+							RoomContinue = map[? "room"]; 
+
+							scrChangeMusicVolume( ( map[? "MusicVol"] - round(scrControlSound(MUSIC_VOLUME, 0, 1, 0, 10)) )/10 );// (saveVol - nowVol)/10 ,to col how much vol need to minus or plus
+							scrChangeSoundVolume( ( map[? "SFXVol"] - round(scrControlSound(SOUND_VOLUME, 0, 1, 0, 10)) )/10 );// (saveVol - nowVol)/10
+										
 							#endregion
 							
 							#region //Load other info
 							for(var i = 1; i < ds_list_size(list); i++){
 								var map = list[| i];
 								var obj = map[? "obj"];
-								with(instance_create_layer(0, 0, layer , asset_get_index(obj))){
+								with(instance_create_layer(0, 0, layer , asset_get_index(obj))){ //Bug? maybe 
 									
 								}
 							}
@@ -64,10 +75,11 @@ switch(screen){
 							
 							ds_map_destroy(wrapper);
 						}else{
-							show_debug_message("NOOOOOOOOOOOOOOOOOOOOOOO");
+							show_debug_message("NOOOOOOOOOOOOOOOOOOOOOOO no save file");
 						}
 						
 						targetRoom = int64(RoomContinue);
+						audio_play_sound(sMusic, 3, true);
 						doTransition = true;
 						SartWithContinue = true;
 					}
@@ -81,7 +93,6 @@ switch(screen){
 					game_end();
 				break;
 			}
-			
 		}
 		
 		
