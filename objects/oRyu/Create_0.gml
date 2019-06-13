@@ -28,10 +28,10 @@ blockSize = 16;
 control = true;
 
 //coyote time
-ledgeJumpTime = 4;
+ledgeJumpTime = 6;
 ledgeJumpTimer = ledgeJumpTime;
 
-jumpBufferTime = 4
+jumpBufferTime = 6
 jumpBufferTimer = 0;
 
 coyoteJump = false;

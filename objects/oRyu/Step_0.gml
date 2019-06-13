@@ -18,7 +18,8 @@ if(onGround){
 
 if(control){
 	//Handle gravity
-	if(!onGround && state!=climb  ){
+
+	if(!onGround && state!=climb){
 		yVelo = approach(yVelo, yVeloMax, gravityNormal);
 	}
 
@@ -70,7 +71,6 @@ if(control){
 	if(state == climb){
 		if(right) facing = -1;   //for teleport
 		else if(left) facing = 1;
-		
 	}
 	if(place_meeting(x,y,oLadder)){ 
 		if(place_meeting(x,y+1,oParentSolid)){  //when Ryu on the ground, stop hold climb
@@ -88,7 +88,9 @@ if(control){
 				yVelo = -jumpHeight * 0.75;
 			}
 		}
+
 		//var tempLadder = instance_place(x,y,oLadder); //Lock RyuX to the center of ladder
+
 		if(up){
 			state = climb;
 			holdClimb = true;
