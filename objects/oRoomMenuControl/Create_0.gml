@@ -18,9 +18,9 @@ optionsCommited = -1;
 options[5] = "Music : ";
 options[4] = "SFX : ";
 options[3] = "Language : ";
-options[2] = "SAVE THE GAME"
-options[1] = "BACK TO MENU";
-options[0] = "RESUME";
+options[2] = "Save the Game"
+options[1] = "Back to Menu";
+options[0] = "Resume";
 //Language options
 Language_option[1] = "Taiwanese";
 Language_option[0] = "English";
