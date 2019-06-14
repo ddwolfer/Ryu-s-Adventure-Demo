@@ -29,6 +29,8 @@ switch(screen){
 						SartWithContinue = false;
 						targetRoom = r1_0;
 						doTransition = true;
+						audio_play_sound(sMusic, 3, true);
+						scrRyureset();
 					}
 				break;
 				
