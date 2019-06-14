@@ -27,7 +27,7 @@ menu[0] = "Quit";
 options[3] = "Music : ";
 options[2] = "SFX : ";
 options[1] = "Language : ";
-options[0] = "BACK TO MENU";
+options[0] = "Back to Menu";
 //Language options
 Language_option[1] = "Taiwanese";
 Language_option[0] = "English";

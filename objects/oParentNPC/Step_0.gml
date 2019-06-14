@@ -18,6 +18,8 @@ if(point_in_rectangle(playerobject.x, playerobject.y, x-dr, y-dr, x+dr, y+dr)){
 	}
 }
 
-var facing = oRyu.x - x;
-if(facing >= 0) image_xscale = 1;
-else if(facing < 0) image_xscale = -1;
+if(!instance_exists(oEasterEgg)){
+	var facing = oRyu.x - x;
+	if(facing >= 0) image_xscale = 1;
+	else if(facing < 0) image_xscale = -1;
+}

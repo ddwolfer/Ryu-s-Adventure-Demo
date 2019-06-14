@@ -112,27 +112,13 @@ if(control){
 	
 	#region//Jump
 	if(jump){
-		if(onGround || ledgeJumpTimer > 0){
-			/*if (down) {    /////////fall through platform
-	            if (place_meeting(x, y + 1, oParentJumpThru))
-	                ++y;
-	        } else {*/
-				audio_group_set_gain(soundEffect, random_range(0.15, 0.3), 0);
-				audio_play_sound(sdJump, 5, false);
-	            yVelo = -jumpHeight;
-	            yscale = 1.33;
-	            xscale = 0.67;
-				ledgeJumpTimer = 0;
-	        //}
-		}
 		jumpBufferTimer = jumpBufferTime;
-		
-	}else if (jumpRelease && state!=climb) { 
+	}else if (jumpRelease && state!=climb) {  //control jump height
 	    if (yVelo < 0)
 	        yVelo *= 0.25;
 	}
 	
-	if(!onGround && state!=climb) {
+	if(!onGround && state!=climb && ledgeJumpTimer <= 0) {  //double jump
 		state = jumpS;
 		if(jump && canDJump && oRyuController.abilityDJump && !place_meeting(x,y,oLadder)){    //can double jump after collect scroll
 			 yVelo = -jumpHeight * (2 / 3);
@@ -187,7 +173,7 @@ else if (random(100) > 85 && abs(xVelo) > 0.5 && !onMovingPlatform) instance_cre
 	
 	if(coyoteJump){
 		if(onGround || ledgeJumpTimer > 0){
-			audio_play_sound(sdJump, 5, false);
+			audio_play_sound(sdJump, 3, false);
 			yVelo = -jumpHeight;
 	        yscale = 1.33;
 	        xscale = 0.67;
@@ -261,4 +247,4 @@ if(warp != noone){
 	}
 }
 
-show_debug_message(state);
+//show_debug_message(ledgeJumpTimer);

@@ -1191,6 +1191,14 @@
             }
         },
         {
+            "Key": "6db2879f-6833-4eaa-89ce-99a4d46116e2",
+            "Value": {
+                "id": "a2d5b7c1-d860-4c32-9d0b-83320b8820c1",
+                "resourcePath": "sprites\\sNPCEasterEgg\\sNPCEasterEgg.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6e771e6f-f0d8-47a4-84e3-ae57d307aee2",
             "Value": {
                 "id": "2574003f-6484-4e16-9e0d-76bc17e4ba04",
@@ -1403,6 +1411,14 @@
             "Value": {
                 "id": "adcf89a0-de8f-451b-a73f-9a8c3d868daa",
                 "resourcePath": "objects\\oSpikesD\\oSpikesD.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "81965d4c-f028-4e7f-8eaa-e6ac0c7c0a40",
+            "Value": {
+                "id": "286c6fad-2247-4506-a8e9-cc1c6dd3c499",
+                "resourcePath": "objects\\oEasterEgg\\oEasterEgg.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1908,6 +1924,14 @@
                 "id": "87ae03ff-d73b-4780-8629-0ade2ee11358",
                 "resourcePath": "sprites\\sEParticle\\sEParticle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b6709fff-6272-4302-a391-c6e1e63d9ac0",
+            "Value": {
+                "id": "36f1f5eb-2582-4b59-a7f1-fa17b831a98b",
+                "resourcePath": "rooms\\r3_2\\r3_2.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
