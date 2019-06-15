@@ -1,8 +1,6 @@
 getInput();
 
 #region //main screen
-
-
 switch(screen){
 	#region //main page
 	case menu_screen.main:
@@ -38,8 +36,8 @@ switch(screen){
 				case 2: //Continue
 					with(oGame){
 						if(file_exists("savedfile.sav")){
-							show_debug_message("Yes you got it");
-							show_debug_message("what layer:"+string(layer) );
+							//show_debug_message("Yes you got it");
+							//show_debug_message("what layer:"+string(layer) );
 							var wrapper = LoadJSONFromFile("savedfile.sav");
 							var list = wrapper[? "ROOT"];
 							
@@ -53,7 +51,7 @@ switch(screen){
 							if( layer != -1 ){
 								instance_create_layer(0, 0, layer , asset_get_index(obj));
 							}
-							show_debug_message("what layer:"+string(layer) );
+							//show_debug_message("what layer:"+string(layer) );
 							oRyuController.deathCount = map[? "deathCount"];
 							oRyuController.abilityTP = map[? "oRyuAbilityTP"];
 							oRyuController.abilityDJump = map[? "oRyuAbilityDJump"];
@@ -78,7 +76,7 @@ switch(screen){
 							
 							ds_map_destroy(wrapper);
 						}else{
-							show_debug_message("NOOOOOOOOOOOOOOOOOOOOOOO no save file");
+							//show_debug_message("NOOOOOOOOOOOOOOOOOOOOOOO no save file");
 						}
 						
 						targetRoom = int64(RoomContinue);
@@ -130,6 +128,7 @@ switch(screen){
 				break;
 				case 0: //Back To Menu
 					screen = menu_screen.main;
+					cursor_options = 3;
 				break;
 			}
 		}
@@ -139,11 +138,16 @@ switch(screen){
 				if(leftMenu){
 					audio_play_sound(sdMenu, 2, false);
 					cursor_Language -=1
-					if(cursor_Language < 0) cursor_options = Language_Count - 1;
+					if(cursor_Language < 0) cursor_Language = Language_Count - 1;
 				}else if (rightMenu){
 					audio_play_sound(sdMenu, 2, false);
 					cursor_Language +=1
-					if(cursor_Language > Language_Count) cursor_options = 0;
+					if(cursor_Language > Language_Count - 1) cursor_Language = 0;
+				}
+				if(cursor_Language == 0){
+					oGame.languageIndex = 0;
+				}else if(cursor_Language == 1){
+					oGame.languageIndex = 1;
 				}
 			break;
 			case 2: //SFX
@@ -172,7 +176,7 @@ switch(screen){
 	
 #endregion
 
-show_debug_message(test);
+//show_debug_message(oGame.languageIndex);
 
 
 

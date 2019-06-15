@@ -10,7 +10,7 @@ switch (screen){
 		draw_set_font(f);
 		//setting end
 		for(var i = 0; i < menuCount; i++){
-			var txt = menu[i];
+			var txt = menu[oGame.languageIndex, i];
 			if(cursor == i){
 				//txt = string_insert("> ", txt, 0);
 				var menuCol = c_white;
@@ -36,7 +36,7 @@ switch (screen){
 			if(i == 0){draw_set_halign(fa_center);}
 			draw_set_font(f);
 			//setting end
-			var txt = options[i];
+			var txt = options[oGame.languageIndex, i];
 			if(cursor_options == i){
 				//txt = string_insert("> ", txt, 0);
 				var optionsCol = c_white;
@@ -88,9 +88,9 @@ switch (screen){
 		draw_set_color(musicVolCol);
 		//draw volume bar
 		for(i=0 ; i<num ; i++){
-			draw_rectangle( (widthHalf+ (fontSize*3/2) )+i*fontSize ,screen_y+fontSize,(widthHalf+(fontSize*5/2))+i*fontSize,screen_y+5,false);
+			draw_rectangle( (widthHalf+ (fontSize*3/2) )+i*fontSize + 10,screen_y+fontSize,(widthHalf+(fontSize*5/2))+i*fontSize + 10,screen_y+5,false);
 		}
-		draw_rectangle( (widthHalf+(fontSize*3/2))+i*fontSize ,screen_y+fontSize,(widthHalf+(fontSize*5/2))+9*fontSize,screen_y+5,true);
+		draw_rectangle( (widthHalf+(fontSize*3/2))+i*fontSize + 10,screen_y+fontSize,(widthHalf+(fontSize*5/2))+9*fontSize + 10,screen_y+5,true);
 		//draw volume bar end
 		draw_text(screen_x, screen_y, num);
 		#endregion
@@ -111,9 +111,9 @@ switch (screen){
 		draw_set_color(SFXVolCol);
 		//draw volume bar
 		for(i=0 ; i<num ; i++){
-			draw_rectangle( (widthHalf+ (fontSize*3/2) )+i*fontSize ,screen_y+fontSize,(widthHalf+(fontSize*5/2))+i*fontSize,screen_y+5,false);
+			draw_rectangle( (widthHalf+ (fontSize*3/2) )+i*fontSize+ 10,screen_y+fontSize,(widthHalf+(fontSize*5/2))+i*fontSize+ 10,screen_y+5,false);
 		}
-		draw_rectangle( (widthHalf+(fontSize*3/2))+i*fontSize ,screen_y+fontSize,(widthHalf+(fontSize*5/2))+9*fontSize,screen_y+5,true);
+		draw_rectangle( (widthHalf+(fontSize*3/2))+i*fontSize+ 10,screen_y+fontSize,(widthHalf+(fontSize*5/2))+9*fontSize+ 10,screen_y+5,true);
 		//draw volume bar end
 		draw_text(screen_x, screen_y, num);
 		#endregion

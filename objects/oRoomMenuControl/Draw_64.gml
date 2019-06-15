@@ -1,5 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
 
 if(drawGrayBackround == true){
 	#region draw blue background
@@ -16,7 +14,7 @@ if(drawGrayBackround == true){
 			if(i < 3){draw_set_halign(fa_center);}
 			draw_set_font(levelMenuFont);
 			//setting end
-			var txt = options[i];
+			var txt = options[oGame.languageIndex, i];
 			if(cursor_options == i){
 				//txt = string_insert("> ", txt, 0);
 				var optionsCol = c_white;
@@ -48,9 +46,9 @@ if(drawGrayBackround == true){
 		draw_set_color(musicVolCol);
 		//draw volume bar
 		for(i=0 ; i<num ; i++){
-			draw_rectangle( (widthHalf+ (fontSize*3/2) )+i*fontSize ,screen_y+fontSize,(widthHalf+(fontSize*5/2))+i*fontSize,screen_y+5,false);
+			draw_rectangle( (widthHalf+ (fontSize*3/2) )+i*fontSize + 10,screen_y+fontSize,(widthHalf+(fontSize*5/2))+i*fontSize+ 10,screen_y+5,false);
 		}
-		draw_rectangle( (widthHalf+(fontSize*3/2))+i*fontSize ,screen_y+fontSize,(widthHalf+(fontSize*5/2))+9*fontSize,screen_y+5,true);
+		draw_rectangle( (widthHalf+(fontSize*3/2))+i*fontSize + 10,screen_y+fontSize,(widthHalf+(fontSize*5/2))+9*fontSize+ 10,screen_y+5,true);
 		//draw volume bar end
 		draw_text(screen_x, screen_y, num);
 		#endregion
@@ -71,9 +69,9 @@ if(drawGrayBackround == true){
 		draw_set_color(SFXVolCol);
 		//draw volume bar
 		for(i=0 ; i<num ; i++){
-			draw_rectangle( (widthHalf+ (fontSize*3/2) )+i*fontSize ,screen_y+fontSize,(widthHalf+(fontSize*5/2))+i*fontSize,screen_y+5,false);
+			draw_rectangle( (widthHalf+ (fontSize*3/2) )+i*fontSize + 10,screen_y+fontSize,(widthHalf+(fontSize*5/2))+i*fontSize+ 10,screen_y+5,false);
 		}
-		draw_rectangle( (widthHalf+(fontSize*3/2))+i*fontSize ,screen_y+fontSize,(widthHalf+(fontSize*5/2))+9*fontSize,screen_y+5,true);
+		draw_rectangle( (widthHalf+(fontSize*3/2))+i*fontSize + 10,screen_y+fontSize,(widthHalf+(fontSize*5/2))+9*fontSize+ 10,screen_y+5,true);
 		//draw volume bar end
 		draw_text(screen_x, screen_y, num);
 		#endregion
