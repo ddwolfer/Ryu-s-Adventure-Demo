@@ -10,7 +10,7 @@ if(type[page] == 0){
 		}
 		
 		//Only increase page IF page + 1,is less than the total number of entries
-		else if(page+1 < array_length_1d(text)){
+		else if(page+1 < DialogueLineNow){
 			event_perform(ev_other, ev_user0);
 			switch(nextline[page]){
 				case -1: instance_destroy();	exit;

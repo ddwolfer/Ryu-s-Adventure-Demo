@@ -75,7 +75,7 @@ switch(choice_variable){
 		myText[0 , i]	= "Hey you are the one telling me to mind my own business.";
 		myText[1 , i]	= "嘿，你是那個告訴我要管好自己的人。";
 		mySpeaker[i]	= id;
-
+		myTypes			= 0;
 	break;
 	
 	case 2:
@@ -83,6 +83,6 @@ switch(choice_variable){
 		myText[0 , i]	= "The entrance is right in front of you, go ahead.";
 		myText[1 , i]	= "入口就在右邊, 前進吧.";
 		mySpeaker[i]	= id;
-		
+		myTypes			= 0;
 	break;
 }

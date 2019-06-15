@@ -102,3 +102,5 @@ freq		= 2;
 ec			= 0;	//effect c
 
 #endregion
+globalvar DialogueLineNow;
+DialogueLineNow = 0
