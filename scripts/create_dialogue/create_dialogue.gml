@@ -21,14 +21,25 @@ var arg = 0, i = 0, arg_count = argument_count;
 repeat(arg_count){ arg[i] = argument[i]; i++; } 
 
 //Get arguments
-var _text = arg[0];
+#region //choice Language
+var _2DText = arg[0];
+for(var i = 0 ; i < array_length_1d(_2DText) ; i++){
+	_1DText[i] = _2DText[oGame.languageIndex,i];
+}
+var _text = _1DText;
+#endregion
+
 var _speaker, text_len;
 
 //If Text or Speaker aren't arrays (single line input), make them arrays 
 if(is_array(_text))		{ text_len = array_length_1d(_text); }
 else					{ text_len = 1; _text[0] = _text;  }
-if(!is_array(arg[1]))	{ _speaker = array_create(text_len, id); }
-else					{ _speaker = arg[1]; }
+
+if(!is_array(arg[1])){
+	_speaker = array_create(text_len, id); 
+}else{
+	_speaker = arg[1]; 
+}
 
 //Get rest of arguments, fill with default
 var _effects	= array_create(text_len, [1,0]);
@@ -69,10 +80,14 @@ with(_textbox){
 	
 	//Speaker's Variables
 	i = 0; repeat(text_len){
-		portrait[i]			= _speaker[i].myPortrait;
-		voice[i]			= _speaker[i].myVoice;
+		
+		portrait[i]			= -1;
+		voice[i]			= -1;
 		font[i]				= _speaker[i].myFont;
-		name[i]				= _speaker[i].myName;
+		name[i]				=_speaker[i].myName;
+		if(_speaker[i].myName != "None"){	//if have name
+		name[i]				= _speaker[i].myName[oGame.languageIndex];
+		}
 		speaker[i]			= _speaker[i];
 		
 		if(variable_instance_exists(_speaker[i], "myPortraitTalk"))		{ portrait_talk[i] = _speaker[i].myPortraitTalk; }

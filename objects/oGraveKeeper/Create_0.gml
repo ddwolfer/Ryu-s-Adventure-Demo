@@ -4,7 +4,8 @@ event_inherited();
 
 myPortrait			= -1;
 myVoice				= -1;
-myName				= "Grave Keeper";
+myName[0]			= "Grave Keeper";
+myName[1]			= "守墓者";
 
 myPortraitTalk		= -1;
 myPortraitTalk_x	= 26;

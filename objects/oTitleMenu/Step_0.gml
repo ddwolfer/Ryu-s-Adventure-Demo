@@ -51,7 +51,7 @@ switch(screen){
 							if( layer != -1 ){
 								instance_create_layer(0, 0, layer , asset_get_index(obj));
 							}
-							//show_debug_message("what layer:"+string(layer) );
+							
 							oRyuController.deathCount = map[? "deathCount"];
 							oRyuController.abilityTP = map[? "oRyuAbilityTP"];
 							oRyuController.abilityDJump = map[? "oRyuAbilityDJump"];
@@ -59,8 +59,8 @@ switch(screen){
 							ContinueY = map[? "oRyuY"];
 							RoomContinue = map[? "room"]; 
 
-							scrChangeMusicVolume( ( map[? "MusicVol"] - round(scrControlSound(MUSIC_VOLUME, 0, 1, 0, 10)) )/10 );// (saveVol - nowVol)/10 ,to col how much vol need to minus or plus
-							scrChangeSoundVolume( ( map[? "SFXVol"] - round(scrControlSound(SOUND_VOLUME, 0, 1, 0, 10)) )/10 );// (saveVol - nowVol)/10
+							//scrChangeMusicVolume( ( map[? "MusicVol"] - round(scrControlSound(MUSIC_VOLUME, 0, 1, 0, 10)) )/10 );// (saveVol - nowVol)/10 ,to col how much vol need to minus or plus
+							//scrChangeSoundVolume( ( map[? "SFXVol"] - round(scrControlSound(SOUND_VOLUME, 0, 1, 0, 10)) )/10 );// (saveVol - nowVol)/10
 										
 							#endregion
 							
@@ -92,6 +92,7 @@ switch(screen){
 				break;
 	
 				case 0: //Quit
+					scrSaveSystem();
 					game_end();
 				break;
 			}
@@ -129,6 +130,7 @@ switch(screen){
 				case 0: //Back To Menu
 					screen = menu_screen.main;
 					cursor_options = 3;
+					scrSaveSystem();
 				break;
 			}
 		}

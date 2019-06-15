@@ -53,8 +53,9 @@ deathSound = false;
 reset_dialogue_defaults();
 myPortrait			= -1;
 myVoice				= -1;
-myFont				= font_add("EquipmentPro.ttf", 20, false, false, 32, 128);;
-myName				= "Ryu";
+myFont				= font_add("ChineseDialogue.ttf", 20, false, false, 32, 128);;
+myName[0]			= "Ryu";
+myName[1]			= "Ryu";
 
 myPortraitTalk		= -1;
 myPortraitTalk_x	= 26;

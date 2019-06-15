@@ -42,20 +42,20 @@ if(drawGrayBackround == true){
 					//create root list
 					var rootList = ds_list_create();
 					
-					#region //save system & character info
+					#region //save character info
 					var map = ds_map_create();
 					ds_list_add(rootList, map);
 					ds_list_mark_as_map(rootList, ds_list_size(rootList) - 1);
 					
 					ds_map_add(map,"obj",object_get_name(oGame));
 					ds_map_add(map,"room", room);
-					ds_map_add(map,"oRyuX",oRyu.x);
-					ds_map_add(map,"oRyuY",oRyu.y);
+					ds_map_add(map,"oRyuX",oRyuSpawner.spawnX);
+					ds_map_add(map,"oRyuY",oRyuSpawner.spawnY);
 					ds_map_add(map,"deathCount", oRyuController.deathCount);
 					ds_map_add(map,"oRyuAbilityTP",oRyuController.abilityTP);
 					ds_map_add(map,"oRyuAbilityDJump",oRyuController.abilityDJump);
-					ds_map_add(map,"SFXVol",round(scrControlSound(SOUND_VOLUME, 0, 1, 0, 10)));
-					ds_map_add(map,"MusicVol",round(scrControlSound(MUSIC_VOLUME, 0, 1, 0, 10)) );
+					//ds_map_add(map,"SFXVol",round(scrControlSound(SOUND_VOLUME, 0, 1, 0, 10)));
+					//ds_map_add(map,"MusicVol",round(scrControlSound(MUSIC_VOLUME, 0, 1, 0, 10)) );
 					
 					#endregion
 					
@@ -87,10 +87,13 @@ if(drawGrayBackround == true){
 			case 1://Back To Menu
 				room_goto(rTitle);
 				drawGrayBackround =false;
+				scrSaveSystem();
+				
 			break;
 			case 0: //RESUME
 				drawGrayBackround =false;
 				oRyu.control = true;
+				scrSaveSystem();
 			break;
 		}
 	}

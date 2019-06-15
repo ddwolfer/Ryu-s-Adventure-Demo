@@ -21,9 +21,14 @@ ContinueY = 0 ;
 RoomContinue = 0;
 gpConnected = false;
 
-//language index
-languageIndex = 0;
+//language index 
+languageIndex = 0; //0->English 1->Chinese
 
 f = font_add("EquipmentPro.ttf", 20, false, false, 32, 128);
 
 audio_group_load(soundEffect);
+
+
+
+
+
