@@ -919,6 +919,14 @@
             }
         },
         {
+            "Key": "59aad47b-95ea-47cf-ba8b-0b8ef2be26d8",
+            "Value": {
+                "id": "f8273fb1-76ca-49bf-a7ab-d4bf18c9834f",
+                "resourcePath": "rooms\\rDwolfTest\\rDwolfTest.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "59b9e21e-6468-4075-ba99-a8b59e409328",
             "Value": {
                 "id": "7c7d847a-84b1-48f0-8a18-c44c34b000c0",
