@@ -21,6 +21,9 @@ ContinueY = 0 ;
 RoomContinue = 0;
 gpConnected = false;
 
+//language index
+languageIndex = 0;
+
 f = font_add("EquipmentPro.ttf", 20, false, false, 32, 128);
 
 audio_group_load(soundEffect);

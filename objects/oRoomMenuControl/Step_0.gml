@@ -1,7 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
-
 getInput();
+cursor_Language = oGame.languageIndex;
 
 #region //open close
 
@@ -104,11 +102,16 @@ if(drawGrayBackround == true){
 			if(leftMenu){
 				audio_play_sound(sdMenu, 2, false);
 				cursor_Language -=1
-				if(cursor_Language < 0) cursor_options = Language_Count - 1;
+				if(cursor_Language < 0) cursor_Language = Language_Count - 1;
 			}else if (rightMenu){
 				audio_play_sound(sdMenu, 2, false);
 				cursor_Language +=1
-				if(cursor_Language > Language_Count) cursor_options = 0;
+				if(cursor_Language > Language_Count - 1) cursor_Language = 0;
+			}
+			if(cursor_Language == 0){
+				oGame.languageIndex = 0;
+			}else if(cursor_Language == 1){
+				oGame.languageIndex = 1;
 			}
 		break;
 		case 4: //SFX

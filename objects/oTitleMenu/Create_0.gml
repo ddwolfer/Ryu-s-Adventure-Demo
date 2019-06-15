@@ -5,7 +5,7 @@ audio_group_set_gain(music, defaultVolume, 0);
 #endregion
 
 //set font
-f = font_add("EquipmentPro.ttf", 20, false, false, 32, 128);
+f = font_add("Chinese.ttf", 20, false, false, 32, 128);
 
 chosen = -1;
 //set position
@@ -19,26 +19,36 @@ menuCommited = -1;
 optionsCommited = -1;
 
 //menu txt
-menu[3] = "New Game";
-menu[2] = "Continue";
-menu[1] = "Options";
-menu[0] = "Quit";
+menu[0, 3] = "New Game";
+menu[0, 2] = "Continue";
+menu[0, 1] = "Options";
+menu[0, 0] = "Quit";
+
+menu[1, 3] = "新遊戲";
+menu[1, 2] = "繼續遊戲";
+menu[1, 1] = "選項";
+menu[1, 0] = "退出";
 //option txx
-options[3] = "Music : ";
-options[2] = "SFX : ";
-options[1] = "Language : ";
-options[0] = "Back to Menu";
+options[0, 3] = "Music : ";
+options[0, 2] = "SFX : ";
+options[0, 1] = "Language : ";
+options[0, 0] = "Back to Menu";
+
+options[1, 3] = "音樂 : ";
+options[1, 2] = "音效 : ";
+options[1, 1] = "語言 : ";
+options[1, 0] = "回到主選單";
 //Language options
-Language_option[1] = "Taiwanese";
+Language_option[1] = "繁體中文";
 Language_option[0] = "English";
 
 //variable for step 
-menuCount = array_length_1d(menu);
-optionsCount = array_length_1d(options);
+menuCount = array_length_2d(menu, 0);
+optionsCount = array_length_2d(options, 0);
 Language_Count = array_length_1d(Language_option);
 cursor = 3;
 cursor_options = 3;
-cursor_Language = 0;
+cursor_Language = oGame.languageIndex;
 
 //variable for controll view
 enum menu_screen { //which page now

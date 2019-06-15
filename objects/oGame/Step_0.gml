@@ -18,4 +18,5 @@ if(room == rCredit){
 	if(select) game_end();
 }
 
+//show_debug_message(oGame.languageIndex);
 
