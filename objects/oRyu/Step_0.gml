@@ -94,13 +94,13 @@ if(control){
 		if(up){
 			state = climb;
 			holdClimb = true;
-		    y -= 0.8;
+		    y -= 1;
 			image_speed = 0.35;
 		}
 		else if (down && !place_meeting(x,y+1,oParentSolid)){ //can't down when you on the ground
 			state = climb;
 			holdClimb = true;
-			y += 0.8;
+			y += 1;
 			image_speed = 0.35;
 		}
 	}else if (down && place_meeting(x,y+8,oLadder)){ //if have ladder under the JumpTru
@@ -158,6 +158,7 @@ else if (random(100) > 85 && abs(xVelo) > 0.5 && !onMovingPlatform) instance_cre
 		var maxCameraX = CameraX + camera_get_view_width(view_camera[0]);
 		if(x > maxCameraX || x < CameraX){
 			alarm[11] = 20; //set a timer for the death animation to finish
+			audio_play_sound(sdDeath, 3, false);
 			state = death;
 			control = false;
 		}
