@@ -117,7 +117,7 @@ else {
 						//*/
 						var l = string_lower(ch);
 						if(l == "a" or l == "e" or l == "i" or l == "o" or l == "u"){ 
-							portrait_talk_c = open_mouth_frame; 
+							portrait_talk_c = open_mouth_frame ; 
 							if (charCount > audio_c) { 
 								//audio_play_sound(voice[page], 1, false); 
 								audio_c = charCount + audio_increment; 

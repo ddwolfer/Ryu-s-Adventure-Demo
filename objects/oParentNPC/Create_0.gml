@@ -5,7 +5,7 @@ detection_radius = 32;
 
 myVoice			= -1;
 myPortrait		= -1;
-myFont			= font_add("EquipmentPro.ttf", 20, false, false, 32, 128);;
+myFont			= font_add("ChineseDialogue.ttf", 20, false, false, 32, 128);;
 myName			= "None";
 
 myPortraitTalk		= -1;

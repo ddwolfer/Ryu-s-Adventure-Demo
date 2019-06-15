@@ -60,4 +60,3 @@ screen = menu_screen.main
 
 test = 0;
 
-

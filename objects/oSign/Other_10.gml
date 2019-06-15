@@ -5,6 +5,7 @@ switch(choice_variable){
 	case -1:
 		//Line 0
 		var i = 0;
-		myText[i]		= text;
+		myText[0,i]		= text[0];
+		myText[1,i]		= text[1];
 }
 

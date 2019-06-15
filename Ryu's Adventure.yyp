@@ -1255,6 +1255,14 @@
             }
         },
         {
+            "Key": "7155f6fe-d53b-46fa-8f9f-60f905874229",
+            "Value": {
+                "id": "bd217791-e7d2-41f3-b3a3-b53e5b307cb3",
+                "resourcePath": "datafiles_yy\\ChineseDialogue.ttf.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "74e3b5a0-c7e8-455d-bf2c-01f12f3ed105",
             "Value": {
                 "id": "e3d5ff96-3705-4fa5-bf71-d7ef04cde676",
@@ -2303,6 +2311,14 @@
             }
         },
         {
+            "Key": "d903ece1-9d4d-475a-b41c-b17448ee991c",
+            "Value": {
+                "id": "810a2976-e821-49ac-a02b-5da516b4c4f3",
+                "resourcePath": "objects\\oLoadSystemInfo\\oLoadSystemInfo.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "daa6ac26-9b16-4c9c-a55f-bda1aac05755",
             "Value": {
                 "id": "d0d09c4d-b855-44cc-b458-f32832f619ef",
@@ -2559,6 +2575,14 @@
             }
         },
         {
+            "Key": "f7fee410-aaad-4e2c-be41-2871a6a4be52",
+            "Value": {
+                "id": "0bf7cf1f-9304-4649-b9d9-127c443e1a73",
+                "resourcePath": "scripts\\scrSaveSystem\\scrSaveSystem.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f8bca889-f059-412d-9fbc-39701db8897b",
             "Value": {
                 "id": "9e42749b-f10d-482c-80c4-772c55419a93",
@@ -2649,6 +2673,7 @@
         "6a9626e6-2c20-4dfe-9334-836862cc07e7",
         "b26c551b-2b7d-4c27-b058-fadcfdb6fdc8",
         "f1c02d5a-ae0f-44c4-a470-31115db55668",
+        "f7fee410-aaad-4e2c-be41-2871a6a4be52",
         "3a0161ff-35ef-4455-b09f-c2fbe75d34f1",
         "5ab13248-695c-4fa8-a47b-38578a9e904d",
         "e4e633ec-d373-4323-ad61-a56fcf975014",
