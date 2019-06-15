@@ -1,6 +1,6 @@
 //-----------Customise (FOR USER)
 playerobject = oRyu;
-interact_key = ord("X");
+interact_key = vk_up;
 detection_radius = 32;
 
 myVoice			= -1;
@@ -17,3 +17,6 @@ myPortraitIdle_y	= -1;
 
 //-----------Defaults Setup (LEAVE THIS STUFF)
 reset_dialogue_defaults();
+
+//Tool tip
+created = false;

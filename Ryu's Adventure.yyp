@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "01c313c2-8b5d-467c-809b-291a3b772adc",
+            "Value": {
+                "id": "cfe864ba-69f9-4f85-8e3e-4a67aea9fa3f",
+                "resourcePath": "sprites\\sSign\\sSign.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "03c9a076-597a-43a1-a3ca-2a10ddb8f5e0",
             "Value": {
                 "id": "4bbaf475-e037-49f8-8f19-e371be792126",
@@ -1023,6 +1031,14 @@
             }
         },
         {
+            "Key": "6436d465-0e81-4ef5-9301-70a1a7aacf96",
+            "Value": {
+                "id": "5612329e-afa2-43bb-8b6c-363fd31689c0",
+                "resourcePath": "objects\\oSign\\oSign.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6548d3c1-7927-45a0-b3bc-68075227c243",
             "Value": {
                 "id": "749cca47-4f59-4415-8e0c-ab0c8b6ec612",
@@ -1623,6 +1639,14 @@
             }
         },
         {
+            "Key": "954f0edf-c996-4dcb-8f59-b8f205421994",
+            "Value": {
+                "id": "da9e5350-3991-4fa3-b9e0-4d138dfe365f",
+                "resourcePath": "objects\\oToolTipPC\\oToolTipPC.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "968af6d9-33ea-4301-b369-3f0cf1846ab7",
             "Value": {
                 "id": "f1413559-23c8-4098-97a0-e805a8b81df0",
@@ -1828,6 +1852,14 @@
                 "id": "4f64b370-46ad-4e9a-8a02-2154aa4a02cd",
                 "resourcePath": "objects\\oSlopeR1\\oSlopeR1.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "aeeb992e-2c8c-4047-bb3d-3cac80994108",
+            "Value": {
+                "id": "8ca56547-4458-4203-a419-b9e771d7d21a",
+                "resourcePath": "views\\aeeb992e-2c8c-4047-bb3d-3cac80994108.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2364,6 +2396,14 @@
                 "id": "bcba92df-731a-44fc-bbd9-6dba5b188c46",
                 "resourcePath": "sprites\\spr_namebox\\spr_namebox.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e73a8782-00b5-421b-b2f3-798e7f8e2232",
+            "Value": {
+                "id": "f47c57f9-5e24-4afb-87bb-8b1aef964fc8",
+                "resourcePath": "objects\\oToolTipXbox\\oToolTipXbox.yy",
+                "resourceType": "GMObject"
             }
         },
         {

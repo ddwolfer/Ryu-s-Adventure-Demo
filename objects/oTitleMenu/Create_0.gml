@@ -48,4 +48,6 @@ enum menu_screen { //which page now
 }
 screen = menu_screen.main
 
+test = 0;
+
 

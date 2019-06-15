@@ -1,0 +1,1 @@
+text = "The magic scroll boosts you upward in the air, try pressing Z in the air."

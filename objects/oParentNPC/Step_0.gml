@@ -23,3 +23,24 @@ if(!instance_exists(oEasterEgg)){
 	if(facing >= 0) image_xscale = 1;
 	else if(facing < 0) image_xscale = -1;
 }
+
+var controller = oGame.gpConnected;
+
+if(place_meeting(x, y, oRyu) && !created){
+	if(controller){
+		instance_create(x, y - 24, oToolTipXbox);
+		created = true;
+	}else if(!controller){
+		instance_create(x, y - 24, oToolTipPC);
+		created = true;
+	}
+}
+if(!place_meeting(x, y, oRyu) && created){
+	if(instance_exists(oToolTipXbox)){
+		instance_destroy(oToolTipXbox);
+		created = false;
+	}else if(instance_exists(oToolTipPC)){
+		instance_destroy(oToolTipPC);
+		created = false;
+	}
+}

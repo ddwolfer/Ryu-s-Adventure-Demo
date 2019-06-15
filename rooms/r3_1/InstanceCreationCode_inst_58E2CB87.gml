@@ -1,0 +1,1 @@
+text = "The scroll gives you a magic boomerang, press X to throw it, then press X again to teleport."

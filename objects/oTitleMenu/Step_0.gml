@@ -30,6 +30,7 @@ switch(screen){
 						targetRoom = r1_0;
 						doTransition = true;
 						audio_play_sound(sMusic, 3, true);
+						test = 1;
 						scrRyureset();
 					}
 				break;
@@ -82,6 +83,7 @@ switch(screen){
 						
 						targetRoom = int64(RoomContinue);
 						audio_play_sound(sMusic, 3, true);
+						test = 2;
 						doTransition = true;
 						SartWithContinue = true;
 					}
@@ -170,7 +172,7 @@ switch(screen){
 	
 #endregion
 
-
+show_debug_message(test);
 
 
 
