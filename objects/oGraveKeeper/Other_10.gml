@@ -10,7 +10,6 @@ switch(choice_variable){
 		myText[0 , i]	= "A human! What brings you up here?";
 		myText[1 , i]	= "人類! 什麼風把你吹來這?";
 		mySpeaker[i]	= id;
-		
 		//Line 1
 		i++;
 		myText[0 , i]	= "A human?! I thought there's no living things here?";
@@ -59,7 +58,7 @@ switch(choice_variable){
 		//line 8
 		i++;
 		myText[0 , i]	= "He'll be proud of you.";
-		myText[1 , i]	= "他會旖旎為榮的.";
+		myText[1 , i]	= "他會以你為榮的.";
 		mySpeaker[i]	= id;
 		
 		//line 9
