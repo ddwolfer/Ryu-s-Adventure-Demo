@@ -7,19 +7,5 @@ activedialouge = 0;
 
 event_inherited();
 
-//-------DIALOGUE STUFF
-
-myPortrait			= -1;
-myVoice				= -1;
-myName[0]			= "Ashley";
-myName[1]			= "Ashley";
-
-myPortraitTalk		= -1;
-myPortraitTalk_x	= 26;
-myPortraitTalk_y	= 44;
-myPortraitIdle		= -1;
-
-
-//-------OTHER
-
-choice_variable		= -1;	//the variable we change depending on the player's choice in dialogue
+myTxT[0,0]	="I will wait for you! be sure to come back!";
+myTxT[1,0]	="我會等你的! 你一定要回來!"

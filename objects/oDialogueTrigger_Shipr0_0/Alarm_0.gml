@@ -3,8 +3,8 @@
 
 
 create_textevent(
-    ["I will wait for you! be sure to come back!"],
-    id,
+    myTxT,
+    -1,
     [[1, 1]],
     -1,
     -1,

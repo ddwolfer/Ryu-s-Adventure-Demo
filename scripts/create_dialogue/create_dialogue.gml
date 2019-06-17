@@ -34,11 +34,9 @@ var _text = _1DText;
 var _speaker, text_len;
 
 //If Text or Speaker aren't arrays (single line input), make them arrays 
-<<<<<<< HEAD
+
 if(is_array(_text))		{ text_len = i; DialogueLineNow = i;}
-=======
-if(is_array(_text))		{ text_len = i; }
->>>>>>> Chowdog
+
 else					{ text_len = 1; _text[0] = _text;  }
 
 if(!is_array(arg[1])){
