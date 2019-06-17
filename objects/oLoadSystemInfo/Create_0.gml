@@ -9,9 +9,17 @@ if(file_exists("saveSystem.sav")){
 	
 	var map = list;	
 	
-	oGame.languageIndex = map[? "Language"];
-	MusicLoad = (map[? "MusicVol"] - 10 )/10;
-	SFXLoad = (map[? "SFXVol"] - 10 )/10;
+	if(map[? "MusicVol"] == undefined || map[? "SFXVol"] == undefined ||  map[? "Language"] == undefined){
+		oGame.languageIndex = 0;
+		MusicLoad = 10;
+		SFXLoad = 10;
+	}else{
+		show_debug_message("YESSSSSSSSSSSSSSSSSSSSS" );
+		oGame.languageIndex = map[? "Language"];
+		MusicLoad = (map[? "MusicVol"] - 10 )/10;
+		SFXLoad = (map[? "SFXVol"] - 10 )/10;
+	}
+	
 				
 	ds_map_destroy(wrapper);
 }

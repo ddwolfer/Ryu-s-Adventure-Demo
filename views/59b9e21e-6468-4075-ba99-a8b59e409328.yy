@@ -6,7 +6,8 @@
     "children": [
         "7f34fd57-ddb5-4ffd-8eb2-35fa867f5f16",
         "68772d91-c9b0-4ccc-9566-030f987a3e15",
-        "2153c456-b2ed-48e3-9ff4-7cf40869eaaf"
+        "2153c456-b2ed-48e3-9ff4-7cf40869eaaf",
+        "62d580fc-5347-4107-a362-efa572ea492a"
     ],
     "filterType": "GMSprite",
     "folderName": "Ship",

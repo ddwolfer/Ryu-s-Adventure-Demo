@@ -25,7 +25,7 @@ switch(screen){
 				case 3:  //Start
 					with(oGame){
 						SartWithContinue = false;
-						targetRoom = r1_0;
+						targetRoom = r0_0;
 						doTransition = true;
 						audio_play_sound(sMusic, 3, true);
 						test = 1;
@@ -51,17 +51,22 @@ switch(screen){
 							if( layer != -1 ){
 								instance_create_layer(0, 0, layer , asset_get_index(obj));
 							}
-							
-							oRyuController.deathCount = map[? "deathCount"];
-							oRyuController.abilityTP = map[? "oRyuAbilityTP"];
-							oRyuController.abilityDJump = map[? "oRyuAbilityDJump"];
-							ContinueX = map[? "oRyuX"];
-							ContinueY = map[? "oRyuY"];
-							RoomContinue = map[? "room"]; 
-
-							//scrChangeMusicVolume( ( map[? "MusicVol"] - round(scrControlSound(MUSIC_VOLUME, 0, 1, 0, 10)) )/10 );// (saveVol - nowVol)/10 ,to col how much vol need to minus or plus
-							//scrChangeSoundVolume( ( map[? "SFXVol"] - round(scrControlSound(SOUND_VOLUME, 0, 1, 0, 10)) )/10 );// (saveVol - nowVol)/10
-										
+							if(map[? "deathCount"] == undefined){
+								oRyuController.deathCount = 0;
+								oRyuController.abilityTP = false;
+								oRyuController.abilityDJump = false;
+								ContinueX = oRyuSpawner.spawnX;
+								ContinueY = oRyuSpawner.spawnY;
+								RoomContinue = 1; 
+							}else{
+								oRyuController.deathCount = map[? "deathCount"];
+								oRyuController.abilityTP = map[? "oRyuAbilityTP"];
+								oRyuController.abilityDJump = map[? "oRyuAbilityDJump"];
+								ContinueX = map[? "oRyuX"];
+								ContinueY = map[? "oRyuY"];
+								RoomContinue = map[? "room"]; 
+							}
+									
 							#endregion
 							
 							#region //Load other info
