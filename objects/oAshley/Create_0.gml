@@ -4,7 +4,8 @@
 
 myPortrait			= -1;
 myVoice				= -1;
-myName				= "Ashley";
+myName[0]			= "Ashley";
+myName[1]			= "Ashley";
 
 myPortraitTalk		= -1;
 myPortraitTalk_x	= 26;
