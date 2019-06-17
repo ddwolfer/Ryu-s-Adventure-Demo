@@ -23,7 +23,8 @@ repeat(arg_count){ arg[i] = argument[i]; i++; }
 //Get arguments
 #region //choice Language
 var _2DText = arg[0];
-for( i = 0 ; i < array_length_2d(_2DText,0) ; i++){
+
+for(var i = 0 ; i < array_length_2d(_2DText, 1)  ; i++){
 	_1DText[i] = _2DText[oGame.languageIndex,i];
 	show_debug_message("LOOP I:"+string(i));
 }
@@ -33,7 +34,11 @@ var _text = _1DText;
 var _speaker, text_len;
 
 //If Text or Speaker aren't arrays (single line input), make them arrays 
+<<<<<<< HEAD
 if(is_array(_text))		{ text_len = i; DialogueLineNow = i;}
+=======
+if(is_array(_text))		{ text_len = i; }
+>>>>>>> Chowdog
 else					{ text_len = 1; _text[0] = _text;  }
 
 if(!is_array(arg[1])){

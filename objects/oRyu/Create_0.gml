@@ -46,7 +46,7 @@ lastSprite = sprite_index;// make sure animation starts from frame 0
 
 deathSound = false;
 //light glow
-//instance_create_layer(x, y, "Lighting", oRyuLight);
+instance_create_layer(x, y, "Lighting", oRyuLight);
 
 
 //--------Dialogue Stuff
