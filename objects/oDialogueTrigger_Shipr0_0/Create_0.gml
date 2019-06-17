@@ -1,0 +1,25 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+//to checkout textbox end
+activedialouge = 0;
+
+
+event_inherited();
+
+//-------DIALOGUE STUFF
+
+myPortrait			= -1;
+myVoice				= -1;
+myName[0]			= "Ashley";
+myName[1]			= "Ashley";
+
+myPortraitTalk		= -1;
+myPortraitTalk_x	= 26;
+myPortraitTalk_y	= 44;
+myPortraitIdle		= -1;
+
+
+//-------OTHER
+
+choice_variable		= -1;	//the variable we change depending on the player's choice in dialogue

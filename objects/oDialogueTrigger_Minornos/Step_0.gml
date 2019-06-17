@@ -22,7 +22,6 @@ if(place_meeting(x, y, oRyu)){
 		dialogueActiveCount++;
 	}
 	fade = true
-	
 }
 
 if( !instance_exists(obj_textbox) && dialogueActiveCount>0){
