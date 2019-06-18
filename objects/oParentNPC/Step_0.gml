@@ -1,6 +1,6 @@
 getInput();
 var dr = detection_radius;
-if(point_in_rectangle(playerobject.x, playerobject.y, x-dr, y-dr, x+dr, y+dr)){
+if(point_in_rectangle(playerobject.x, playerobject.y, x-dr, y-dr, x+dr, y+dr) && !deletedNPC){
 	if(myTextbox != noone){ 
 		if(!instance_exists(myTextbox)){ myTextbox = noone; exit; }
 	}
@@ -27,7 +27,8 @@ if(!instance_exists(oEasterEgg)){
 
 var controller = oGame.gpConnected;
 
-if(place_meeting(x, y, oRyu) && !created){
+
+if(place_meeting(x, y, oRyu) && !created && !deletedNPC){
 	if(controller){
 		instance_create(x, y - 24, oToolTipXbox);
 		created = true;
@@ -36,7 +37,7 @@ if(place_meeting(x, y, oRyu) && !created){
 		created = true;
 	}
 }
-if(!place_meeting(x, y, oRyu) && created){
+if(!place_meeting(x, y, oRyu) && created && !deletedNPC){
 	if(instance_exists(oToolTipXbox)){
 		instance_destroy(oToolTipXbox);
 		created = false;
@@ -44,4 +45,15 @@ if(!place_meeting(x, y, oRyu) && created){
 		instance_destroy(oToolTipPC);
 		created = false;
 	}
+}
+
+if(deletedNPCFlag){
+	if(instance_exists(oToolTipXbox)){
+			instance_destroy(oToolTipXbox);
+			created = false;
+		}else if(instance_exists(oToolTipPC)){
+			instance_destroy(oToolTipPC);
+			created = false;
+		}
+	deletedNPCFlag = false;
 }

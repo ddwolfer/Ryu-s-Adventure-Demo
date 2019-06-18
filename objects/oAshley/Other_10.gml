@@ -33,7 +33,7 @@ switch(choice_variable){
 		myText[0,i]		= "......";
 		myText[1,i]		= "......";
 		mySpeaker[i]	= id;
-		choice_variable	= 1;
+		myScripts[i]	= [change_variable, id, "choice_variable", "1"];
 	break;
 	
 	case 1:

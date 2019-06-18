@@ -11,3 +11,4 @@ image_speed = 0.6;
 if(oRyuController.abilityDJump == true){ //check Ryu have double jump scroll
 	instance_destroy(oScrollDJ);
 }
+getScroll = false;
