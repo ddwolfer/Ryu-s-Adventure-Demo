@@ -1,8 +1,8 @@
 //We check the type of dialogue to see if it is 1) "normal" or 2) a player choice dialogue.
-
+getInput();
 #region TYPE 0: NORMAL
 if(type[page] == 0){
-	if(keyboard_check_pressed(interact_key)){
+	if(action){
 		//audio_play_sound(select_snd_effect, priority_snd_effect, false);
 		//If we haven't "typed out" all the letters, immediately "type out" all letters (works as a "skip")
 		if(charCount < str_len){
@@ -27,14 +27,14 @@ if(type[page] == 0){
 #region TYPE 1: DIALOGUE CHOICE
 else {
 	if(chosen) exit;
-	if(keyboard_check_pressed(interact_key)){ 
+	if(action){ 
 		chosen = true; 
 		alarm[2] = 10; 
 		audio_play_sound(select_snd_effect, priority_snd_effect, false);
 	} 
 	
 	//Change Choice 
-	var change_choice = keyboard_check_pressed(down_key) - keyboard_check_pressed(up_key);
+	var change_choice = down - up;
 	if(change_choice != 0){ 
 		choice += change_choice; 
 		audio_play_sound(choice_snd_effect, priority_snd_effect, false); 

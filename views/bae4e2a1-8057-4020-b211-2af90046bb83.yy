@@ -12,7 +12,10 @@
         "a6c2bb1a-e6ed-4d07-b4d7-9d2fdb186c57",
         "5a547154-ea57-4475-a512-d0f810bcce0e",
         "a7b09381-3bec-476c-8118-a3b020615164",
-        "ca1143bc-105f-44cc-8c83-23739a93f999"
+        "ca1143bc-105f-44cc-8c83-23739a93f999",
+        "7027abef-4913-4a08-ae75-3681cc12a333",
+        "11a8790f-fd15-4b54-bd26-6145db2d1fb0",
+        "c6dec124-2514-4d7e-b690-121a5a627d1a"
     ],
     "filterType": "GMSound",
     "folderName": "Sound Effect",

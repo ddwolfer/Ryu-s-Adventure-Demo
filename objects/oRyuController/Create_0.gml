@@ -1,7 +1,5 @@
 //Ryu stats
 keyCount = 0;
-cheeseCount = 0;
-RyuHealth = 1;
 deathCount = 0;
 
 //drawing variables
