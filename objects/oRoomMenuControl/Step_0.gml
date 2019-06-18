@@ -6,10 +6,20 @@ cursor_Language = oGame.languageIndex;
 	if(select && room!=rTitle){
 		if(drawGrayBackround == false){ //open menu
 			drawGrayBackround =true;
-			oRyu.control = false;
+			if(instance_exists(oRyu)){
+				oRyu.control = false;
+			}
+			if( instance_exists(oShip) ){
+				oShip.control = false;
+			}
 		}else if(drawGrayBackround == true){ //close menu
 			drawGrayBackround =false;
-			oRyu.control = true;
+			if(instance_exists(oRyu)){
+				oRyu.control = true;
+			}
+			if( instance_exists(oShip) ){
+				oShip.control = true;
+			}
 		}		
 	}
 
