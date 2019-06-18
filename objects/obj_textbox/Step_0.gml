@@ -34,7 +34,7 @@ else {
 	} 
 	
 	//Change Choice 
-	var change_choice = down - up;
+	var change_choice = downMenu - upMenu;
 	if(change_choice != 0){ 
 		choice += change_choice; 
 		audio_play_sound(choice_snd_effect, priority_snd_effect, false); 

@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "08db59a3-1973-4f10-bc46-9df691e9a5b8",
+            "Value": {
+                "id": "8849c5e5-a93c-4923-b495-14ed0681609b",
+                "resourcePath": "sprites\\sBlack\\sBlack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "096f468a-f591-410d-806d-b4a5171abeca",
             "Value": {
                 "id": "19740ba0-a226-43eb-b457-f205afea39da",
@@ -679,6 +687,14 @@
             }
         },
         {
+            "Key": "3a5ed5a3-3dcf-41be-9a5d-e7ef27d18960",
+            "Value": {
+                "id": "7baf248e-2be6-4fc3-94d8-077ebb4e80d2",
+                "resourcePath": "objects\\oGraveKeeper2_1\\oGraveKeeper2_1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3a7ce849-9da8-4ecd-b27c-2777317281b1",
             "Value": {
                 "id": "1b8c68a6-ae6b-42a4-a267-16cad12de48f",
@@ -1066,7 +1082,7 @@
             "Key": "610caf7f-cd1a-4d5e-b5b7-62bbaa5c19dd",
             "Value": {
                 "id": "1d38a9d9-f675-4eb5-8c9c-74de659c627a",
-                "resourcePath": "objects\\oGraveKeeper\\oGraveKeeper.yy",
+                "resourcePath": "objects\\oGraveKeeper1_0\\oGraveKeeper1_0.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1719,6 +1735,14 @@
             }
         },
         {
+            "Key": "8f2d1570-f059-42b9-9420-82d27ea4cba0",
+            "Value": {
+                "id": "5db13562-0517-4dde-ae0e-0dafeb778fa5",
+                "resourcePath": "objects\\BlackBackground\\BlackBackground.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8fd8e5ce-0597-4fc7-a8fa-5c6150b4ee16",
             "Value": {
                 "id": "29280986-0f12-4fe8-a6d0-eb16c0c90d05",
@@ -2219,6 +2243,14 @@
             "Value": {
                 "id": "84a11ae0-5900-427b-b1a8-ff5b0350012e",
                 "resourcePath": "objects\\obj_textbox\\obj_textbox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "bd2c8e95-512e-4742-8b1a-cd8b2806b51e",
+            "Value": {
+                "id": "1e180a16-f41b-4542-805b-397d494bafec",
+                "resourcePath": "objects\\oGraveKeeper3_1\\oGraveKeeper3_1.yy",
                 "resourceType": "GMObject"
             }
         },
