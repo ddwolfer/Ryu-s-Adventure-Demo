@@ -4,7 +4,7 @@ if(instance_number(obj_textevent)>1 or instance_number(obj_textbox)>0){ instance
 myVoice			= -1;
 myTextCol		= c_white;
 myPortrait		= -1;
-myFont			= font_add("Chinese.ttf", 15, false, false, 0, 65535);
+myFont			= font_add("ChineseDialogue.ttf", 20, false, false, 0, 65535);
 myName			= "None";
 
 //-----------Setup (LEAVE THIS STUFF)
