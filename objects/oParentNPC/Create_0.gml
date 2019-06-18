@@ -5,7 +5,12 @@ detection_radius = 32;
 
 myVoice			= -1;
 myPortrait		= -1;
-myFont			= font_add("ChineseDialogue.ttf", 20, false, false, 32, 128);;
+if(oGame.languageIndex == 0){
+	myFont		= font_add("ChineseDialogue.ttf", 17, false, false, 32, 128);
+}else{
+	myFont		= font_add("ChineseDialogue.ttf", 17, false, false, 32, 128);
+}
+
 myName			= "None";
 
 myPortraitTalk		= -1;
@@ -20,3 +25,5 @@ reset_dialogue_defaults();
 
 //Tool tip
 created = false;
+deletedNPC = false;
+deletedNPCFlag = false;

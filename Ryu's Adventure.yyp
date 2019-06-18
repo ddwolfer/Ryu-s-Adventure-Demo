@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "0f62c6a3-bbe5-4d78-b961-05a4e92264cd",
+            "Value": {
+                "id": "d9480700-4951-4a52-8203-e5f003d1d2ce",
+                "resourcePath": "sprites\\spriteForDoorTest\\spriteForDoorTest.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0ff05751-86ca-4aa7-a22f-965d3c5e13ea",
             "Value": {
                 "id": "aad572b9-32e4-43fc-b3d9-05a1f4695399",
@@ -327,6 +335,14 @@
             }
         },
         {
+            "Key": "1df408e3-cc83-4504-b9f9-4b5d8205304a",
+            "Value": {
+                "id": "2cf41ee6-ccdb-4cb4-b2bf-4f83328fc01b",
+                "resourcePath": "rooms\\rGemDoorTest\\rGemDoorTest.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "1f391772-8104-4915-97c7-cc77043aa013",
             "Value": {
                 "id": "59a1c7cc-50e1-4d54-b10e-c9a2f5ed6e98",
@@ -436,6 +452,14 @@
                 "id": "b574fdd5-e9b4-4499-8145-49b9425fde83",
                 "resourcePath": "sprites\\spr_emotes\\spr_emotes.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2a2e62fe-bff5-4f6a-97c0-086cf312fcfe",
+            "Value": {
+                "id": "8f92d467-bde6-4218-aed5-b26c7679eac9",
+                "resourcePath": "objects\\oDoorBot1\\oDoorBot1.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1047,6 +1071,22 @@
             }
         },
         {
+            "Key": "5b6d31cd-5a26-46e5-aa37-37cfa735f437",
+            "Value": {
+                "id": "2f11b66c-5211-4b77-a8e7-04effa7268a6",
+                "resourcePath": "sprites\\spriteForDoorTest1\\spriteForDoorTest1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5b7484d6-c2ef-4f25-8f75-0ecff72fe117",
+            "Value": {
+                "id": "e99c1943-bfd5-4e67-94af-bfe48f9ea47b",
+                "resourcePath": "objects\\oDoorBot\\oDoorBot.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5bc1cffb-55e6-4074-829f-2aeebc8c9166",
             "Value": {
                 "id": "cd66fe73-b517-4852-b647-84c08597b483",
@@ -1607,6 +1647,14 @@
             }
         },
         {
+            "Key": "82bfa1ab-3ffb-4401-875d-91675ac1b890",
+            "Value": {
+                "id": "962a5af3-46f5-4183-b362-9152f2343aff",
+                "resourcePath": "objects\\oDoorTop\\oDoorTop.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "831ce625-0f9c-4446-a9bc-baeb2c3a1cc8",
             "Value": {
                 "id": "2d2507dd-0a6a-4ff8-902d-04009c4147b9",
@@ -1772,6 +1820,14 @@
                 "id": "5db13562-0517-4dde-ae0e-0dafeb778fa5",
                 "resourcePath": "objects\\BlackBackground\\BlackBackground.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8f6b75c4-1d69-472c-8fb6-3a66009a379a",
+            "Value": {
+                "id": "763b2f6a-69bb-4a6d-b44c-4c538e9522af",
+                "resourcePath": "sprites\\sDoorBot\\sDoorBot.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1972,6 +2028,14 @@
                 "id": "482d76e6-a30d-408e-80f3-2c805c8edd10",
                 "resourcePath": "objects\\oWarp\\oWarp.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "aa00e6c7-2e4d-4d70-a7c8-31447c991544",
+            "Value": {
+                "id": "5f4a4442-58e9-480d-8db1-be4906ad315f",
+                "resourcePath": "sprites\\sDoorTop\\sDoorTop.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2303,6 +2367,14 @@
             }
         },
         {
+            "Key": "be383766-b4da-406a-9b2c-5b3010e8ffe7",
+            "Value": {
+                "id": "b6afab1f-39c9-4cec-9e50-fb5414abd168",
+                "resourcePath": "views\\be383766-b4da-406a-9b2c-5b3010e8ffe7.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "bf93619c-8aa4-4031-ac6b-01461a1bbc6f",
             "Value": {
                 "id": "55b5bbe6-fcf2-48dd-b87e-2c46101c7a94",
@@ -2491,6 +2563,14 @@
             "Value": {
                 "id": "653eafde-e78c-4f76-ac73-35bd1e78dad8",
                 "resourcePath": "objects\\oRedDino\\oRedDino.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d4cadeed-89e4-4b8b-b1b8-3523bcabf78e",
+            "Value": {
+                "id": "2ddd5ee1-6406-46bf-aca2-dc47be999d1b",
+                "resourcePath": "objects\\oDoorTop1\\oDoorTop1.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2863,6 +2943,14 @@
             }
         },
         {
+            "Key": "f944ed04-3946-446a-a9d8-6023a0642436",
+            "Value": {
+                "id": "e2397b31-86b2-4c33-86cd-b899c8b18c20",
+                "resourcePath": "views\\f944ed04-3946-446a-a9d8-6023a0642436.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "f94adf4c-32d7-4269-af9e-f1adea795fee",
             "Value": {
                 "id": "5db72856-a148-4f6d-a4ee-ee6882313a6f",
@@ -2876,6 +2964,14 @@
                 "id": "4b203313-ee87-4145-996c-95a565f09ba7",
                 "resourcePath": "objects\\oHeartGem\\oHeartGem.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fa3c17c1-1224-4e06-837c-1644b114b485",
+            "Value": {
+                "id": "8c763533-43f0-4c9f-b2bd-5a8ed8c6b570",
+                "resourcePath": "sprites\\sBlueDoor\\sBlueDoor.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
