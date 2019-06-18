@@ -1,0 +1,2 @@
+CanMove = true;
+SpikeOn = true;

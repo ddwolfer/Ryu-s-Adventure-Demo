@@ -5,7 +5,7 @@ if( !instance_exists(obj_textbox) && !DialogueDisappear){
 	DialogueDisappear = true;
 	
 }
-if(DialogueDisappear == true){
+/*if(DialogueDisappear == true){
 	
 	BlackBackground.image_alpha += 0.01
-}
+}*/
