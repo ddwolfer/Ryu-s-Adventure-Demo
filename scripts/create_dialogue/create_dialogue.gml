@@ -10,7 +10,7 @@
 ///@arg *Emotion
 ///@arg *Emote
 
-if(instance_exists(obj_textbox)){ exit; }
+if(instance_exists(obj_textbox) || oRoomMenuControl.drawGrayBackround == true){ exit; }
 
 //Create the Textbox
 var _textbox = instance_create_layer(x,y, "System", obj_textbox);

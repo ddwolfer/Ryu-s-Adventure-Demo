@@ -4,7 +4,6 @@
 //to checkout textbox end
 activedialouge = 0;
 
-
 event_inherited();
 
 myTxT[0,0]	="I will wait for you! be sure to come back!";

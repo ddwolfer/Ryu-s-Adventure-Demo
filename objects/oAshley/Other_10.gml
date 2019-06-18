@@ -36,7 +36,7 @@ switch(choice_variable){
 		choice_variable	= 1;
 	break;
 	
-	case "1":
+	case 1:
 	#region 
 		var i = 0;
 		//Line 0

@@ -8,6 +8,9 @@ mytxt[0, 1] = "TXT00000002";
 mytxt[1, 0] = "歡銀來到這";
 mytxt[1, 1] = "拉拉";
 
+DialogueDisappear = false;
+i = 1;
+
 create_textevent(
     mytxt,
     -1,
