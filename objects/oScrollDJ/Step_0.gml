@@ -1,8 +1,12 @@
 /// @description 
 y += floatSpeed * dir
 if(y >= bottom || y <= top) dir *= -1;
-	
-if(place_meeting(x, y, oRyu)){
+
+if(image_alpha > 0.5){
+	getScroll = true;
+}
+
+if(place_meeting(x, y, oRyu) && getScroll){
 	oRyuController.abilityDJump = true;
 	instance_destroy();
 }

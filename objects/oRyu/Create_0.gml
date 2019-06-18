@@ -53,7 +53,7 @@ instance_create_layer(x, y, "Lighting", oRyuLight);
 reset_dialogue_defaults();
 myPortrait			= -1;
 myVoice				= -1;
-myFont				= font_add("ChineseDialogue.ttf", 20, false, false, 32, 128);;
+myFont				= font_add("ChineseDialogue.ttf", 17, false, false, 32, 128);;
 myName[0]			= "Ryu";
 myName[1]			= "Ryu";
 
