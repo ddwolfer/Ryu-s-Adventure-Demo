@@ -1,0 +1,2 @@
+targetRoom = rGemDoorTest;
+instant = true;

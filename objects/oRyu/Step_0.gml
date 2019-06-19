@@ -149,6 +149,7 @@ else if (random(100) > 85 && abs(xVelo) > 0.5 && !onMovingPlatform) instance_cre
 		audio_play_sound(sdDeath, 3, false);
 		control = false;
 		damaged = true;
+		addScreenShake(6, 10);
 	}
 	#endregion
 	
@@ -238,12 +239,16 @@ var warp = instance_place(x, y, oWarp);
 if(warp != noone){
 	with(oGame){
 		targetRoom = warp.targetRoom;
-		if(oRyu.up){
-			doTransition = true;
-			if(oRyu.hasCheese) {
-				oRyuController.cheeseCount++;
-				oRyu.hasCheese = false;
+		if(!warp.instant){
+			if(oRyu.up){
+				doTransition = true;
+				if(oRyu.hasCheese) {
+					oRyuController.cheeseCount++;
+					oRyu.hasCheese = false;
+				}
 			}
+		}else if(warp.instant){
+			doTransition = true;
 		}
 	}
 }

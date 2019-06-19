@@ -1,1 +1,0 @@
-CanMove = true;

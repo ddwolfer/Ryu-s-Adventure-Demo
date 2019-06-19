@@ -1,5 +1,8 @@
 if(!instance_exists(oRyuController)) exit;
 
+x += random_range(-screenShake, screenShake);
+
+
 if(instance_exists(oRyu)){
 	var target_x = oRyu.x; 
 	var target_y = oRyu.y;
@@ -16,8 +19,10 @@ if(instance_exists(oRyu)){
 
 	if(y < 2 * height / 3){
 		y = 2 * height / 3;
+		y += random_range(-screenShake, screenShake);
 	}else if(y > room_height - height / 3){
 		y = room_height - height / 3;
+		y += random_range(-screenShake, screenShake);
 	}
 
 	/*if(oRyu.x < 463){
