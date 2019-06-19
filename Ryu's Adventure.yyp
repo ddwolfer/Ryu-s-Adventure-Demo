@@ -1183,6 +1183,14 @@
             }
         },
         {
+            "Key": "62fcdf02-668d-4141-a2eb-144714275680",
+            "Value": {
+                "id": "7ffee193-02bf-47e9-b583-505b4d8d256c",
+                "resourcePath": "objects\\oBossMagic\\oBossMagic.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "63b0c72e-29f1-4bcb-bc62-f2cc3e6bdb7a",
             "Value": {
                 "id": "68128adc-ae5e-4baa-99b0-ca1fc54f5ecd",
@@ -1428,6 +1436,14 @@
                 "id": "bd217791-e7d2-41f3-b3a3-b53e5b307cb3",
                 "resourcePath": "datafiles_yy\\ChineseDialogue.ttf.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "71ff953d-ec63-4c8c-b568-ed37eb3e8993",
+            "Value": {
+                "id": "dcb01963-b7aa-430f-8a7c-8aff9f884322",
+                "resourcePath": "sprites\\sBossMagic\\sBossMagic.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2183,6 +2199,14 @@
             }
         },
         {
+            "Key": "b25a93d9-4b9d-4371-82de-1c7e4f3cfadb",
+            "Value": {
+                "id": "c5f93638-867d-4d32-bf36-78f0935e67e6",
+                "resourcePath": "sprites\\sBossFire\\sBossFire.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b26c551b-2b7d-4c27-b058-fadcfdb6fdc8",
             "Value": {
                 "id": "8622c49d-2fcb-4c24-807d-8ca7a72c668a",
@@ -2428,6 +2452,14 @@
                 "id": "c9656b03-7ebf-4302-b657-924dac0aa91b",
                 "resourcePath": "sprites\\sSlopeL1\\sSlopeL1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c478c156-993d-4822-8902-ef92f46277d7",
+            "Value": {
+                "id": "704ab9fe-a9f6-4ede-ae7d-a472dcad79fc",
+                "resourcePath": "rooms\\rFlyTest\\rFlyTest.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -2747,6 +2779,14 @@
             "Value": {
                 "id": "f47c57f9-5e24-4afb-87bb-8b1aef964fc8",
                 "resourcePath": "objects\\oToolTipXbox\\oToolTipXbox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e7c0b0ee-608e-4171-9659-c5b1f09aab8f",
+            "Value": {
+                "id": "e6b0e9ef-b217-43fc-9509-056bb8f28f59",
+                "resourcePath": "objects\\oBossFire\\oBossFire.yy",
                 "resourceType": "GMObject"
             }
         },
