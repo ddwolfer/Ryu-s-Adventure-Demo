@@ -51,21 +51,29 @@ switch(screen){
 							if( layer != -1 ){
 								instance_create_layer(0, 0, layer , asset_get_index(obj));
 							}
-							if(map[? "deathCount"] == undefined){
-								oRyuController.deathCount = 0;
-								oRyuController.abilityTP = false;
-								oRyuController.abilityDJump = false;
-								ContinueX = oRyuSpawner.spawnX;
-								ContinueY = oRyuSpawner.spawnY;
-								RoomContinue = 1; 
-							}else{
-								oRyuController.deathCount = map[? "deathCount"];
-								oRyuController.abilityTP = map[? "oRyuAbilityTP"];
-								oRyuController.abilityDJump = map[? "oRyuAbilityDJump"];
-								ContinueX = map[? "oRyuX"];
-								ContinueY = map[? "oRyuY"];
-								RoomContinue = map[? "room"]; 
-							}
+							//default variable
+							oRyuController.deathCount = 0;
+							oRyuController.abilityTP = false;
+							oRyuController.abilityDJump = false;
+							oRyuController.BlueGemsGet = false;
+							oRyuController.HeartGemsGet = false;
+							oRyuController.YellowGemsGet = false;
+							oRyuController.GreenGemsGet = false;
+							oRyuController.RedGemsGet = false;
+							RoomContinue = 1; 
+							//if the variable exits in save file
+							if( map[? "oRyuAbilityTP"] != undefined)	{oRyuController.abilityTP = map[? "oRyuAbilityTP"];}
+							if( map[? "deathCount"] != undefined)		{oRyuController.deathCount = map[? "deathCount"];}
+							if( map[? "oRyuAbilityDJump"] != undefined)	{oRyuController.abilityDJump = map[? "oRyuAbilityDJump"];}
+							if( map[? "BlueGem"] != undefined)			{oRyuController.BlueGemsGet = map[? "BlueGem"];}
+							if( map[? "HeartGem"] != undefined)			{oRyuController.HeartGemsGet = map[? "HeartGem"];}
+							if( map[? "RedGem"] != undefined)			{oRyuController.YellowGemsGet = map[? "RedGem"];}
+							if( map[? "YellowGem"] != undefined)		{oRyuController.GreenGemsGet = map[? "YellowGem"];}
+							if( map[? "GreenGem"] != undefined)			{oRyuController.RedGemsGet = map[? "GreenGem"];}
+							if( map[? "oRyuX"] != undefined)			{ContinueX = map[? "oRyuX"];}
+							if( map[? "oRyuY"] != undefined)			{ContinueY = map[? "oRyuY"];}
+							if( map[? "room"] != undefined)				{RoomContinue = map[? "room"]; }
+						
 									
 							#endregion
 							
@@ -82,7 +90,7 @@ switch(screen){
 							ds_map_destroy(wrapper);
 							
 							targetRoom = int64(RoomContinue);
-							//audio_play_sound(sMusic, 3, true);
+							audio_play_sound(sMusic, 3, true);
 							test = 2;
 							doTransition = true;
 							SartWithContinue = true;
@@ -91,7 +99,7 @@ switch(screen){
 							SartWithContinue = false;
 							targetRoom = r0_0;
 							doTransition = true;
-							//audio_play_sound(sMusic, 3, true);
+							audio_play_sound(sMusic, 3, true);
 							test = 1;
 							scrRyureset();
 						}

@@ -863,6 +863,14 @@
             }
         },
         {
+            "Key": "4ca5551f-a22f-445d-9abc-29c5e0985cfe",
+            "Value": {
+                "id": "6616bcaa-ba8b-4a56-82ff-b98a3dcd8df8",
+                "resourcePath": "objects\\oLightForBoss\\oLightForBoss.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4d05c7a0-23cc-4ec0-bb92-fe4ae27c6462",
             "Value": {
                 "id": "2927714d-89b9-4cb6-888d-d7bcc453ac45",
@@ -1635,6 +1643,14 @@
             "Value": {
                 "id": "adcf89a0-de8f-451b-a73f-9a8c3d868daa",
                 "resourcePath": "objects\\oSpikesD\\oSpikesD.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7fe5a146-bbd4-4380-86a2-bad976d5c33b",
+            "Value": {
+                "id": "1c3cda2e-7c9b-4dab-901a-b0e06ca31ea8",
+                "resourcePath": "objects\\oFinalCore\\oFinalCore.yy",
                 "resourceType": "GMObject"
             }
         },

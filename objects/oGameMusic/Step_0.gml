@@ -5,6 +5,6 @@ if(room_get_name(room) == "r0_0" && !played1){
 
 if(room_get_name(room)=="r0_1" && !played2){
 	audio_stop_sound(sWind);
-	//audio_play_sound(sMusic, 3, true);
+	audio_play_sound(sMusic, 3, true);
 	played2 = true;
 }

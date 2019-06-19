@@ -64,6 +64,11 @@ if(drawGrayBackround == true){
 					ds_map_add(map,"deathCount", oRyuController.deathCount);
 					ds_map_add(map,"oRyuAbilityTP",oRyuController.abilityTP);
 					ds_map_add(map,"oRyuAbilityDJump",oRyuController.abilityDJump);
+					ds_map_add(map,"BlueGem",oRyuController.BlueGemsGet);
+					ds_map_add(map,"HeartGem",oRyuController.HeartGemsGet);
+					ds_map_add(map,"RedGem",oRyuController.RedGemsGet);
+					ds_map_add(map,"YellowGem",oRyuController.YellowGemsGet);
+					ds_map_add(map,"GreenGem",oRyuController.GreenGemsGet);
 					//ds_map_add(map,"SFXVol",round(scrControlSound(SOUND_VOLUME, 0, 1, 0, 10)));
 					//ds_map_add(map,"MusicVol",round(scrControlSound(MUSIC_VOLUME, 0, 1, 0, 10)) );
 					
