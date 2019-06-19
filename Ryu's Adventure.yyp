@@ -455,14 +455,6 @@
             }
         },
         {
-            "Key": "2a2e62fe-bff5-4f6a-97c0-086cf312fcfe",
-            "Value": {
-                "id": "8f92d467-bde6-4218-aed5-b26c7679eac9",
-                "resourcePath": "objects\\oDoorBot1\\oDoorBot1.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "2ae5bcf3-1139-45d6-ad22-b597d62e1105",
             "Value": {
                 "id": "5852d57e-fc72-4ef9-8c96-5d58f747f551",
@@ -2563,14 +2555,6 @@
             "Value": {
                 "id": "653eafde-e78c-4f76-ac73-35bd1e78dad8",
                 "resourcePath": "objects\\oRedDino\\oRedDino.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "d4cadeed-89e4-4b8b-b1b8-3523bcabf78e",
-            "Value": {
-                "id": "2ddd5ee1-6406-46bf-aca2-dc47be999d1b",
-                "resourcePath": "objects\\oDoorTop1\\oDoorTop1.yy",
                 "resourceType": "GMObject"
             }
         },

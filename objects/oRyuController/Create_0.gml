@@ -16,3 +16,9 @@ abilityDJump = false;
 abilityTP = false;
 
 f = font_add("EquipmentPro.ttf", 20, false, false, 32, 128);
+
+BlueGemsGet = false;
+HeartGemsGet = false;
+GreenGemsGet = false;
+RedGemsGet = false;
+YellowGemsGet = false;
