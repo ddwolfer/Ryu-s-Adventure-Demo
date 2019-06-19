@@ -1,3 +1,3 @@
 /// @description attack 2
-flyAttackSpeed = 3;
-
+flyAttackSpeed = 4;
+attacked = true;

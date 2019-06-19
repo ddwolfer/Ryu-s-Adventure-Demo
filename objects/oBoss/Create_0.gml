@@ -18,4 +18,7 @@ fire1 = true;
 fire2 = true;
 attacked = false;
 
+fireCounter = 0;
+idleCounter = 0;
+
 flyAttackSpeed = 0;

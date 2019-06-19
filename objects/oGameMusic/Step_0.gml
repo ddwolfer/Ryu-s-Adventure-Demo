@@ -8,3 +8,8 @@ if(room_get_name(room)=="r0_1" && !played2){
 	audio_play_sound(sMusic, 3, true);
 	played2 = true;
 }
+
+if(room_get_name(room)=="rTitle"){
+	played1 = false;
+	played2 = false;
+}

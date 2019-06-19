@@ -1,28 +1,28 @@
 {
-    "id": "62fcdf02-668d-4141-a2eb-144714275680",
+    "id": "cb7d4892-357d-46a3-a902-21ea69e20f6a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oBossMagic",
+    "name": "oShipExplode",
     "eventList": [
         {
-            "id": "2ccfa47b-933f-470c-b82a-2cc8988a3925",
+            "id": "312942ee-634a-41a9-95e1-fd43cc61856f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "cb7d4892-357d-46a3-a902-21ea69e20f6a"
+        },
+        {
+            "id": "7950903f-1a0d-45f8-9144-0167961264e1",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "62fcdf02-668d-4141-a2eb-144714275680"
-        },
-        {
-            "id": "b73c54d3-990f-4913-9242-70c626c4d463",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 2,
-            "m_owner": "62fcdf02-668d-4141-a2eb-144714275680"
+            "m_owner": "cb7d4892-357d-46a3-a902-21ea69e20f6a"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "71ff953d-ec63-4c8c-b568-ed37eb3e8993",
+    "spriteId": "7647b9b5-4023-4e1e-9d83-d5ff1bb15244",
     "visible": true
 }
