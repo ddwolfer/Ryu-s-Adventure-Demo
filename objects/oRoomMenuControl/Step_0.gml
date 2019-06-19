@@ -3,7 +3,7 @@ cursor_Language = oGame.languageIndex;
 
 #region //open close
 
-	if(select && room!=rTitle){
+	if(select && room!=rTitle && room!=r0_0 && room!=r0_1){
 		if(drawGrayBackround == false){ //open menu
 			drawGrayBackround =true;
 			if(instance_exists(oRyu)){

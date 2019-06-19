@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oGreenGem",
     "eventList": [
-        
+        {
+            "id": "1a954dfc-0995-4cb5-94c1-7da374ff402a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "50f4b58d-6fb0-4866-b67a-5191552c2d33"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

@@ -2,6 +2,8 @@
 // You can write your code in this editor
 LoadSystemfile = true;
 
+MusicLoad = 10;
+SFXLoad = 10;
 #region//Load Langeage Volume		
 if(file_exists("saveSystem.sav")){
 	var wrapper = LoadJSONFromFile("saveSystem.sav");
@@ -11,8 +13,6 @@ if(file_exists("saveSystem.sav")){
 	
 	if(map[? "MusicVol"] == undefined || map[? "SFXVol"] == undefined ||  map[? "Language"] == undefined){
 		oGame.languageIndex = 0;
-		MusicLoad = 10;
-		SFXLoad = 10;
 	}else{
 		show_debug_message("YESSSSSSSSSSSSSSSSSSSSS" );
 		oGame.languageIndex = map[? "Language"];

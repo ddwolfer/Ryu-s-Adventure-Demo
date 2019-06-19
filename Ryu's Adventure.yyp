@@ -338,7 +338,7 @@
             "Key": "1df408e3-cc83-4504-b9f9-4b5d8205304a",
             "Value": {
                 "id": "2cf41ee6-ccdb-4cb4-b2bf-4f83328fc01b",
-                "resourcePath": "rooms\\rGemDoorTest\\rGemDoorTest.yy",
+                "resourcePath": "rooms\\r3_7_1\\r3_7_1.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -452,14 +452,6 @@
                 "id": "b574fdd5-e9b4-4499-8145-49b9425fde83",
                 "resourcePath": "sprites\\spr_emotes\\spr_emotes.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "2a2e62fe-bff5-4f6a-97c0-086cf312fcfe",
-            "Value": {
-                "id": "8f92d467-bde6-4218-aed5-b26c7679eac9",
-                "resourcePath": "objects\\oDoorBot1\\oDoorBot1.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -2563,14 +2555,6 @@
             "Value": {
                 "id": "653eafde-e78c-4f76-ac73-35bd1e78dad8",
                 "resourcePath": "objects\\oRedDino\\oRedDino.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "d4cadeed-89e4-4b8b-b1b8-3523bcabf78e",
-            "Value": {
-                "id": "2ddd5ee1-6406-46bf-aca2-dc47be999d1b",
-                "resourcePath": "objects\\oDoorTop1\\oDoorTop1.yy",
                 "resourceType": "GMObject"
             }
         },

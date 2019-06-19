@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "oBlueGem",
     "eventList": [
-        
+        {
+            "id": "dc57370a-5596-472a-bf3b-a988a894b6d1",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "151429c0-7991-4039-9cb8-81f38445bcf0"
+        },
+        {
+            "id": "d35ad943-8dc1-49d2-9aee-ce6d48cf3d15",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "151429c0-7991-4039-9cb8-81f38445bcf0"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
