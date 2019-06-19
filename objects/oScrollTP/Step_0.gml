@@ -8,5 +8,6 @@ if(image_alpha > 0.5){
 
 if(place_meeting(x, y, oRyu) && getScroll){
 	oRyuController.abilityTP = true;
+	audio_play_sound(sdCollect, 3, false);
 	instance_destroy();
 }

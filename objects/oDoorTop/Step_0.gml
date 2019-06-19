@@ -2,7 +2,7 @@
 // You can write your code in this editor
 /// @description Insert description here
 // You can write your code in this editor
-var moveDoor = 1;
+var moveDoor = 0.4;
 if(place_meeting(x-12,y+48,oRyu)){
 	switch(image_index){
 	case 0: //Blue
