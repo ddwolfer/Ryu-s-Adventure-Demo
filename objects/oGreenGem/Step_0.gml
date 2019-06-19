@@ -3,6 +3,6 @@
 event_inherited();
 
 if(place_meeting(x, y, oRyu)){ 
-	oRyu.GreenGemsGet = true;
+	oRyuController.GreenGemsGet = true;
 	instance_destroy(self);
 } 

@@ -6,3 +6,6 @@ width = room_width;
 height = room_height;
 
 control = true;
+
+shipHealth = 5;
+damaged = false;

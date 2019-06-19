@@ -1,0 +1,2 @@
+/// @description 
+shipHealth -= 1;

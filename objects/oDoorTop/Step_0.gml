@@ -31,5 +31,4 @@ if(place_meeting(x-12,y+48,oRyu)){
 		}	
 	break;
 	}
-
 }
