@@ -82,7 +82,7 @@
             "Key": "0513fd5a-3c1d-47b0-9214-7ade2ff2dbb6",
             "Value": {
                 "id": "b76a55cf-6ff8-4686-b209-a1314b0582a4",
-                "resourcePath": "sprites\\sBlackGem\\sBlackGem.yy",
+                "resourcePath": "sprites\\sBoss\\sBoss.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2356,6 +2356,14 @@
                 "id": "1e180a16-f41b-4542-805b-397d494bafec",
                 "resourcePath": "objects\\oGraveKeeper3_1\\oGraveKeeper3_1.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "be2489c0-9232-4476-9a9a-4e412fb1a427",
+            "Value": {
+                "id": "f5d35e36-94e5-4e31-b215-44f066a84172",
+                "resourcePath": "sounds\\sWind\\sWind.yy",
+                "resourceType": "GMSound"
             }
         },
         {

@@ -27,7 +27,7 @@ switch(screen){
 						SartWithContinue = false;
 						targetRoom = r0_0;
 						doTransition = true;
-						audio_play_sound(sMusic, 3, true);
+						//audio_play_sound(sMusic, 3, true);
 						test = 1;
 						scrRyureset();
 					}
@@ -82,7 +82,7 @@ switch(screen){
 							ds_map_destroy(wrapper);
 							
 							targetRoom = int64(RoomContinue);
-							audio_play_sound(sMusic, 3, true);
+							//audio_play_sound(sMusic, 3, true);
 							test = 2;
 							doTransition = true;
 							SartWithContinue = true;
@@ -91,7 +91,7 @@ switch(screen){
 							SartWithContinue = false;
 							targetRoom = r0_0;
 							doTransition = true;
-							audio_play_sound(sMusic, 3, true);
+							//audio_play_sound(sMusic, 3, true);
 							test = 1;
 							scrRyureset();
 						}
