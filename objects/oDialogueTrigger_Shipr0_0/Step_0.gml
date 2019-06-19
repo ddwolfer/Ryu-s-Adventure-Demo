@@ -17,6 +17,6 @@ if(up && place_meeting(x,y,oRyu)){
 if( !instance_exists(obj_textbox) && activedialouge == 1){
 
 	oRyu.control = true;
-	audio_play_sound(sMusic, 3, true);
+	//audio_play_sound(sMusic, 3, true);
 	room_goto(2);
 }

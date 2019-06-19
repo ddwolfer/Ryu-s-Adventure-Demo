@@ -1,0 +1,2 @@
+instant = true;
+targetRoom = noone;

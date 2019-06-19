@@ -16,4 +16,4 @@ create_textevent(
 );
 activedialouge = 1;
 
-audio_stop_sound(sMusic);
+//audio_stop_sound(sMusic);
