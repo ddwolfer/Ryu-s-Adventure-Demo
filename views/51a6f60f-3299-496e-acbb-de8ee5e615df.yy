@@ -5,6 +5,7 @@
     "name": "51a6f60f-3299-496e-acbb-de8ee5e615df",
     "children": [
         "ff00479f-90db-4174-9508-d2097804a6e6",
+        "be2489c0-9232-4476-9a9a-4e412fb1a427",
         "bae4e2a1-8057-4020-b211-2af90046bb83"
     ],
     "filterType": "GMSound",
