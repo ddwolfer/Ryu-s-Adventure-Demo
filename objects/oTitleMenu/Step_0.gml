@@ -25,7 +25,7 @@ switch(screen){
 				case 3:  //Start
 					with(oGame){
 						SartWithContinue = false;
-						targetRoom = rGemDoorTest;
+						targetRoom = r3_1;
 						doTransition = true;
 						audio_play_sound(sMusic, 3, true);
 						test = 1;
@@ -88,14 +88,13 @@ switch(screen){
 							SartWithContinue = true;
 						}else{
 							//show_debug_message("NOOOOOOOOOOOOOOOOOOOOOOO no save file");
+							SartWithContinue = false;
+							targetRoom = r0_0;
+							doTransition = true;
+							audio_play_sound(sMusic, 3, true);
+							test = 1;
+							scrRyureset();
 						}
-						
-						SartWithContinue = false;
-						targetRoom = r0_0;
-						doTransition = true;
-						audio_play_sound(sMusic, 3, true);
-						test = 1;
-						scrRyureset();
 					}
 				break;
 	
