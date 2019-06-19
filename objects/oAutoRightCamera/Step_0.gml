@@ -16,17 +16,17 @@ if instance_exists(oRyu){
 		camera_set_view_pos(view_camera[0], CameraX + CameraRightSpeed, 0);
 	}
 	//move camera Up (choice camera ,set x ,set y)
-	if( (CameraY < room_height - height) && (oRyu.y != startPosition_Y) && CameraUpSpeed!=0){
-		camera_set_view_pos(view_camera[0], CameraY + CameraUpSpeed, 0);
+	if( (CameraY > 0) && (oRyu.x != startPosition_X) && CameraUpSpeed!=0){
+		camera_set_view_pos(view_camera[0], 0 , CameraY - CameraUpSpeed);
 	}
 	
 	
 	//reset the camera (if the deathCount plus)
 	if(deathflag != oRyuController.deathCount){
-		camera_set_view_pos(view_camera[0], 0, 0);
+		camera_set_view_pos(view_camera[0], startCameraX, startCameraY);
 		deathflag = oRyuController.deathCount;
 	}
 	
 }else{
-	camera_set_view_pos(view_camera[0], 0, 0);
+	camera_set_view_pos(view_camera[0], startCameraX, startCameraY);
 }

@@ -1,5 +1,6 @@
 /// @description create camera
-
+startCameraX = 0;
+startCameraY = 0;
 startPosition_X = 0;
 startPosition_Y = 0;
 startRoom = 0;
