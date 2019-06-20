@@ -32,6 +32,22 @@ if(deathFade){
 	draw_set_alpha(1);
 }
 
+//death
+if(ShipdeathFade){
+	with(oRyu){
+		if( oShipSpawner.shipHealth <= 0 ){
+			oGame.transitionAlpha += 0.1;
+		}else{
+			oGame.transitionAlpha -= 0.1;
+		}
+	}
+	if(transitionAlpha <= 0) ShipdeathFade = false;
+	
+	draw_set_alpha(transitionAlpha);
+	draw_rectangle_color(0, 0, width, height,  c_black, c_black, c_black, c_black, false);
+	draw_set_alpha(1);
+}
+
 //var totalTime = string(timerMinute) + "." + string(timerSecond);
 creditRole();
 

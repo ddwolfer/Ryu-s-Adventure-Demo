@@ -1999,6 +1999,14 @@
             }
         },
         {
+            "Key": "9289ef89-273f-4bfc-9896-02dd5c377318",
+            "Value": {
+                "id": "cfecc798-5243-4405-896a-6d9ebac842e2",
+                "resourcePath": "rooms\\rFinalFight\\rFinalFight.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "9346b776-4671-42a6-bebf-edffb1350582",
             "Value": {
                 "id": "5333c965-59e1-4725-9b79-bf6574e200be",
