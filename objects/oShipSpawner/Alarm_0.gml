@@ -1,5 +1,5 @@
 /// @description 
 with(oGame){
-	targetRoom = rGoShip;
-	doTransition = true;
+	oRyuController.deathCount++;
+	room_goto(r0_11);
 }

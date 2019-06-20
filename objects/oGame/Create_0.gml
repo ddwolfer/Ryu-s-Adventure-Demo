@@ -9,6 +9,7 @@ doTransition = false;
 targetRoom = noone;
 
 deathFade = false;
+ShipdeathFade = false;
 
 timerSecond = 0;
 timerMinute = 0;

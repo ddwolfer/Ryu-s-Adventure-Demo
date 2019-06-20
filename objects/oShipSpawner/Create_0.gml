@@ -8,4 +8,8 @@ heartWidth = sprite_get_width(sHealth) + 5;
 heartX = 10;
 heartY = 10;
 
-shipHealth = 5;
+shipHealth = 3;
+ShipDeathflag = false;
+
+transitionAlpha = 1;
+FadeinRoom = true;
