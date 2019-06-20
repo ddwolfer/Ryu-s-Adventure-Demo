@@ -56,7 +56,7 @@ switch(choice_variable){
 		myText[0 , i]	="you gonna give me something like the scroll?";
 		myText[1 , i]	="你又要給我什麼東西了嗎?";
 		mySpeaker[i]	= oRyu;
-		myScripts[i]	= [change_variable, oScrollTP, "image_alpha", 1];
+		myScripts[i]	= [change_variable, oScrollTP, "getScroll", 1];
 		
 		//Line 8
 		i++;

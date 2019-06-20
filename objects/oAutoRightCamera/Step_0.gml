@@ -3,9 +3,9 @@
 if instance_exists(oRyu){
 	//oRyu start moving
 	if(startRoom == 0){
+		startRoom=1 //start or not
 		startPosition_X = oRyu.x; //set default x
 		startPosition_Y = oRyu.y; //set default x
-		startRoom=1 //start or not
 	}
 	//get camera x
 	var CameraX = camera_get_view_x(view_camera[0]);
