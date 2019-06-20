@@ -25,7 +25,8 @@ switch(screen){
 				case 3:  //Start
 					with(oGame){
 						SartWithContinue = false;
-						targetRoom = rFinalFight;
+						targetRoom = r0_0;
+
 						doTransition = true;
 						//audio_play_sound(sMusic, 3, true);
 						test = 1;
