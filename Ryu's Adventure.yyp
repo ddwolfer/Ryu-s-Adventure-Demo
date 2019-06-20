@@ -2583,14 +2583,6 @@
             }
         },
         {
-            "Key": "c478c156-993d-4822-8902-ef92f46277d7",
-            "Value": {
-                "id": "704ab9fe-a9f6-4ede-ae7d-a472dcad79fc",
-                "resourcePath": "rooms\\rFlyTest\\rFlyTest.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "c6dec124-2514-4d7e-b690-121a5a627d1a",
             "Value": {
                 "id": "5213048e-f96a-4be3-95af-951563cc08fa",
