@@ -6,7 +6,7 @@ switch(state){
 		else if(y <= 40) dir *= -1;
 		idleCounter++;
 		
-		if(idleCounter >= 200){
+		if(idleCounter >= 120){
 			state = attack1;
 			idleCounter = 0;
 		}

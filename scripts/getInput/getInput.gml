@@ -5,6 +5,7 @@ if(gamepad_is_connected(0)){
 	left = gamepad_axis_value(0, gp_axislh) < -0.4 || gamepad_button_check(0, gp_padl) || keyboard_check(vk_left);
 	right = gamepad_axis_value(0, gp_axislh) >  0.4 || gamepad_button_check(0, gp_padr) || keyboard_check(vk_right);
 	action = gamepad_button_check_pressed(0, gp_face3) || keyboard_check_pressed(ord("X"));
+	actionTurbo = gamepad_button_check(0, gp_face3) || keyboard_check(ord("X"));
 	jump =  gamepad_button_check_pressed(0, gp_face1) || keyboard_check_pressed(ord("Z"));
 	jumpRelease =  gamepad_button_check_released(0, gp_face1) || keyboard_check_released(ord("Z"));
 	jumpHold =  gamepad_button_check(0, gp_face1) || keyboard_check(ord("Z"));
@@ -20,6 +21,7 @@ if(gamepad_is_connected(0)){
 	left = gamepad_axis_value(4, gp_axislh) < -0.4 || gamepad_button_check(4, gp_padl) || keyboard_check(vk_left);
 	right = gamepad_axis_value(4, gp_axislh) >  0.4 || gamepad_button_check(4, gp_padr) || keyboard_check(vk_right);
 	action = gamepad_button_check_pressed(4, gp_face3) || keyboard_check_pressed(ord("X"));
+	actionTurbo = gamepad_button_check(0, gp_face3) || keyboard_check(ord("X"));
 	jump = gamepad_button_check_pressed(4, gp_face1) || keyboard_check_pressed(ord("Z"));
 	jumpRelease = gamepad_button_check_released(4, gp_face1) || keyboard_check_released(ord("Z"));
 	jumpHold = gamepad_button_check(4, gp_face1) || keyboard_check(ord("Z"));
@@ -35,6 +37,7 @@ if(gamepad_is_connected(0)){
 	left = keyboard_check(vk_left);
 	right = keyboard_check(vk_right);
 	action = keyboard_check_pressed(ord("X"));
+	actionTurbo =  keyboard_check(ord("X"));
 	jump = keyboard_check_pressed(ord("Z")); 
 	jumpRelease = keyboard_check_released(ord("Z"));
 	jumpHold = keyboard_check(ord("Z"));

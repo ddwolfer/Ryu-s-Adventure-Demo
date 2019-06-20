@@ -9,7 +9,8 @@
         "2153c456-b2ed-48e3-9ff4-7cf40869eaaf",
         "62d580fc-5347-4107-a362-efa572ea492a",
         "d77567bd-da6b-4057-a64e-21199628d0d0",
-        "7647b9b5-4023-4e1e-9d83-d5ff1bb15244"
+        "7647b9b5-4023-4e1e-9d83-d5ff1bb15244",
+        "4ac837bb-8243-4687-a4be-1655954c0fb9"
     ],
     "filterType": "GMSprite",
     "folderName": "Ship",
