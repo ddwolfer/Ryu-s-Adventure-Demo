@@ -27,3 +27,5 @@ reset_dialogue_defaults();
 created = false;
 deletedNPC = false;
 deletedNPCFlag = false;
+
+CreateDialougeByTrigger = false;

@@ -25,7 +25,7 @@ switch(screen){
 				case 3:  //Start
 					with(oGame){
 						SartWithContinue = false;
-						targetRoom = rFlyTest;
+						targetRoom = r3_7;
 						doTransition = true;
 						//audio_play_sound(sMusic, 3, true);
 						test = 1;
