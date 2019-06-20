@@ -156,8 +156,16 @@ else if (random(100) > 85 && abs(xVelo) > 0.5 && !onMovingPlatform) instance_cre
 	#region //out of camera in auto scroll levels
 	if(instance_exists(oAutoRightCamera)){
 		var CameraX = camera_get_view_x(view_camera[0]);
+		var CameraY = camera_get_view_y(view_camera[0]);
 		var maxCameraX = CameraX + camera_get_view_width(view_camera[0]);
+		var maxCameraY = CameraY + camera_get_view_height(view_camera[0]);
 		if(x > maxCameraX || x < CameraX){
+			alarm[11] = 20; //set a timer for the death animation to finish
+			audio_play_sound(sdDeath, 3, false);
+			state = death;
+			control = false;
+		}
+		if(y > maxCameraY){
 			alarm[11] = 20; //set a timer for the death animation to finish
 			audio_play_sound(sdDeath, 3, false);
 			state = death;
