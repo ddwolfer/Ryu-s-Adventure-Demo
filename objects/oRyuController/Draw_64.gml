@@ -1,10 +1,10 @@
-var text1 = "X" + string(deathCount);
+//var text1 = "X" + string(deathCount);
 //var text2 = "X" + string(cheeseCount);
 
-draw_set_font(f)
-draw_set_halign(fa_left);
+/*draw_set_font(f)
+draw_set_halign(fa_left);*/
 
-if(room != rCredit){
+/*if(room != rCredit){
 	draw_sprite(sDeathCounter, -1, healthX, healthY + 5);
 	//draw_sprite(sCheese, -1, healthX + 70, healthY + 5);
 	draw_set_color(c_white);
@@ -17,6 +17,6 @@ if(room != rCredit){
 	draw_set_color(c_white);
 	draw_text_transformed(260, 200, text1, 3, 3, 0);
 	//draw_text_transformed(460, 200, text2 + "  /5", 3, 3, 0);
-}
+}*/
 
 

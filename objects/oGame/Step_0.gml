@@ -13,10 +13,6 @@ for(var i = 0; i < 12; i++){
 	if(gpConnected == true) break;
 }
 
-if(room == rCredit){
-	if(start) game_restart();
-	if(select) game_end();
-}
 
 //show_debug_message(oGame.languageIndex);
 
