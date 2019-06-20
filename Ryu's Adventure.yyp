@@ -1015,14 +1015,6 @@
             }
         },
         {
-            "Key": "56762a23-b867-4bb1-bb38-e6eec48034ff",
-            "Value": {
-                "id": "22f58181-455a-4fb7-8b82-0211cc99b115",
-                "resourcePath": "rooms\\r3_UP\\r3_UP.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "56b904e6-c149-4e6f-8bd4-e81ff73bc8ba",
             "Value": {
                 "id": "48295653-4f9a-497d-891f-fdb544435c2e",
@@ -2532,14 +2524,6 @@
                 "id": "c9656b03-7ebf-4302-b657-924dac0aa91b",
                 "resourcePath": "sprites\\sSlopeL1\\sSlopeL1.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "c478c156-993d-4822-8902-ef92f46277d7",
-            "Value": {
-                "id": "704ab9fe-a9f6-4ede-ae7d-a472dcad79fc",
-                "resourcePath": "rooms\\rFlyTest\\rFlyTest.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
