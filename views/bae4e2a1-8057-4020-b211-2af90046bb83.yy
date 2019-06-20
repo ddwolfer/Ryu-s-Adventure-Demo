@@ -15,7 +15,8 @@
         "ca1143bc-105f-44cc-8c83-23739a93f999",
         "7027abef-4913-4a08-ae75-3681cc12a333",
         "11a8790f-fd15-4b54-bd26-6145db2d1fb0",
-        "c6dec124-2514-4d7e-b690-121a5a627d1a"
+        "c6dec124-2514-4d7e-b690-121a5a627d1a",
+        "cfb05311-0595-4808-b3b4-fd6e16a3eef6"
     ],
     "filterType": "GMSound",
     "folderName": "Sound Effect",

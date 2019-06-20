@@ -24,8 +24,11 @@ if(control){
 	if(y > height - 15) y = height - 15;
 	
 	//shoot
-	if(action){
+	if(actionTurbo && canShoot){
+		audio_play_sound(sdShipShoot, 3, false);
 		instance_create(x + 40, y + 9, oBullet);
+		canShoot = false;
+		alarm[1] = 10;
 	}
 }
 
