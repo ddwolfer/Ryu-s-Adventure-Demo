@@ -32,7 +32,7 @@ if(control){
 	}
 }
 
-if(shipHealth <= 0){
+if(oShipSpawner.shipHealth <= 0){
 	control = false;
 	if(explosionCounter <= 15){
 		var xx = random_range(x - 40, x + 40);

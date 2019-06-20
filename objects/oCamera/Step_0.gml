@@ -1,4 +1,4 @@
-if(!instance_exists(oRyuController)) exit;
+//if(!instance_exists(oRyuController)) exit;
 
 //x += random_range(-screenShake, screenShake);
 
@@ -27,6 +27,11 @@ if(instance_exists(oRyu)){
 	camera_set_view_pos(view_camera[0], x - width / 2 + random_range(-screenShake, screenShake), y - 2 * height / 3 + random_range(-screenShake, screenShake));
 }else{
 	camera_set_view_pos(view_camera[0], 0, 0);
+}
+
+if(instance_exists(oShip)){
+
+	camera_set_view_pos(view_camera[0], random_range(-screenShake, screenShake), random_range(-screenShake, screenShake));
 }
 
  

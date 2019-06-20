@@ -351,6 +351,14 @@
             }
         },
         {
+            "Key": "1ee71958-4d77-46a8-85de-ba4077c8b6f7",
+            "Value": {
+                "id": "b311ce6f-2db1-4a62-9975-5d1e9b480aef",
+                "resourcePath": "objects\\oShipSpawner\\oShipSpawner.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1f391772-8104-4915-97c7-cc77043aa013",
             "Value": {
                 "id": "59a1c7cc-50e1-4d54-b10e-c9a2f5ed6e98",
@@ -3011,6 +3019,14 @@
             "Value": {
                 "id": "f686320a-cf55-4751-88c0-9fdedf3735f8",
                 "resourcePath": "sprites\\sSlopeR1\\sSlopeR1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f13eec1b-ace2-4c1e-ba40-5f857c04e07d",
+            "Value": {
+                "id": "3ddb5b70-d26f-4559-b30e-b9fef57e2e88",
+                "resourcePath": "sprites\\sHealth\\sHealth.yy",
                 "resourceType": "GMSprite"
             }
         },
