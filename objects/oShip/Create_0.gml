@@ -9,3 +9,4 @@ control = true;
 
 shipHealth = 5;
 damaged = false;
+explosionCounter = 0;

@@ -1,6 +1,6 @@
 if(!instance_exists(oRyuController)) exit;
 
-x += random_range(-screenShake, screenShake);
+//x += random_range(-screenShake, screenShake);
 
 
 if(instance_exists(oRyu)){
@@ -19,18 +19,12 @@ if(instance_exists(oRyu)){
 
 	if(y < 2 * height / 3){
 		y = 2 * height / 3;
-		y += random_range(-screenShake, screenShake);
+		//y += random_range(-screenShake, screenShake);
 	}else if(y > room_height - height / 3){
 		y = room_height - height / 3;
-		y += random_range(-screenShake, screenShake);
+		//y += random_range(-screenShake, screenShake);
 	}
-
-	/*if(oRyu.x < 463){
-		if(oRyu.y > 300){
-			y = room_height - height / 3;
-		}
-	}*/
-	camera_set_view_pos(view_camera[0], x - width / 2, y - 2 * height / 3);
+	camera_set_view_pos(view_camera[0], x - width / 2 + random_range(-screenShake, screenShake), y - 2 * height / 3 + random_range(-screenShake, screenShake));
 }else{
 	camera_set_view_pos(view_camera[0], 0, 0);
 }
