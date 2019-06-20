@@ -5,6 +5,7 @@ width = room_width;
 height = room_height;
 instance_create(x , y , oBossFire);
 originalXPosition = 336;
+bossHealth = 250;
 
 //state
 idle = 10;
@@ -22,3 +23,4 @@ fireCounter = 0;
 idleCounter = 0;
 
 flyAttackSpeed = 0;
+explosionCounter = 0;

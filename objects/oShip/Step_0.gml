@@ -31,9 +31,14 @@ if(control){
 
 if(shipHealth <= 0){
 	control = false;
-	repeat(10){
-		var xx = random_range(x-40, x+40);
-		var yy = random_range(x-18, x+18);
+	if(explosionCounter <= 15){
+		var xx = random_range(x - 40, x + 40);
+		var yy = random_range(y - 18, y + 18);
 		instance_create(xx, yy, oShipExplode);
+		explosionCounter++;
+	}else if(explosionCounter >15){
+		instance_destroy(self);
 	}
 }
+
+//show_debug_message(shipHealth);

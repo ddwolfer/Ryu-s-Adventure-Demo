@@ -1,3 +1,4 @@
+if(!instance_exists(oShip)) exit;
 switch(state){
 	case idle:
 		y += moveSpeed * dir;
@@ -50,3 +51,16 @@ switch(state){
 		}	
 	break;
 }
+if(bossHealth <= 0){
+	moveSpeed = 0;
+	flyAttackSpeed = 0;
+	if(explosionCounter <= 100){
+		var xx = random_range(x - 40, x + 40);
+		var yy = random_range(y - 40, y + 40);
+		instance_create(xx, yy, oShipExplode);
+		explosionCounter++;
+	}else if(explosionCounter >100){
+		instance_destroy(self);
+	}
+}
+show_debug_message(bossHealth);
