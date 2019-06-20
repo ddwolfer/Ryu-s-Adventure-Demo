@@ -11,8 +11,7 @@
         "63b0c72e-29f1-4bcb-bc62-f2cc3e6bdb7a",
         "ba9adeed-a9fd-40d8-a1e7-11826dec3ab1",
         "47455489-8721-45ea-9ca2-e3f31738ac9b",
-        "3a21d26d-8cc2-4163-b1df-ed3c75fe032a",
-        "1b8de532-a1d4-40ca-8ed8-c2215aaf3ed7"
+        "3a21d26d-8cc2-4163-b1df-ed3c75fe032a"
     ],
     "filterType": "GMRoom",
     "folderName": "World1",
