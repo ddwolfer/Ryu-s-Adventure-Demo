@@ -3,8 +3,8 @@
 
 
 //let ladder and fire disappear (layers escape id = 296)
-layer_set_visible(296,0);
-layer_set_visible(294,0);
+layer_set_visible(layer_get_id("escape"),0);
+layer_set_visible(layer_get_id("Lighting2"),0);
 
 myTxT[0,0]	="!!!! what's going wrong here?";
 myTxT[1,0]	="!!!! 發生什麼事了?"

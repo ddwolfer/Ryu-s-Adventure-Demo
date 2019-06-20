@@ -159,7 +159,7 @@ else if (random(100) > 85 && abs(xVelo) > 0.5 && !onMovingPlatform) instance_cre
 		var CameraY = camera_get_view_y(view_camera[0]);
 		var maxCameraX = CameraX + camera_get_view_width(view_camera[0]);
 		var maxCameraY = CameraY + camera_get_view_height(view_camera[0]);
-		if(x > maxCameraX || x < CameraX){
+		if(x < CameraX){
 			alarm[11] = 20; //set a timer for the death animation to finish
 			audio_play_sound(sdDeath, 3, false);
 			state = death;
@@ -195,7 +195,7 @@ else if (random(100) > 85 && abs(xVelo) > 0.5 && !onMovingPlatform) instance_cre
 	#endregion
 	
 	#region //Boomerang
-	if(action && oRyuController.abilityTP){  //Can teleport after coolect the scroll
+	if(action && oRyuController.abilityTP && !instance_exists(obj_textbox)){  //Can teleport after coolect the scroll
 		if(!instance_exists(oTeleport)){
 			instance_create_layer(x, y-1, "MainEntities", oTeleport);
 		}

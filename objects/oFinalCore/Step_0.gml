@@ -24,8 +24,8 @@ if(place_meeting(x,y,oTeleport)){
 }
 if(!instance_exists(obj_textbox) && nextDialogue && !DialogueEND){
 	//show ladder and fire
-	layer_set_visible(296,1);
-	layer_set_visible(294,1);
+	layer_set_visible(layer_get_id("escape"),1);
+	layer_set_visible(layer_get_id("Lighting2"),1);
 	create_textevent(
 	    myTxT01,
 	    -1,
