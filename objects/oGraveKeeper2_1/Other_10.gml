@@ -20,7 +20,7 @@ switch(choice_variable){
 		myText[0 , i]	="That's not a point, look at this scroll now.";
 		myText[1 , i]	="先不管我為什麼在這裡,你看看這個卷軸. ";
 		mySpeaker[i]	= id;
-		myScripts[i]	= [change_variable, oScrollDJ, "image_alpha", "1"];
+		myScripts[i]	= [change_variable, oScrollDJ, "getScroll", "1"];
 
 		//Line 3
 		i++;
