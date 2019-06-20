@@ -35,6 +35,17 @@ switch (state) {
             instance_destroy();
         }
     break;
+	
+	case Faint:
+		xscale = 1;
+        yscale = 1;
+		sprite_index = sRyuFaint;
+		if(image_index == 3){
+			image_speed = 0;
+		}else{
+			image_speed = 0.2;
+		}
+	break;
 }
 
 //make sure animation starts from frame 0

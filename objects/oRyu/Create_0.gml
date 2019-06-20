@@ -16,6 +16,7 @@ run = 11;
 jumpS = 12;
 death = 13;
 climb = 14;
+Faint = 15;
 
 state = idle;
 facing = -image_xscale;

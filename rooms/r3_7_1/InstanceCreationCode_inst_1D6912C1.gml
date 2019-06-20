@@ -1,2 +1,2 @@
 instant = true;
-targetRoom = noone;
+targetRoom = r3_UP;
