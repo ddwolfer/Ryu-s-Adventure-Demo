@@ -1,4 +1,7 @@
 if(!instance_exists(oShip)) exit;
+if(instance_exists(obj_textbox)){
+	state = talk;
+}
 switch(state){
 	case talk:
 		if(!instance_exists(obj_textbox)){
