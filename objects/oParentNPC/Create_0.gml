@@ -1,9 +1,6 @@
 //-----------Customise (FOR USER)
-if(instance_exists(oRyu)){
-	playerobject = oRyu;
-}else{
-	playerobject = oShip;
-}
+playerobject = oRyu;
+
 
 interact_key = vk_up;
 detection_radius = 32;
