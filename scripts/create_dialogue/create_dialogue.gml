@@ -26,7 +26,6 @@ var _2DText = arg[0];
 
 for(var i = 0 ; i < array_length_2d(_2DText, 0)  ; i++){
 	_1DText[i] = _2DText[oGame.languageIndex,i];
-	show_debug_message("LOOP I:"+string(i));
 }
 var _text = _1DText;
 #endregion
@@ -88,7 +87,6 @@ with(_textbox){
 		portrait[i]			= -1;
 		voice[i]			= -1;
 		font[i]				= _speaker[i].myFont;
-		show_debug_message("FFF :"+string(font[i])+" MF:"+string(_speaker[i].myFont));
 		name[i]				=_speaker[i].myName;
 		if(_speaker[i].myName != "None"){	//if have name
 		name[i]				= _speaker[i].myName[oGame.languageIndex];

@@ -1959,6 +1959,14 @@
             }
         },
         {
+            "Key": "8fd49aeb-51d6-4235-8080-2acb393a167f",
+            "Value": {
+                "id": "f19ff44c-8406-4fe2-a838-0b521ba24c46",
+                "resourcePath": "objects\\oRyuSoul\\oRyuSoul.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8fd8e5ce-0597-4fc7-a8fa-5c6150b4ee16",
             "Value": {
                 "id": "29280986-0f12-4fe8-a6d0-eb16c0c90d05",
@@ -2170,7 +2178,7 @@
             "Key": "a71136a6-5a54-4317-9acc-7a7cd6cf194e",
             "Value": {
                 "id": "a3eaabcb-84d0-44e5-b3b2-ee8971ef31a0",
-                "resourcePath": "objects\\oDialogueTrigger_CheckPoint\\oDialogueTrigger_CheckPoint.yy",
+                "resourcePath": "objects\\oDialogueTrigger_3_7_1\\oDialogueTrigger_3_7_1.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2266,7 +2274,7 @@
             "Key": "adb612a9-6402-460b-ace3-9740ab65b968",
             "Value": {
                 "id": "aa11471d-9c20-4acb-a09a-a630014fc4dd",
-                "resourcePath": "objects\\object86\\object86.yy",
+                "resourcePath": "objects\\oFinalBoss\\oFinalBoss.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3236,6 +3244,14 @@
                 "id": "79649ba1-213a-4dbc-8059-9661922d4de8",
                 "resourcePath": "sprites\\sSlopeL\\sSlopeL.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fd50146e-84fb-4024-8753-28829da1be4d",
+            "Value": {
+                "id": "ee54f634-7a70-46bc-841f-af13cc7eedfc",
+                "resourcePath": "objects\\oDialogueTriggerFinalFight\\oDialogueTriggerFinalFight.yy",
+                "resourceType": "GMObject"
             }
         },
         {
