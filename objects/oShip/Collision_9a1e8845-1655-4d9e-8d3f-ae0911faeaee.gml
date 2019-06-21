@@ -1,6 +1,6 @@
 /// @description 
 if(!damaged){
-	audio_play_sound(sdShipHit, 3, false);
+	audio_play_sound(sdShipHit, 5, false);
 	addScreenShake(10, 30);
 	oShipSpawner.shipHealth -= 1;
 	damaged = true;
