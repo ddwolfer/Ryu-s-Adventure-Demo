@@ -7,7 +7,7 @@ switch(choice_variable){
 	#region First Dialogue
 		//Line 0
 		var i = 0;
-		myText[0 , i]	= "Greeting, seems you pass the test.";
+		myText[0 , i]	= "Greetings, you pass the test.";
 		myText[1 , i]	= "又見面了,看來你順利地通過前面的考驗了呢.";
 		mySpeaker[i]	= id;
 		
@@ -19,7 +19,7 @@ switch(choice_variable){
 		
 		//Line 2
 		i++;
-		myText[0 , i]	= "By the way, did you see anything looks like gem?";
+		myText[0 , i]	= "By the way, did you see anything on the way here? Perhaps gems?";
 		myText[1 , i]	="對了,你來的路上有看到寶石之類的東西嗎?";
 		mySpeaker[i]	= id;
 
@@ -34,8 +34,8 @@ switch(choice_variable){
 		
 		//Line 4
 		i++;
-		myText[0 , i]	="I suggest that you stop picking up that thing, it may bring you curse.";
-		myText[1 , i]	="那我建議你不要再撿了,他可能會為你帶來詛咒.";
+		myText[0 , i]	="I won't touch them if I were you, those things are cursed.";
+		myText[1 , i]	="那我建議你不要再撿了,那些東西會為你帶來詛咒.";
 		myNextLine[i]	= 6;
 		mySpeaker[i]	= id;
 		
@@ -53,21 +53,21 @@ switch(choice_variable){
 		
 		//Line 7
 		i++;
-		myText[0 , i]	="you gonna give me something like the scroll?";
+		myText[0 , i]	="You're gonna give me a scroll or something?";
 		myText[1 , i]	="你又要給我什麼東西了嗎?";
 		mySpeaker[i]	= oRyu;
 		myScripts[i]	= [change_variable, oScrollTP, "getScroll", 1];
 		
 		//Line 8
 		i++;
-		myText[0 , i]	="Yes. Take this scroll, it will be helpfull for your adventure. See you.";
+		myText[0 , i]	="Yes. Take this scroll, it will be helpfull for your adventure. See ya.";
 		myText[1 , i]	="收下這個卷軸吧,對接下來的考驗有幫助的,再見.";
 		myScripts[i]	= [change_variable, id, "image_alpha",0.01];
 		mySpeaker[i]	= id;
 		
 		//Line 8
 		i++;
-		myText[0 , i]	="(where is this old man come from...?)";
+		myText[0 , i]	="(What's with this creepy old dude...?)";
 		myText[1 , i]	="(這個老頭到底是什麼人......)";
 		myScripts[i]	= [change_variable, id, "image_alpha",0];
 		mySpeaker[i]	= oRyu;

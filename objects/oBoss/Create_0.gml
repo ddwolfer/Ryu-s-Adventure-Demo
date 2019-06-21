@@ -5,7 +5,7 @@ width = room_width;
 height = room_height;
 instance_create(x , y , oBossFire);
 originalXPosition = 336;
-bossHealth = 250;
+bossHealth = 10;
 flash = 0;
 
 //state
