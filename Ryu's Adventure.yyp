@@ -311,14 +311,6 @@
             }
         },
         {
-            "Key": "195a7b47-0fb1-40ee-ac37-350017bd77df",
-            "Value": {
-                "id": "fcc0882a-e8d4-4ed6-b017-99e5178aea68",
-                "resourcePath": "sprites\\sBlueDinoRun1\\sBlueDinoRun1.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "1a0dc050-220e-4d30-a5a8-90f9feed0df9",
             "Value": {
                 "id": "67f18e7b-2978-4569-9893-230511e45b74",
@@ -491,14 +483,6 @@
             "Value": {
                 "id": "5852d57e-fc72-4ef9-8c96-5d58f747f551",
                 "resourcePath": "sprites\\sTrigger\\sTrigger.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "2af05df4-d558-491e-827e-206c4a46b2c3",
-            "Value": {
-                "id": "fb97b77e-2c1c-4975-a1a3-a408aa7b283a",
-                "resourcePath": "sprites\\sEParticle2\\sEParticle2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -767,14 +751,6 @@
             }
         },
         {
-            "Key": "3a7ce849-9da8-4ecd-b27c-2777317281b1",
-            "Value": {
-                "id": "1b8c68a6-ae6b-42a4-a267-16cad12de48f",
-                "resourcePath": "sprites\\sBlueDinoRun\\sBlueDinoRun.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "3d8a331c-10f0-4261-bab4-cc2230fc2b8a",
             "Value": {
                 "id": "38068468-efe1-4be8-a374-80a3eb9532ea",
@@ -955,22 +931,6 @@
             "Value": {
                 "id": "3324a6bd-f062-4ce3-938c-ab5eaeb02693",
                 "resourcePath": "sprites\\sYellowGem\\sYellowGem.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "4e0f527d-2848-4047-85c1-deeb939aa317",
-            "Value": {
-                "id": "66264df7-a242-4684-9454-7c9871646e1c",
-                "resourcePath": "rooms\\r3_8\\r3_8.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
-            "Key": "4ec68d2e-99ae-46fc-b08e-a85b9bf4c465",
-            "Value": {
-                "id": "464f992e-5360-4d9a-ab12-d55a5e0ab906",
-                "resourcePath": "sprites\\sRedDinoRun\\sRedDinoRun.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1391,14 +1351,6 @@
             }
         },
         {
-            "Key": "69999e8d-9288-44b1-a543-c213d4ddd79b",
-            "Value": {
-                "id": "3ac9ed2d-d933-4355-a0d3-14058e8824a3",
-                "resourcePath": "sprites\\sRedDinoHit\\sRedDinoHit.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "69bb293a-2c4c-4e72-881f-18e91d4b1fc1",
             "Value": {
                 "id": "8bc5d57c-1e24-413b-b7ab-537d71f49dba",
@@ -1460,14 +1412,6 @@
                 "id": "cac6716f-bf6c-4e4b-9223-cb5c48ae9599",
                 "resourcePath": "objects\\oSwitchBlockR\\oSwitchBlockR.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "6d4f7328-9e6f-4e92-8354-be089cbf0d5a",
-            "Value": {
-                "id": "5d675e8f-04ee-4291-8a61-12909a950249",
-                "resourcePath": "sprites\\sprite69\\sprite69.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -1743,6 +1687,14 @@
             }
         },
         {
+            "Key": "7fa39451-47f9-4443-b7b3-949ff8449267",
+            "Value": {
+                "id": "5df36f75-5453-4eeb-abb1-8e963b22e77f",
+                "resourcePath": "sounds\\sdShipHit\\sdShipHit.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "7fdc95f9-1201-4fdf-ac9e-9e2449eec574",
             "Value": {
                 "id": "adcf89a0-de8f-451b-a73f-9a8c3d868daa",
@@ -1911,14 +1863,6 @@
             }
         },
         {
-            "Key": "8b08f8e8-1971-4062-83e4-cf41404c2559",
-            "Value": {
-                "id": "2da0e821-9219-41c5-9ee8-cfefb5fb4860",
-                "resourcePath": "objects\\oEParticle\\oEParticle.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "8c66a1fa-2c93-4e73-bba5-cfcbd6c58f3f",
             "Value": {
                 "id": "ec2e21c0-e4c4-4342-9051-e347dbf8c90e",
@@ -2039,6 +1983,14 @@
             }
         },
         {
+            "Key": "96f7b9bb-d73d-45be-a262-1cd335ff034f",
+            "Value": {
+                "id": "dd74cd93-3c93-403e-a02e-dd84889ccd35",
+                "resourcePath": "objects\\oScreenShaker\\oScreenShaker.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "98b13cb6-e654-486e-8297-92b954613d78",
             "Value": {
                 "id": "6eab459b-96ac-4a64-bc1e-530588ee1eb0",
@@ -2124,14 +2076,6 @@
                 "id": "14c0b983-bec5-4b66-b56a-804f371e473d",
                 "resourcePath": "views\\a29a8bc9-5848-47db-af33-3af0d539f1d7.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "a2a836c5-5baf-4028-a187-09c52bc7a757",
-            "Value": {
-                "id": "9b1b6291-d9b8-4f93-841a-a780e234b853",
-                "resourcePath": "objects\\oGreenDino\\oGreenDino.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -2391,14 +2335,6 @@
             }
         },
         {
-            "Key": "b56f9c51-2b84-4a8f-8aa8-2a8d070ffbca",
-            "Value": {
-                "id": "87ae03ff-d73b-4780-8629-0ade2ee11358",
-                "resourcePath": "sprites\\sEParticle\\sEParticle.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "b6709fff-6272-4302-a391-c6e1e63d9ac0",
             "Value": {
                 "id": "36f1f5eb-2582-4b59-a7f1-fa17b831a98b",
@@ -2567,14 +2503,6 @@
             }
         },
         {
-            "Key": "bff12c08-2ebb-41ce-8dc9-2f913f1abd6a",
-            "Value": {
-                "id": "cae15c24-bf36-4b19-8a22-17fe90d42ad6",
-                "resourcePath": "sprites\\sGreenDinoRun\\sGreenDinoRun.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "c3169f24-2d02-42d0-b26a-3495acdd0525",
             "Value": {
                 "id": "d9bfbe00-ff48-459b-bb49-5702ed42b7dd",
@@ -2604,14 +2532,6 @@
                 "id": "5213048e-f96a-4be3-95af-951563cc08fa",
                 "resourcePath": "sounds\\sdFootStep3\\sdFootStep3.yy",
                 "resourceType": "GMSound"
-            }
-        },
-        {
-            "Key": "c6f63884-28bf-4cec-989b-5c1f031f77e6",
-            "Value": {
-                "id": "ffc98dd4-5b33-4af0-bd6d-e53182f3b102",
-                "resourcePath": "objects\\oBlueDino\\oBlueDino.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -2735,14 +2655,6 @@
             }
         },
         {
-            "Key": "d184d4c7-e8c0-4601-8acf-892e6ee2a999",
-            "Value": {
-                "id": "f74cb432-fcff-4615-9e86-ff780a7e8ff1",
-                "resourcePath": "sprites\\sGreenDinoHit\\sGreenDinoHit.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "d3621813-e91b-40e7-8117-41818e6c8061",
             "Value": {
                 "id": "17222921-9276-42b0-bb2c-cd9562644767",
@@ -2755,14 +2667,6 @@
             "Value": {
                 "id": "334118c8-84b7-4052-8901-482905a02da6",
                 "resourcePath": "objects\\oRyuController\\oRyuController.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "d492bf5e-75a2-43c2-8c15-e62d988e2a45",
-            "Value": {
-                "id": "653eafde-e78c-4f76-ac73-35bd1e78dad8",
-                "resourcePath": "objects\\oRedDino\\oRedDino.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2819,14 +2723,6 @@
             "Value": {
                 "id": "d0d09c4d-b855-44cc-b458-f32832f619ef",
                 "resourcePath": "rooms\\r1_0\\r1_0.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
-            "Key": "db4048fc-eea0-498d-b86d-d15e9e009c3e",
-            "Value": {
-                "id": "e2d696b1-cd1b-4acb-8f2f-8a47ac8cfc47",
-                "resourcePath": "rooms\\r2_71\\r2_71.yy",
                 "resourceType": "GMRoom"
             }
         },

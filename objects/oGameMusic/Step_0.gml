@@ -11,6 +11,7 @@ if(room_get_name(room)=="r0_1" && !played2){
 
 if(room_get_name(room)=="r3_7_1"){
 	audio_stop_sound(sMusic);
+	played7 = false;
 }
 
 if(room_get_name(room)=="r3_UP" && !played3){
@@ -36,6 +37,13 @@ if(room_get_name(room)=="rFinalFight" && !played6){
 	if(!audio_is_playing(sFinalIntro)){
 		audio_play_sound(sFinalLoop, 100, true);
 		played6 = true;
+	}
+}
+
+if(room_get_name(room)=="r3_7" && !played7){
+	if(!audio_is_playing(sMusic)){
+		audio_play_sound(sMusic, 100, true);
+		played7 = true;
 	}
 }
 

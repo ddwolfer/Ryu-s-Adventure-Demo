@@ -1,14 +1,14 @@
 {
-    "id": "03a45d66-fd81-489c-b012-dfe8f0bbb1fe",
+    "id": "7fa39451-47f9-4443-b7b3-949ff8449267",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "sUpLoop",
-    "audioGroupGuid": "5c0c299e-403d-4b11-a5af-dd568980670d",
+    "name": "sdShipHit",
+    "audioGroupGuid": "b8b76b5b-1516-4671-a4a3-d520c726ec92",
     "bitDepth": 1,
     "bitRate": 128,
     "kind": 0,
     "preload": false,
     "sampleRate": 44100,
     "type": 0,
-    "volume": 0.2
+    "volume": 1
 }

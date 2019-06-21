@@ -13,8 +13,8 @@ switch(choice_variable){
 		
 		//Line 1
 		i++;
-		myText[0 , i]	="Why you are here again?";
-		myText[1 , i]	="你怎麼又在這裡?";
+		myText[0 , i]	="Why you are here again...?";
+		myText[1 , i]	="你怎麼又在這裡...?";
 		mySpeaker[i]	= oRyu;
 		
 		//Line 2

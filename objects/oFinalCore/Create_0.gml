@@ -6,7 +6,7 @@
 layer_set_visible(layer_get_id("escape"),0);
 layer_set_visible(layer_get_id("Lighting2"),0);
 
-myTxT[0,0]	="!!!! what's going wrong here?";
+myTxT[0,0]	="!!!! what's going on?";
 myTxT[1,0]	="!!!! 發生什麼事了?"
 
 myTxT01[0,0]	="The ladder! Let's get out of here."

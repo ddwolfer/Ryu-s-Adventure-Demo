@@ -1,1 +1,0 @@
-CameraRightSpeed = 0.6;

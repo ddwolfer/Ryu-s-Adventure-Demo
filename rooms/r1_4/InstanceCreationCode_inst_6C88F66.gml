@@ -1,2 +1,2 @@
-text[0] = "Tap Z to short hop."
-text[1] = "輕按Z進行小跳躍"
+text[0] = "Tap Z or gamepad A to short hop."
+text[1] = "輕按鍵盤Z或搖桿A進行小跳躍"

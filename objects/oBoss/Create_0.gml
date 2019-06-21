@@ -7,13 +7,15 @@ instance_create(x , y , oBossFire);
 originalXPosition = 336;
 bossHealth = 10;
 flash = 0;
+played = false;
 
 //state
+talk = 9;
 idle = 10;
 attack1 = 11;
 attack2 = 12;
 
-state = idle;
+state = talk;
 
 //shooting variables
 fire1 = true;

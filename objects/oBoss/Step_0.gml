@@ -1,5 +1,11 @@
 if(!instance_exists(oShip)) exit;
 switch(state){
+	case talk:
+		if(!instance_exists(obj_textbox)){
+			state = idle;
+		}
+	break;
+	
 	case idle:
 		y += moveSpeed * dir;
 		if(y >= height - 40) dir *= -1;
@@ -54,13 +60,17 @@ switch(state){
 if(bossHealth <= 0){
 	moveSpeed = 0;
 	flyAttackSpeed = 0;
-	if(explosionCounter <= 100){
+	if(explosionCounter <= 200){
 		var xx = random_range(x - 40, x + 40);
 		var yy = random_range(y - 40, y + 40);
 		instance_create(xx, yy, oShipExplode);
+		instance_destroy(oBossMagic);
 		explosionCounter++;
-	}else if(explosionCounter >100){
+		if(!played){
+			alarm[3] = 10;
+			played = true;
+		}
+	}else if(explosionCounter >200){
 		instance_destroy(self);
 	}
 }
-show_debug_message(bossHealth);
