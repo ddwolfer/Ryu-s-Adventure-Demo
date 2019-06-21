@@ -7,3 +7,5 @@ HeartOpen = false;
 GreenOpen = false;
 RedOpen = false;
 YellowOpen = false;
+
+played = false;

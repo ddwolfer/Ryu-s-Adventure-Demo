@@ -38,30 +38,50 @@ if(place_meeting(x-12,y,oRyu)){
 		case 5: //Blue
 			if(oRyuController.BlueGemsGet == true && BlueOpen){
 				addScreenShake(6, 10);
+				if(!played){
+					alarm[5] = 10;
+					played = true;
+				}
 				y += moveDoor;
 			}
 		break;
 		case 6: //Heart
 			if(oRyuController.HeartGemsGet == true && HeartOpen){
 				addScreenShake(6, 10);
+				if(!played){
+					alarm[5] = 10;
+					played = true;
+				}
 				y += moveDoor;
 			}
 		break;
 		case 7: //Green
 			if(oRyuController.GreenGemsGet == true && GreenOpen){
 				addScreenShake(6, 10);
+				if(!played){
+					alarm[5] = 10;
+					played = true;
+				}
 				y += moveDoor;
 			}
 		break;
 		case 8: //Red
 			if(oRyuController.RedGemsGet == true && RedOpen){
 				addScreenShake(6, 10);
+				if(!played){
+					alarm[5] = 10;
+					played = true;
+				}
 				y += moveDoor;
 			}
 		break;
 		case 9: //Yellow
 			if(oRyuController.YellowGemsGet == true && YellowOpen){
 				addScreenShake(6, 10);
+				if(!played){
+					alarm[5] = 10;
+					played = true;
+				}
 				y += moveDoor;
 			}	
 		break;
