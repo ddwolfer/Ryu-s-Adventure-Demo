@@ -1,10 +1,19 @@
 {
-    "id": "adb612a9-6402-460b-ace3-9740ab65b968",
+    "id": "8fd49aeb-51d6-4235-8080-2acb393a167f",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "object86",
+    "name": "oRyuSoul",
     "eventList": [
-        
+        {
+            "id": "2ee33479-e302-420b-8f0f-d4e20baee36f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "8fd49aeb-51d6-4235-8080-2acb393a167f"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -24,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "6d6bb757-20be-4db2-8f45-0f9166ed9c5c",
+    "spriteId": "b25a93d9-4b9d-4371-82de-1c7e4f3cfadb",
     "visible": true
 }

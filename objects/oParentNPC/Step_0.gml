@@ -18,8 +18,10 @@ if(point_in_rectangle(playerobject.x, playerobject.y, x-dr, y-dr, x+dr, y+dr) &&
 			
 	//Hand over variables
 	create_dialogue(myText, mySpeaker, myEffects, myTextSpeed, myTypes, myNextLine, myScripts, myTextCol, myEmotion, myEmote);
-	oRyu.control = false;
-	oRyu.state = 10;
+	if( instance_exists(oRyu) ){
+		alarm[1] = 60;
+		oRyu.state = 10;
+	}
 }else {	//if player moves outside of detection radius
 	if(myTextbox != noone){
 		with(myTextbox) instance_destroy();
@@ -28,7 +30,7 @@ if(point_in_rectangle(playerobject.x, playerobject.y, x-dr, y-dr, x+dr, y+dr) &&
 }
 
 if(!instance_exists(oEasterEgg)){
-	var facing = oRyu.x - x;
+	var facing = playerobject.x - x;
 	if(facing >= 0) image_xscale = 1;
 	else if(facing < 0) image_xscale = -1;
 }
