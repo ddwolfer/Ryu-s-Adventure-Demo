@@ -36,7 +36,7 @@ if(!instance_exists(oEasterEgg)){
 var controller = oGame.gpConnected;
 
 
-if(place_meeting(x, y, oRyu) && !created && !deletedNPC){
+if(point_in_rectangle(playerobject.x, playerobject.y, x-dr, y-dr, x+dr, y+dr) && !created && !deletedNPC){
 	if(controller){
 		instance_create(x, y - 24, oToolTipXbox);
 		created = true;
@@ -45,7 +45,7 @@ if(place_meeting(x, y, oRyu) && !created && !deletedNPC){
 		created = true;
 	}
 }
-if(!place_meeting(x, y, oRyu) && created && !deletedNPC){
+if(!point_in_rectangle(playerobject.x, playerobject.y, x-dr, y-dr, x+dr, y+dr) && created && !deletedNPC){
 	if(instance_exists(oToolTipXbox)){
 		instance_destroy(oToolTipXbox);
 		created = false;
